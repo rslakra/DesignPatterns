@@ -22,7 +22,7 @@
  *****************************************************************************/
 package com.devamatre.patterns.core.behavioral.iterator;
 
-import com.devamatre.datastructure.lists.ArrayList;
+import java.util.ArrayList;
 
 /**
  * @author Rohtash Lakra (rohtash.lakra@devamatre.com)
