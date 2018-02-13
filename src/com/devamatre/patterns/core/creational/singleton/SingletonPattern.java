@@ -22,15 +22,18 @@
  *****************************************************************************/
 package com.devamatre.patterns.core.creational.singleton;
 
+import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.PrintStream;
+import java.io.PrintWriter;
+import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Properties;
 
 /**
+ * This class returns the same instnace in the same JVM.
  * 
  * @author Rohtash Lakra (rohtash.lakra@devamatre.com)
  * @author Rohtash Singh Lakra (rohtash.singh@gmail.com)
@@ -38,10 +41,11 @@ import java.util.Properties;
  * @version 1.0.0
  * @since 1.0.0
  */
-public class SingletonPattern implements Singleton {
+public class SingletonPattern {
 
+	private final String fileName = "Logger.properties";
 	private static SingletonPattern instance;
-
+	private final SimpleDateFormat logDateFormat = new SimpleDateFormat("EEE, MMM d, yyyy 'at' hh:mm:ss a");
 	private Properties properties;
 
 	enum LogType {
@@ -52,6 +56,7 @@ public class SingletonPattern implements Singleton {
 	}
 
 	/**
+	 * Returns the singleton instance of this object.
 	 * 
 	 * @return
 	 */
@@ -68,24 +73,51 @@ public class SingletonPattern implements Singleton {
 	}
 
 	/**
+	 * 
+	 * @param inputstream
+	 */
+	public void safeClose(InputStream inputstream) {
+		if (inputstream != null) {
+			try {
+				inputstream.close();
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
+		}
+	}
+
+	/**
+	 * 
+	 */
+	public void loadProperties(final String fileName) {
+		InputStream inputstream = getClass().getResourceAsStream(fileName);
+		if (inputstream != null) {
+			try {
+				if (properties == null) {
+					properties = new Properties();
+				}
+				properties.load(inputstream);
+			} catch (IOException ex) {
+				ex.printStackTrace();
+			}
+		}
+
+		safeClose(inputstream);
+	}
+
+	/**
 	 * Level of logging, error or information etc
 	 *
 	 * @return level, int
 	 */
-	public int getRegisteredLevel() {
-		int i = 0;
-		try {
-			InputStream inputstream = getClass().getResourceAsStream("Logger.properties");
-			properties.load(inputstream);
-			inputstream.close();
-			i = Integer.parseInt(properties.getProperty("logger.registeredlevel"));
-			if (i < 0 || i > 3)
-				i = 0;
-		} catch (Exception exception) {
-			System.out.println("Logger: Failed in the getRegisteredLevel method");
-			exception.printStackTrace();
+	public String getLogLevel() {
+		String logLevel = null;
+		if (properties == null) {
+			loadProperties(fileName);
 		}
-		return i;
+
+		logLevel = properties.getProperty("logger.registeredlevel");
+		return logLevel;
 	}
 
 	/**
@@ -95,10 +127,24 @@ public class SingletonPattern implements Singleton {
 	 *            GregorianCalendar
 	 * @return String, name of file
 	 */
-	private String getFileName() {
-		SimpleDateFormat dateFormat1 = new SimpleDateFormat("dd-MMM-yyyy");
-		String dateString = dateFormat1.format(Calendar.getInstance().getTime());
-		String logFilePath = getClass().getResource("Log-" + dateString + ".txt").getPath();
+	private String getLogFilePath() {
+		String logFilePath = null;
+		URL url = getClass().getResource("Logs.txt");
+		if (url != null) {
+			File file = new File(url.getPath().replaceAll("classes", "src"));
+			if (!file.exists()) {
+				try {
+					file.createNewFile();
+				} catch (IOException ex) {
+					ex.printStackTrace();
+				}
+			}
+
+			if (file.exists()) {
+				logFilePath = file.getAbsolutePath();
+			}
+		}
+
 		return logFilePath;
 	}
 
@@ -111,14 +157,18 @@ public class SingletonPattern implements Singleton {
 	 */
 	public void logMsg(LogType logType, String message) {
 		try {
-			String fileName = getFileName();
-			FileOutputStream fos = new FileOutputStream(fileName, true);
-			PrintStream ps = new PrintStream(fos);
-			SimpleDateFormat dateFormat2 = new SimpleDateFormat("EEE, MMM d, yyyy 'at' hh:mm:ss a");
-			ps.println("<" + dateFormat2.format(Calendar.getInstance().getTime()) + ">[" + message + "]");
-			ps.close();
-		} catch (IOException ie) {
-			ie.printStackTrace();
+			String logFilePath = getLogFilePath();
+			if (logFilePath != null) {
+				PrintWriter output = new PrintWriter(new FileOutputStream(logFilePath, true), true);
+				output.write("[");
+				output.write(logDateFormat.format(Calendar.getInstance().getTime()));
+				output.write("] [");
+				output.write(message);
+				output.write("]\n");
+				output.close();
+			}
+		} catch (IOException ex) {
+			ex.printStackTrace();
 		}
 	}
 
@@ -127,15 +177,37 @@ public class SingletonPattern implements Singleton {
 	 * @param arg
 	 */
 	public static void main(String arg[]) {
-		System.out.println("The output of two instance:");
-		System.out.println("First Instance: " + SingletonPattern.getInstance());
-		System.out.println("Second Instance:" + SingletonPattern.getInstance());
-		System.out.println("Third Instance:" + SingletonPattern.getInstance());
-		SingletonPattern.getInstance().logMsg(LogType.DEBUG, "Debug Message");
-		SingletonPattern.getInstance().logMsg(LogType.INFO, "Debug Message");
-		SingletonPattern.getInstance().logMsg(LogType.WARN, "Debug Message");
-		String logFilePath = SingletonPattern.getInstance().getFileName();
+		String logFilePath = SingletonPattern.getInstance().getLogFilePath();
 		System.out.println("logFilePath:" + logFilePath);
+
+		String logLevel = SingletonPattern.getInstance().getLogLevel();
+		System.out.println("logLevel:" + logLevel);
+
+		SingletonPattern.getInstance().logMsg(LogType.DEBUG, "Debug Message");
+		SingletonPattern.getInstance().logMsg(LogType.INFO, "Info Message");
+		SingletonPattern.getInstance().logMsg(LogType.WARN, "Warn Message");
+
+		System.out.println("The output of instances:");
+
+		System.out.println("SingletonPattern Instance:" + SingletonPattern.getInstance());
+
+		new Thread() {
+			public void run() {
+				System.out.println("First Instance: " + SingletonPattern.getInstance());
+			}
+		}.start();
+
+		new Thread() {
+			public void run() {
+				System.out.println("Second Instance: " + SingletonPattern.getInstance());
+			}
+		}.start();
+
+		new Thread() {
+			public void run() {
+				System.out.println("Third Instance: " + SingletonPattern.getInstance());
+			}
+		}.start();
 
 	}
 }
