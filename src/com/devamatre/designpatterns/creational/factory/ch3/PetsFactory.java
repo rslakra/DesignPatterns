@@ -1,5 +1,5 @@
 /******************************************************************************
- * Copyright (C) Devamatre Inc 2009-2018
+ * Copyright (C) Devamatre Inc. 2009-2018.
  * 
  * This code is licensed to Devamatre under one or more contributor license 
  * agreements. The reproduction, transmission or use of this code or the 
@@ -20,80 +20,19 @@
  * Devamatre reserves the right to modify the technical specifications and or 
  * features without any prior notice.
  *****************************************************************************/
-package com.devamatre.designpatterns.testcases;
+package com.devamatre.designpatterns.creational.factory.ch3;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 
  * @author Rohtash Lakra (rohtash.lakra@devamatre.com)
  * @author Rohtash Singh Lakra (rohtash.singh@gmail.com)
- * @created 2000-02-17 10:52:08 AM 
+ * @created 2000-02-17 10:52:08 AM
  * @version 1.0.0
  * @since 1.0.0
  */
-class Pet {
-	String name;
-	String type;
-
-	public Pet(String name, String type) {
-		this.name = name;
-		this.type = type;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getType() {
-		return type;
-	}
-
-	public void setType(String type) {
-		this.type = type;
-	}
-
-	public boolean equals(Object obj) {
-		if (obj == this) {
-			return true;
-		}
-
-		if (obj instanceof Pet) {
-			Pet oPet = (Pet) obj;
-			return getName().equals(oPet.getName()) && getType().equals(oPet.getType());
-		}
-
-		return false;
-	}
-
-	public int hashCode() {
-		return getName().hashCode();
-	}
-
-	public String toString() {
-		return getName();
-	}
-}
-
-class Dog extends Pet {
-
-	public Dog(String name) {
-		super(name, "Dog");
-	}
-}
-
-class Puppy extends Pet {
-	public Puppy(String name) {
-		super(name, "Puppy");
-	}
-}
-
-class PetsFactory {
+public class PetsFactory {
 
 	List<Pet> pets = new ArrayList<Pet>();
 
@@ -141,10 +80,10 @@ class PetsFactory {
 		System.out.println(pets);
 	}
 
-}
-
-public class AnimalFactory {
-
+	/**
+	 * 
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		PetsFactory petsFactory = new PetsFactory();
 		List<? extends Pet> pets = petsFactory.getPets("Dog");
@@ -152,4 +91,5 @@ public class AnimalFactory {
 		pets = petsFactory.getPets("Puppy");
 		petsFactory.show(pets);
 	}
+
 }
