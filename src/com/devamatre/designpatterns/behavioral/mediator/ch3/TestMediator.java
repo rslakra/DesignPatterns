@@ -26,74 +26,37 @@
  * Devamatre reserves the right to modify the technical specifications and or 
  * features without any prior notice.
  *****************************************************************************/
-package com.devamatre.designpatterns.behavioral.command.ch1;
+package com.devamatre.designpatterns.behavioral.mediator.ch3;
 
 /**
  * 
  * @author Rohtash Lakra (rohtash.lakra@devamatre.com)
  * @author Rohtash Singh Lakra (rohtash.singh@gmail.com)
- * @created 2018-01-15 03:03:42 PM
+ * @created 2009-11-23 10:09:14 AM
  * @version 1.0.0
  * @since 1.0.0
  */
-public class Namer {
-	String firstName;
-	String lastName;
-
-	public Namer() {
-	}
-
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-}
-
-/**
- * Name is space delimited. We assume that everything before the last space is
- * part of the first name. If comma does not exists in name, the throw an error.
- * 
- * @author Rohtash Lakra (rohtash.lakra@devamatre.com)
- * @author Rohtash Singh Lakra (rohtash.singh@gmail.com)
- * @created 2018-01-15 03:03:50 PM
- * @version 1.0.0
- * @since 1.0.0
- */
-final class FirstName extends Namer {
-	public FirstName(String str) {
-		if (str == null) {
-			throw new NullPointerException("Passed Name is Null!");
-		}
-		int idx = str.lastIndexOf(" ");
-		if (idx > 0) {
-			firstName = str.substring(0, idx).trim();
-			lastName = str.substring(idx + 1).trim();
-		} else {
-			lastName = str;
-			firstName = "";
-		}
-	}
-}
-
-/**
- * Name is comma delimited. Before comman is LastName and after it is FirstName,
- * if comma does not exists in name, the throw an error.
- */
-class LastName extends Namer {
-	public LastName(String str) {
-		if (str == null) {
-			throw new NullPointerException("Passed Name is Null!");
-		}
-		int idx = str.indexOf(",");
-		if (idx > 0) {
-			lastName = str.substring(0, idx).trim();
-			firstName = str.substring(idx + 1).trim();
-		} else {
-			lastName = str;
-			firstName = "";
-		}
+public class TestMediator {
+	/**
+	 * 
+	 * @param arguments
+	 */
+	public static void main(String[] arguments) {
+		System.out.println("Example for the Mediator pattern");
+		System.out.println("In this demonstration, the ContactMediatorImpl class will");
+		System.out.println(" coordinate updates between three controls in a GUI - the");
+		System.out.println(" ContactDisplayPanel, the ContactEditorPanel, and the");
+		System.out.println(" ContactSelectorPanel. As its name suggests, the Mediator");
+		System.out.println(" mediates the activity between the elements of the GUI,");
+		System.out.println(" translating method calls from one panel into the appropriate");
+		System.out.println(" method calls on the other GUI components.");
+		Contact contact = new ContactImpl("", "", "", "");
+		Contact contact1 = new ContactImpl("Duke", "", "Java Advocate", "The Patterns Guild");
+		ContactMediatorImpl mediator = new ContactMediatorImpl();
+		mediator.addContact(contact);
+		mediator.addContact(contact1);
+		GUIMediator guiMediator = new GUIMediator();
+		guiMediator.setContactMediator(mediator);
+		guiMediator.createGui();
 	}
 }

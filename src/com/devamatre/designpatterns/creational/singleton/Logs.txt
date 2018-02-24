@@ -1,3 +1,0 @@
-<Mon, Feb 12, 2018 at 06:46:18 PM> [Debug Message]
-<Mon, Feb 12, 2018 at 06:46:18 PM>[Info Message]
-<Mon, Feb 12, 2018 at 06:46:18 PM>[Warn Message]
