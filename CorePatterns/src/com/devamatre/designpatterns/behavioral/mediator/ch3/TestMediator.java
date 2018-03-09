@@ -42,7 +42,7 @@ public class TestMediator {
 	 * @param arguments
 	 */
 	public static void main(String[] arguments) {
-		System.out.println("Example for the Mediator pattern");
+		System.out.println("Mediator Pattern Example");
 		System.out.println("In this demonstration, the ContactMediatorImpl class will");
 		System.out.println(" coordinate updates between three controls in a GUI - the");
 		System.out.println(" ContactDisplayPanel, the ContactEditorPanel, and the");

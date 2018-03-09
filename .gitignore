@@ -1,4 +1,6 @@
-/bin/
-/build/
-/classes/
-/release-v*/
+/**/bin
+/**/build
+/**/classes
+/**/.class
+/**/.nbattrs
+/**/release-v*
