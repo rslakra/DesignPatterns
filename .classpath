@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" path="J2EEPatterns/AsynchPage/src"/>
-	<classpathentry kind="src" path="J2EEPatterns/FrontController/src"/>
-	<classpathentry kind="src" path="J2EEPatterns/Decorator/src"/>
-	<classpathentry kind="src" path="J2EEPatterns/MVC/src"/>
-	<classpathentry kind="src" path="J2EEPatterns/CachingFilter/src"/>
-	<classpathentry kind="src" path="J2EEPatterns/ViewHelper/src"/>
-	<classpathentry kind="src" path="J2EEPatterns/CompositeView/src"/>
-	<classpathentry kind="src" path="J2EEPatterns/ResourcePool/src"/>
 	<classpathentry kind="src" path="CorePatterns/src"/>
-	<classpathentry kind="src" path="J2EEPatterns/AntiPatterns/src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="lib" path="J2EEPatterns/lib/ejb.jar"/>
-	<classpathentry kind="lib" path="J2EEPatterns/lib/ejb3-persistence.jar"/>
-	<classpathentry kind="lib" path="J2EEPatterns/lib/jndi.jar"/>
-	<classpathentry kind="lib" path="J2EEPatterns/lib/servletapi-2.3.jar"/>
 	<classpathentry kind="lib" path="CorePatterns/libs/dLogger-v1.0.3.jar"/>
 	<classpathentry kind="lib" path="CorePatterns/libs/log4j-1.2.17.jar"/>
 	<classpathentry kind="output" path="classes"/>

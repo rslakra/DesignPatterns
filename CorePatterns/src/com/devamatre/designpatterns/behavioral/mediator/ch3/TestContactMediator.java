@@ -36,7 +36,7 @@ package com.devamatre.designpatterns.behavioral.mediator.ch3;
  * @version 1.0.0
  * @since 1.0.0
  */
-public class TestMediator {
+public class TestContactMediator {
 	/**
 	 * 
 	 * @param arguments

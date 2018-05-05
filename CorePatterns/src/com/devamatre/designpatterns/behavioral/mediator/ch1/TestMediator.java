@@ -36,29 +36,35 @@ package com.devamatre.designpatterns.behavioral.mediator.ch1;
  * @version 1.0.0
  * @since 1.0.0
  */
-class TestMediator {            
-
-    public static void main(String[] args) 
-    {
-        Mediator mediator = new Mediator();
-        Title title = new LowerCaseTitle("Mr. Rohtash Singh", mediator);
-      
-        System.out.println("title.getTitle() :" +  title.getTitle());
-        System.out.println("mediator.getTitle().getTitle() :" +  mediator.getTitle().getTitle());
-//        System.out.println("LowerCase super title :" + lowerCaseTitle.getTitle());   
-//        System.out.println("UpperCase UC title :" + upperCaseTitle.getUpcaseTitle());
-//        System.out.println("UpperCase super title :" + upperCaseTitle.getTitle());   
-        
-        title = new UpperCaseTitle(title.getTitle(), mediator);
-        System.out.println("title.getTitle() :" +  title.getTitle());
-        System.out.println("mediator.getTitle().getTitle() :" +  mediator.getTitle().getTitle());
-//        lowerCaseTitle.setSuperTitleLowercase();
-//        
-//        System.out.println(" ");         
-//        System.out.println("After Super set to LC");    
-//        System.out.println("Lowercase LC title :" + lowerCaseTitle.getLowercaseTitle());
-//        System.out.println("Lowercase super title :" + lowerCaseTitle.getTitle());   
-//        System.out.println("Upcase UC title :" + upperCaseTitle.getUpcaseTitle());
-//        System.out.println("Upcase super title :" + upperCaseTitle.getTitle());  
-    }
- } 
+class TestMediator {
+	
+	public static void main(String[] args) {
+		Mediator mediator = new Mediator();
+		Title title = new LowerCaseTitle("Mr. Rohtash Singh", mediator);
+		
+		System.out.println("title.getTitle() :" + title.getTitle());
+		System.out.println("mediator.getTitle().getTitle() :" + mediator.getTitle().getTitle());
+		// System.out.println("LowerCase super title :" +
+		// lowerCaseTitle.getTitle());
+		// System.out.println("UpperCase UC title :" +
+		// upperCaseTitle.getUpcaseTitle());
+		// System.out.println("UpperCase super title :" +
+		// upperCaseTitle.getTitle());
+		
+		title = new UpperCaseTitle(title.getTitle(), mediator);
+		System.out.println("title.getTitle() :" + title.getTitle());
+		System.out.println("mediator.getTitle().getTitle() :" + mediator.getTitle().getTitle());
+		// lowerCaseTitle.setSuperTitleLowercase();
+		//
+		// System.out.println(" ");
+		// System.out.println("After Super set to LC");
+		// System.out.println("Lowercase LC title :" +
+		// lowerCaseTitle.getLowercaseTitle());
+		// System.out.println("Lowercase super title :" +
+		// lowerCaseTitle.getTitle());
+		// System.out.println("Upcase UC title :" +
+		// upperCaseTitle.getUpcaseTitle());
+		// System.out.println("Upcase super title :" +
+		// upperCaseTitle.getTitle());
+	}
+}

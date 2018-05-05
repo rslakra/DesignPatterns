@@ -61,41 +61,43 @@ import com.sun.java.swing.plaf.windows.WindowsLookAndFeel;
  * @since 1.0.0
  */
 public class GUIMediator extends JFrame {
-
+	/** serialVersionUID */
+	private static final long serialVersionUID = 1L;
+	
 	public static final String NEWLINE = "\n";
-
+	
 	public static final String UPLOAD = "Upload";
 	public static final String DOWNLOAD = "Download";
 	public static final String DELETE = "Delete";
 	public static final String EXIT = "Exit";
-
+	
 	private JPanel rootPanel;
-
+	
 	private LocalList localList;
 	private RemoteList remoteList;
-
+	
 	private DefaultListModel localListModel;
 	private DefaultListModel remoteListModel;
-
+	
 	private Mediator mediator = new Mediator();
-
+	
 	public GUIMediator() throws Exception {
 		super("Design Patterns By Example");
 		guiInitializer();
-
+		
 		localList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		localList.setSelectedIndex(-1);
 		JScrollPane localListScrollPane = new JScrollPane(localList);
-
+		
 		remoteList.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
 		remoteList.setSelectedIndex(-1);
 		JScrollPane remmoteListScrollPane = new JScrollPane(remoteList);
-
+		
 		// Create Labels
 		JLabel lblLocalList = new JLabel("Local List:");
 		JLabel lblRemoteList = new JLabel("Remote List:");
 		JLabel lblSpacer = new JLabel("         ");
-
+		
 		// Create buttons
 		UploadButton btnUpload = new UploadButton(GUIMediator.UPLOAD, mediator);
 		btnUpload.setMnemonic(KeyEvent.VK_U);
@@ -105,19 +107,19 @@ public class GUIMediator extends JFrame {
 		btnDelete.setMnemonic(KeyEvent.VK_D);
 		JButton btnExit = new JButton(GUIMediator.EXIT);
 		btnExit.setMnemonic(KeyEvent.VK_X);
-
+		
 		ButtonHandler buttonHandler = new ButtonHandler();
 		ListHandler listHandler = new ListHandler();
-
+		
 		btnUpload.addActionListener(buttonHandler);
 		btnDownload.addActionListener(buttonHandler);
 		btnDelete.addActionListener(buttonHandler);
 		btnExit.addActionListener(buttonHandler);
 		localList.addListSelectionListener(listHandler);
 		remoteList.addListSelectionListener(listHandler);
-
+		
 		JPanel lstPanel = new JPanel();
-
+		
 		GridBagLayout gridbag2 = new GridBagLayout();
 		lstPanel.setLayout(gridbag2);
 		GridBagConstraints gbc2 = new GridBagConstraints();
@@ -126,14 +128,14 @@ public class GUIMediator extends JFrame {
 		lstPanel.add(localListScrollPane);
 		lstPanel.add(remmoteListScrollPane);
 		lstPanel.add(lblSpacer);
-
+		
 		gbc2.gridx = 0;
 		gbc2.gridy = 0;
 		gridbag2.setConstraints(lblLocalList, gbc2);
 		gbc2.gridx = 1;
 		gbc2.gridy = 0;
 		gridbag2.setConstraints(lblSpacer, gbc2);
-
+		
 		gbc2.gridx = 5;
 		gbc2.gridy = 0;
 		gridbag2.setConstraints(lblRemoteList, gbc2);
@@ -143,11 +145,11 @@ public class GUIMediator extends JFrame {
 		gbc2.gridx = 5;
 		gbc2.gridy = 1;
 		gridbag2.setConstraints(remmoteListScrollPane, gbc2);
-
+		
 		// -----------------------------------
 		// For layout purposes, put the buttons in a separate panel
 		JPanel buttonPanel = new JPanel();
-
+		
 		// ----------------------------------------------
 		GridBagLayout gridbag = new GridBagLayout();
 		buttonPanel.setLayout(gridbag);
@@ -157,12 +159,12 @@ public class GUIMediator extends JFrame {
 		buttonPanel.add(btnDownload);
 		buttonPanel.add(btnDelete);
 		buttonPanel.add(btnExit);
-
+		
 		gbc.insets.top = 5;
 		gbc.insets.bottom = 5;
 		gbc.insets.left = 5;
 		gbc.insets.right = 5;
-
+		
 		gbc.anchor = GridBagConstraints.WEST;
 		gbc.gridx = 1;
 		gbc.gridy = 0;
@@ -176,26 +178,26 @@ public class GUIMediator extends JFrame {
 		gbc.gridx = 4;
 		gbc.gridy = 0;
 		gridbag.setConstraints(btnExit, gbc);
-
+		
 		gbc.gridx = 0;
 		gbc.gridy = 1;
 		gridbag.setConstraints(lstPanel, gbc);
-
+		
 		gbc.anchor = GridBagConstraints.EAST;
 		gbc.insets.left = 2;
 		gbc.insets.right = 2;
 		gbc.insets.top = 40;
-
+		
 		// ****************************************************
 		// Add the buttons and the log to the frame
 		Container contentPane = getContentPane();
 		contentPane.add(lstPanel, BorderLayout.CENTER);
 		contentPane.add(buttonPanel, BorderLayout.SOUTH);
-
+		
 		btnUpload.setEnabled(false);
 		btnDelete.setEnabled(false);
 		btnDownload.setEnabled(false);
-
+		
 		try {
 			UIManager.setLookAndFeel(new WindowsLookAndFeel());
 			SwingUtilities.updateComponentTreeUI(GUIMediator.this);
@@ -203,14 +205,14 @@ public class GUIMediator extends JFrame {
 			System.out.println(ex);
 		}
 	}
-
+	
 	/**
 	 * Initialize the GUI.
 	 */
 	private void guiInitializer() {
 		// Create controls
 		rootPanel = new JPanel();
-
+		
 		localListModel = new DefaultListModel();
 		// fill some test data here into the listbox.
 		localListModel.addElement("htmls/first.html");
@@ -220,7 +222,7 @@ public class GUIMediator extends JFrame {
 		localListModel.addElement("htmls/five.html");
 		localListModel.addElement("htmls/index.html");
 		localList = new LocalList(localListModel, mediator);
-
+		
 		remoteListModel = new DefaultListModel();
 		remoteListModel.addElement("htmls/six.html");
 		remoteListModel.addElement("htmls/seven.html");
@@ -229,26 +231,26 @@ public class GUIMediator extends JFrame {
 		remoteListModel.addElement("htmls/footer.html");
 		remoteList = new RemoteList(remoteListModel, mediator);
 	}
-
+	
 	/**
 	 * 
 	 * @param args
 	 * @throws Exception
 	 */
 	public static void main(String[] args) throws Exception {
-
+		
 		JFrame frame = new GUIMediator();
 		frame.addWindowListener(new WindowAdapter() {
 			public void windowClosing(WindowEvent e) {
 				System.exit(0);
 			}
 		});
-
+		
 		// frame.pack();
 		frame.setSize(450, 300);
 		frame.setVisible(true);
 	}
-
+	
 	/**
 	 * 
 	 * @author Rohtash Lakra (rohtash.lakra@devamatre.com)
@@ -268,7 +270,7 @@ public class GUIMediator extends JFrame {
 			command.processEvent();
 		}
 	}
-
+	
 	/**
 	 * 
 	 * @author Rohtash Lakra (rohtash.lakra@devamatre.com)
@@ -284,14 +286,14 @@ public class GUIMediator extends JFrame {
 		 * @see java.awt.event.ActionListener#actionPerformed(java.awt.event.ActionEvent)
 		 */
 		public void actionPerformed(ActionEvent e) {
-
+			
 			if (e.getActionCommand().equals(GUIMediator.EXIT)) {
 				System.exit(1);
 			}
-
+			
 			Command command = (Command) e.getSource();
 			command.processEvent();
 		}
 	}
-
+	
 }

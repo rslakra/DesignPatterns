@@ -42,28 +42,61 @@ public class ContactMediatorImpl implements ContactMediator {
 	private ContactDisplayPanel display;
 	private ContactEditorPanel editor;
 	private ContactSelectorPanel selector;
-	private List<Contact> contacts = new ArrayList();
+	private List<Contact> contacts = new ArrayList<Contact>();
 	private int contactIndex;
-
+	
+	/**
+	 * 
+	 * @param displayPanel
+	 * @see com.devamatre.designpatterns.behavioral.mediator.ch3.ContactMediator#setContactDisplayPanel(com.devamatre.designpatterns.behavioral.mediator.ch3.ContactDisplayPanel)
+	 */
 	public void setContactDisplayPanel(ContactDisplayPanel displayPanel) {
 		display = displayPanel;
 	}
-
+	
+	/**
+	 * 
+	 * @param editorPanel
+	 * @see com.devamatre.designpatterns.behavioral.mediator.ch3.ContactMediator#setContactEditorPanel(com.devamatre.designpatterns.behavioral.mediator.ch3.ContactEditorPanel)
+	 */
 	public void setContactEditorPanel(ContactEditorPanel editorPanel) {
 		editor = editorPanel;
 	}
-
+	
+	/**
+	 * 
+	 * @param selectorPanel
+	 * @see com.devamatre.designpatterns.behavioral.mediator.ch3.ContactMediator#setContactSelectorPanel(com.devamatre.designpatterns.behavioral.mediator.ch3.ContactSelectorPanel)
+	 */
 	public void setContactSelectorPanel(ContactSelectorPanel selectorPanel) {
 		selector = selectorPanel;
 	}
-
+	
+	/**
+	 * 
+	 * @param firstName
+	 * @param lastName
+	 * @param title
+	 * @param organization
+	 * @see com.devamatre.designpatterns.behavioral.mediator.ch3.ContactMediator#createContact(java.lang.String,
+	 *      java.lang.String, java.lang.String, java.lang.String)
+	 */
 	public void createContact(String firstName, String lastName, String title, String organization) {
 		Contact newContact = new ContactImpl(firstName, lastName, title, organization);
 		addContact(newContact);
 		selector.addContact(newContact);
 		display.contactChanged(newContact);
 	}
-
+	
+	/**
+	 * 
+	 * @param firstName
+	 * @param lastName
+	 * @param title
+	 * @param organization
+	 * @see com.devamatre.designpatterns.behavioral.mediator.ch3.ContactMediator#updateContact(java.lang.String,
+	 *      java.lang.String, java.lang.String, java.lang.String)
+	 */
 	public void updateContact(String firstName, String lastName, String title, String organization) {
 		Contact updateContact = (Contact) contacts.get(contactIndex);
 		if (updateContact != null) {
@@ -74,7 +107,7 @@ public class ContactMediatorImpl implements ContactMediator {
 			display.contactChanged(updateContact);
 		}
 	}
-
+	
 	public void selectContact(Contact contact) {
 		if (contacts.contains(contact)) {
 			contactIndex = contacts.indexOf(contact);
@@ -82,11 +115,11 @@ public class ContactMediatorImpl implements ContactMediator {
 			editor.setContactFields(contact);
 		}
 	}
-
+	
 	public Contact[] getAllContacts() {
 		return (Contact[]) contacts.toArray(new Contact[1]);
 	}
-
+	
 	public void addContact(Contact contact) {
 		if (!contacts.contains(contact)) {
 			contacts.add(contact);

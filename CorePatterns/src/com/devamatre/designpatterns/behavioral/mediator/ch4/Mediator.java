@@ -38,88 +38,123 @@ import javax.swing.DefaultListModel;
  * @since 1.0.0
  */
 public class Mediator {
-	private UploadButton btnUpload;
-
-	private DownloadButton btnDownload;
-
-	private DeleteButton btnDelete;
-
+	
+	private UploadButton uploadButton;
+	private DownloadButton downloadButton;
+	private DeleteButton deleteButton;
 	private LocalList localList;
-
 	private RemoteList remoteList;
-
-	public void registerUploadButton(UploadButton inp_ib) {
-		btnUpload = inp_ib;
+	
+	/**
+	 * 
+	 * @param uploadButton
+	 */
+	public void registerUploadButton(UploadButton uploadButton) {
+		this.uploadButton = uploadButton;
 	}
-
-	public void registerDownloadButton(DownloadButton inp_dnb) {
-		btnDownload = inp_dnb;
+	
+	/**
+	 * 
+	 * @param downloadButton
+	 */
+	public void registerDownloadButton(DownloadButton downloadButton) {
+		this.downloadButton = downloadButton;
 	}
-
-	public void registerDeleteButton(DeleteButton inp_db) {
-		btnDelete = inp_db;
+	
+	/**
+	 * 
+	 * @param deleteButton
+	 */
+	public void registerDeleteButton(DeleteButton deleteButton) {
+		this.deleteButton = deleteButton;
 	}
-
-	public void registerLocalList(LocalList inp_arl) {
-		localList = inp_arl;
+	
+	/**
+	 * 
+	 * @param localList
+	 */
+	public void registerLocalList(LocalList localList) {
+		this.localList = localList;
 	}
-
-	public void registerRemoteList(RemoteList inp_drl) {
-		remoteList = inp_drl;
+	
+	/**
+	 * 
+	 * @param remoteList
+	 */
+	public void registerRemoteList(RemoteList remoteList) {
+		this.remoteList = remoteList;
 	}
-
-	public void UploadItem() {
-
+	
+	/**
+	 * 
+	 * @param enable
+	 */
+	private void enableOrDisableButtons(final boolean enable) {
+		uploadButton.setEnabled(enable);
+		deleteButton.setEnabled(enable);
+		downloadButton.setEnabled(enable);
+	}
+	
+	/**
+	 * 
+	 */
+	public void uploadItem() {
 		int index = localList.getSelectedIndex();
-		String selectedItem = localList.getSelectedValue().toString();
 		((DefaultListModel) localList.getModel()).remove(index);
-
+		
+		String selectedItem = localList.getSelectedValue().toString();
 		((DefaultListModel) remoteList.getModel()).addElement(selectedItem);
-
-		btnUpload.setEnabled(false);
-		btnDelete.setEnabled(false);
-		btnDownload.setEnabled(false);
+		
+		enableOrDisableButtons(false);
 	}
-
-	public void DownloadItem() {
+	
+	/**
+	 * 
+	 */
+	public void downloadItem() {
 		int index = remoteList.getSelectedIndex();
-		String selectedItem = remoteList.getSelectedValue().toString();
 		((DefaultListModel) remoteList.getModel()).remove(index);
-
+		
+		String selectedItem = remoteList.getSelectedValue().toString();
 		((DefaultListModel) localList.getModel()).addElement(selectedItem);
-
-		btnUpload.setEnabled(false);
-		btnDelete.setEnabled(false);
-		btnDownload.setEnabled(false);
+		
+		enableOrDisableButtons(false);
 	}
-
-	public void DeleteItem() {
+	
+	/**
+	 * 
+	 */
+	public void deleteItem() {
 		int index = localList.getSelectedIndex();
 		if (index >= 0) {
 			((DefaultListModel) localList.getModel()).remove(index);
 		}
-
+		
 		index = remoteList.getSelectedIndex();
 		if (index >= 0) {
 			((DefaultListModel) remoteList.getModel()).remove(index);
 		}
-		btnUpload.setEnabled(false);
-		btnDelete.setEnabled(false);
-		btnDownload.setEnabled(false);
-
+		
+		enableOrDisableButtons(false);
 	}
-
-	public void LocalListSelect() {
+	
+	/**
+	 * 
+	 */
+	public void selectLocalList() {
 		remoteList.setSelectedIndex(-1);
-		btnUpload.setEnabled(true);
-		btnDelete.setEnabled(true);
-		btnDownload.setEnabled(false);
+		uploadButton.setEnabled(true);
+		deleteButton.setEnabled(true);
+		downloadButton.setEnabled(false);
 	}
-
-	public void RemoteListSelect() {
+	
+	/**
+	 * 
+	 */
+	public void selectRemoteList() {
 		localList.setSelectedIndex(-1);
-		btnUpload.setEnabled(false);
-		btnDelete.setEnabled(true);
-		btnDownload.setEnabled(true);
+		uploadButton.setEnabled(false);
+		deleteButton.setEnabled(true);
+		downloadButton.setEnabled(true);
 	}
 }

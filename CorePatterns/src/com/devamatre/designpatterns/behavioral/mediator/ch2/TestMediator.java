@@ -37,18 +37,18 @@ package com.devamatre.designpatterns.behavioral.mediator.ch2;
  * @since 1.0.0
  */
 public class TestMediator {
-
+	
 	/**
 	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
-		Mediator mb = new Mediator();
-		new Producer(mb).start();
-		new Producer(mb).start();
-		new Consumer(mb).start();
-		new Consumer(mb).start();
-		new Consumer(mb).start();
-		new Consumer(mb).start();
+		Mediator mediator = new Mediator();
+		new Producer(mediator).start();
+		new Producer(mediator).start();
+		new Consumer(mediator).start();
+		new Consumer(mediator).start();
+		new Consumer(mediator).start();
+		new Consumer(mediator).start();
 	}
 }

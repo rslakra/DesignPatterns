@@ -28,11 +28,14 @@
  *****************************************************************************/
 package com.devamatre.designpatterns.creational.singleton;
 
+import java.io.Closeable;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.ObjectStreamException;
 import java.io.PrintWriter;
+import java.io.Serializable;
 import java.net.URL;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -47,20 +50,32 @@ import java.util.Properties;
  * @version 1.0.0
  * @since 1.0.0
  */
-public class Singleton {
-
-	private final String fileName = "Logger.properties";
-	private static Singleton instance;
+public final class Singleton implements Cloneable, Serializable {
+	
+	/** serialVersionUID */
+	private static final long serialVersionUID = 1L;
+	
+	private final String fileName = "dLogs.properties";
 	private final SimpleDateFormat logDateFormat = new SimpleDateFormat("EEE, MMM d, yyyy 'at' hh:mm:ss a");
+	
+	// singleton
+	private static Singleton instance;
 	private Properties properties;
-
+	private int value;
+	
 	enum LogType {
 		DEBUG, INFO, ERROR, WARN;
 	}
-
+	
+	/**
+	 * 
+	 */
 	private Singleton() {
+		if (null != instance) {
+			throw new InstantiationError("Duplicate instance creation is not allowed!");
+		}
 	}
-
+	
 	/**
 	 * Returns the singleton instance of this object.
 	 * 
@@ -68,30 +83,96 @@ public class Singleton {
 	 */
 	public static Singleton getInstance() {
 		if (instance == null) {
+			// handle multi-threading
 			synchronized (Singleton.class) {
 				if (instance == null) {
 					instance = new Singleton();
 				}
 			}
 		}
-
+		
 		return instance;
 	}
-
+	
 	/**
 	 * 
-	 * @param inputstream
+	 * @return
 	 */
-	public void safeClose(InputStream inputstream) {
-		if (inputstream != null) {
+	public int getValue() {
+		return value;
+	}
+	
+	/**
+	 * 
+	 * @param value
+	 */
+	public void setValue(int value) {
+		this.value = value;
+	}
+	
+	/**
+	 * 
+	 */
+	public void printHashCode() {
+		System.out.println(getClass().getSimpleName() + ", hashCode:" + this.hashCode());
+	}
+	
+	/**
+	 * To maintain the singleton guarantee, you must also override a
+	 * <code>clone</code> method.
+	 * 
+	 * 
+	 * @see java.lang.Object#clone()
+	 */
+	@Override
+	protected Object clone() throws CloneNotSupportedException {
+		throw new CloneNotSupportedException("Clone is not allowed for this object!");
+	}
+	
+	/**
+	 * To maintain the singleton guarantee, you must also provide a
+	 * <code>readResolve</code> method.
+	 * 
+	 * @return
+	 * @throws ObjectStreamException
+	 */
+	private Object readResolve() throws ObjectStreamException {
+		return instance;
+	}
+	
+	// /**
+	// * Avoid using custom classloaders - all singletons should be loaded by
+	// * common parent classloader.
+	// *
+	// *
+	// * @param classname
+	// * @return
+	// * @throws ClassNotFoundException
+	// */
+	// private static Class<?> getClass(String className) throws
+	// ClassNotFoundException {
+	// ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+	// if(classLoader == null) {
+	// classLoader = Singleton.class.getClassLoader();
+	// }
+	// return (classLoader.loadClass(className));
+	// }
+	
+	/**
+	 * Closes the <code>closeable</code> object.
+	 * 
+	 * @param closeable
+	 */
+	public void safeClose(Closeable closeable) {
+		if (closeable != null) {
 			try {
-				inputstream.close();
+				closeable.close();
 			} catch (IOException ex) {
 				ex.printStackTrace();
 			}
 		}
 	}
-
+	
 	/**
 	 * 
 	 */
@@ -107,10 +188,10 @@ public class Singleton {
 				ex.printStackTrace();
 			}
 		}
-
+		
 		safeClose(inputstream);
 	}
-
+	
 	/**
 	 * Level of logging, error or information etc
 	 *
@@ -121,11 +202,11 @@ public class Singleton {
 		if (properties == null) {
 			loadProperties(fileName);
 		}
-
+		
 		logLevel = properties.getProperty("logger.registeredlevel");
 		return logLevel;
 	}
-
+	
 	/**
 	 * One file will be made daily. So, putting date time in file name.
 	 *
@@ -133,7 +214,7 @@ public class Singleton {
 	 *            GregorianCalendar
 	 * @return String, name of file
 	 */
-	private String getLogFilePath() {
+	public String getLogFilePath() {
 		String logFilePath = null;
 		URL url = getClass().getResource("Logs.txt");
 		if (url != null) {
@@ -145,15 +226,15 @@ public class Singleton {
 					ex.printStackTrace();
 				}
 			}
-
+			
 			if (file.exists()) {
 				logFilePath = file.getAbsolutePath();
 			}
 		}
-
+		
 		return logFilePath;
 	}
-
+	
 	/**
 	 * A mechanism to log message to the file.
 	 *
@@ -176,44 +257,5 @@ public class Singleton {
 		} catch (IOException ex) {
 			ex.printStackTrace();
 		}
-	}
-
-	/**
-	 * 
-	 * @param arg
-	 */
-	public static void main(String arg[]) {
-		String logFilePath = Singleton.getInstance().getLogFilePath();
-		System.out.println("logFilePath:" + logFilePath);
-
-		String logLevel = Singleton.getInstance().getLogLevel();
-		System.out.println("logLevel:" + logLevel);
-
-		Singleton.getInstance().logMsg(LogType.DEBUG, "Debug Message");
-		Singleton.getInstance().logMsg(LogType.INFO, "Info Message");
-		Singleton.getInstance().logMsg(LogType.WARN, "Warn Message");
-
-		System.out.println("The output of instances:");
-
-		System.out.println("SingletonPattern Instance:" + Singleton.getInstance());
-
-		new Thread() {
-			public void run() {
-				System.out.println("First Instance: " + Singleton.getInstance());
-			}
-		}.start();
-
-		new Thread() {
-			public void run() {
-				System.out.println("Second Instance: " + Singleton.getInstance());
-			}
-		}.start();
-
-		new Thread() {
-			public void run() {
-				System.out.println("Third Instance: " + Singleton.getInstance());
-			}
-		}.start();
-
 	}
 }

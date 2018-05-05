@@ -39,22 +39,34 @@ package com.devamatre.designpatterns.behavioral.mediator.ch1;
 public class Mediator {
 	
 	private Title title;
-
+	
 	public Mediator() {
 	}
-
+	
+	/**
+	 * 
+	 * @return
+	 */
 	public Title getTitle() {
 		return title;
 	}
-
+	
+	/**
+	 * 
+	 * @param title
+	 */
 	public void setTitle(Title title) {
 		this.title = title;
 	}
-
+	
+	/**
+	 * 
+	 * @param title
+	 */
 	public void changeTitle(Title title) {
 		setTitle(title);
 	}
-
+	
 	// private String star;
 	// private UpperCaseTitle upperCaseTitle;
 	// private LowerCaseTitle lowerCaseTitle;

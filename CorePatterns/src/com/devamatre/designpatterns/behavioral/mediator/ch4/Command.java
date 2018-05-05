@@ -36,5 +36,8 @@ package com.devamatre.designpatterns.behavioral.mediator.ch4;
  * @since 1.0.0
  */
 public interface Command {
+	/**
+	 * 
+	 */
 	public void processEvent();
 }

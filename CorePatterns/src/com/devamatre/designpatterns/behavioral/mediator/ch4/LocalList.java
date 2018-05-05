@@ -39,20 +39,29 @@ import javax.swing.JList;
  * @since 1.0.0
  */
 public class LocalList extends JList implements Command {
+	/** serialVersionUID */
+	private static final long serialVersionUID = 1L;
+	
+	/** mediator */
 	private Mediator mediator;
-
+	
 	/**
 	 * 
-	 * @param defObj
+	 * @param defaultListModel
 	 * @param mediator
 	 */
-	public LocalList(DefaultListModel defObj, Mediator mediator) {
-		super(defObj);
+	public LocalList(DefaultListModel defaultListModel, Mediator mediator) {
+		super(defaultListModel);
 		this.mediator = mediator;
 		mediator.registerLocalList(this);
 	}
-
+	
+	/**
+	 * 
+	 * 
+	 * @see com.devamatre.designpatterns.behavioral.mediator.ch4.Command#processEvent()
+	 */
 	public void processEvent() {
-		mediator.LocalListSelect();
+		mediator.selectLocalList();
 	}
 }

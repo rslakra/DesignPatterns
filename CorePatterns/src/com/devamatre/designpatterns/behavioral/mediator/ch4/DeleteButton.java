@@ -38,8 +38,12 @@ import javax.swing.JButton;
  * @since 1.0.0
  */
 public class DeleteButton extends JButton implements Command {
+	/** serialVersionUID */
+	private static final long serialVersionUID = 1L;
+	
+	/** mediator */
 	private Mediator mediator;
-
+	
 	/**
 	 * 
 	 * @param name
@@ -50,8 +54,8 @@ public class DeleteButton extends JButton implements Command {
 		this.mediator = mediator;
 		mediator.registerDeleteButton(this);
 	}
-
+	
 	public void processEvent() {
-		mediator.DeleteItem();
+		mediator.deleteItem();
 	}
 }

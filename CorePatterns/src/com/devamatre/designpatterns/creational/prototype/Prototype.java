@@ -29,39 +29,42 @@
 package com.devamatre.designpatterns.creational.prototype;
 
 /**
- * TODO :
- * Date :Jan 4, 2007 9:05:31 PM
+ * @author Rohtash Lakra (rohtash.lakra@devamatre.com)
+ * @author Rohtash Singh Lakra (rohtash.singh@gmail.com)
+ * @created 2007-01-04 09:05:11 PM
+ * @version 1.0.0
+ * @since 1.0.0
  */
 public class Prototype implements Cloneable {
-    private int value;
-
-    public Prototype(int value) {
-        this.value = value;
-    }
-
-    public int getValue() {
-        return value;
-    }
-
-    public Object clone() {
-        Object clone = null;
-        try {
-            clone = super.clone();
-        }catch(CloneNotSupportedException ex) {
-            System.out.println("Error while making clone, ex : " + ex);
-        }
-        return clone;
-    }
-
-    /**
-     * Starting Point to Test.
-     * 
-     * @param args
-     */
-    public static void main(String[] args) {
-        Prototype pType = new Prototype(10);
-        System.out.println("Value : " + pType.getValue());
-        Prototype clone = (Prototype)pType.clone();
-        System.out.println("Clone Value : " + clone.getValue());
-    }
+	private int value;
+	
+	public Prototype(int value) {
+		this.value = value;
+	}
+	
+	public int getValue() {
+		return value;
+	}
+	
+	public Object clone() {
+		Object clone = null;
+		try {
+			clone = super.clone();
+		} catch (CloneNotSupportedException ex) {
+			System.out.println("Error while making clone, ex : " + ex);
+		}
+		return clone;
+	}
+	
+	/**
+	 * Starting Point to Test.
+	 * 
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Prototype pType = new Prototype(10);
+		System.out.println("Value : " + pType.getValue());
+		Prototype clone = (Prototype) pType.clone();
+		System.out.println("Clone Value : " + clone.getValue());
+	}
 }

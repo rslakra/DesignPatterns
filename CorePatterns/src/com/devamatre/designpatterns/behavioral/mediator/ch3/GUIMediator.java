@@ -44,11 +44,11 @@ import javax.swing.JFrame;
  */
 public class GUIMediator {
 	private ContactMediator mediator;
-
+	
 	public void setContactMediator(ContactMediator newMediator) {
 		mediator = newMediator;
 	}
-
+	
 	public void createGui() {
 		JFrame mainFrame = new JFrame("Mediator example");
 		Container content = mainFrame.getContentPane();
@@ -66,7 +66,7 @@ public class GUIMediator {
 		mainFrame.pack();
 		mainFrame.setVisible(true);
 	}
-
+	
 	private class WindowCloseManager extends WindowAdapter {
 		public void windowClosing(WindowEvent evt) {
 			System.exit(0);
