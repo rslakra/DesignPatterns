@@ -180,11 +180,11 @@ A class can implement the <code>Observer</code> interface when it wants to be in
 
 ### 4.1. Visitor vs Strategy
 
-- In strategy, we have one context on which multiple algorithms operate.
+- In strategy pattern, there is only one context on which multiple algorithms operate.
 
-- In visitor, we have multiple contexts and for every context we have an algorithm. 
+- In visitor pattern, there are multiple contexts and for every context we have an algorithm. 
     
-### 4.2. Visitor vs Strategy
+### 4.2. 
 
 
 
