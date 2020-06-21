@@ -100,11 +100,9 @@ public class Mediator {
 	 */
 	public void uploadItem() {
 		int index = localList.getSelectedIndex();
-		((DefaultListModel) localList.getModel()).remove(index);
-		
 		String selectedItem = localList.getSelectedValue().toString();
-		((DefaultListModel) remoteList.getModel()).addElement(selectedItem);
-		
+		remoteList.getModel().addElement(selectedItem);
+		localList.getModel().remove(index);
 		enableOrDisableButtons(false);
 	}
 	
@@ -113,11 +111,9 @@ public class Mediator {
 	 */
 	public void downloadItem() {
 		int index = remoteList.getSelectedIndex();
-		((DefaultListModel) remoteList.getModel()).remove(index);
-		
 		String selectedItem = remoteList.getSelectedValue().toString();
-		((DefaultListModel) localList.getModel()).addElement(selectedItem);
-		
+		localList.getModel().addElement(selectedItem);
+		remoteList.getModel().remove(index);
 		enableOrDisableButtons(false);
 	}
 	
@@ -127,12 +123,12 @@ public class Mediator {
 	public void deleteItem() {
 		int index = localList.getSelectedIndex();
 		if (index >= 0) {
-			((DefaultListModel) localList.getModel()).remove(index);
+			((DefaultListModel<?>) localList.getModel()).remove(index);
 		}
 		
 		index = remoteList.getSelectedIndex();
 		if (index >= 0) {
-			((DefaultListModel) remoteList.getModel()).remove(index);
+			((DefaultListModel<?>) remoteList.getModel()).remove(index);
 		}
 		
 		enableOrDisableButtons(false);

@@ -35,50 +35,30 @@ package com.devamatre.designpatterns.structural.bridge;
  * @author Rohtash Singh Lakra
  */
 class Stack {
-	/** javaStack */
-	protected JavaStack javaStack;
+	protected IStack iStack;
 	
-	/**
-	 * 
-	 * @param str
-	 */
-	public Stack(String str) {
-		if (str.equals("java")) {
-			javaStack = new JavaStackImpl();
+	public Stack(String s) {
+		if (s.equals("java")) {
+			iStack = new MyStack();
 		} else {
-			javaStack = new StackMine();
+			iStack = new StackMine();
 		}
 	}
 	
-	/**
-	 * 
-	 */
 	public Stack() {
 		this("java");
 	}
 	
-	/**
-	 * 
-	 * @param value
-	 */
-	public void push(int value) {
-		javaStack.push(value);
+	public void push(int in) {
+		iStack.push(in);
 	}
 	
-	/**
-	 * 
-	 * @return
-	 */
 	public int pop() {
-		return (Integer) javaStack.pop();
+		return (Integer) iStack.pop();
 	}
 	
-	/**
-	 * 
-	 * @return
-	 */
 	public boolean isEmpty() {
-		return javaStack.empty();
+		return iStack.empty();
 	}
 }
 
@@ -86,42 +66,25 @@ class Stack {
  * Embellish the interface class with derived classes if desired
  */
 class StackHanoi extends Stack {
-	/** totalRejected */
 	private int totalRejected = 0;
 	
-	/**
-	 * 
-	 */
 	public StackHanoi() {
 		super("java");
 	}
 	
-	/**
-	 * 
-	 * @param str
-	 */
-	public StackHanoi(String str) {
-		super(str);
+	public StackHanoi(String s) {
+		super(s);
 	}
 	
-	/**
-	 * 
-	 * @return
-	 */
 	public int reportRejected() {
 		return totalRejected;
 	}
 	
-	/**
-	 * 
-	 * @param value
-	 * @see com.devamatre.designpatterns.structural.bridge.Stack#push(int)
-	 */
-	public void push(int value) {
-		if (!javaStack.empty() && value > (Integer) javaStack.peek()) {
+	public void push(int in) {
+		if (!iStack.empty() && in > (Integer) iStack.peek()) {
 			totalRejected++;
 		} else {
-			javaStack.push(value);
+			iStack.push(in);
 		}
 	}
 }
@@ -129,31 +92,13 @@ class StackHanoi extends Stack {
 /**
  * Create an implementation/body base class
  */
-interface JavaStack {
+interface IStack {
+	Object push(Object o);
 	
-	/**
-	 * 
-	 * @param object
-	 * @return
-	 */
-	Object push(Object object);
-	
-	/**
-	 * 
-	 * @return
-	 */
 	Object peek();
 	
-	/**
-	 * 
-	 * @return
-	 */
 	boolean empty();
 	
-	/**
-	 * 
-	 * @return
-	 */
 	Object pop();
 }
 
@@ -161,60 +106,37 @@ interface JavaStack {
  * 
  * @author Rohtash Lakra (rohtash.lakra@devamatre.com)
  * @author Rohtash Singh Lakra (rohtash.singh@gmail.com)
- * @created 2018-10-03 02:22:45 PM
+ * @created 2018-05-12 04:04:30 PM
  * @version 1.0.0
  * @since 1.0.0
  */
-@SuppressWarnings("rawtypes")
-class JavaStackImpl extends java.util.Stack implements JavaStack {
+final class MyStack extends java.util.Stack<Object> implements IStack {
 	
-	/** serialVersionUID */
+	/** <code>serialVersionUID</code> */
 	private static final long serialVersionUID = 1L;
-	
 }
 
 /**
  * Derive the separate implementations from the common abstraction
  */
-class StackMine implements JavaStack {
+class StackMine implements IStack {
 	private Object[] items = new Object[20];
 	private int total = -1;
 	
-	/**
-	 * 
-	 * @param object
-	 * @return
-	 * @see com.devamatre.designpatterns.structural.bridge.JavaStack#push(java.lang.Object)
-	 */
-	public Object push(Object object) {
-		return items[++total] = object;
+	public Object push(Object o) {
+		return items[++total] = o;
 	}
 	
-	/**
-	 * 
-	 * @return
-	 * @see com.devamatre.designpatterns.structural.bridge.JavaStack#peek()
-	 */
 	public Object peek() {
 		return items[total];
 	}
 	
-	/**
-	 * 
-	 * @return
-	 * @see com.devamatre.designpatterns.structural.bridge.JavaStack#pop()
-	 */
 	public Object pop() {
 		return items[total--];
 	}
 	
-	/**
-	 * 
-	 * @return
-	 * @see com.devamatre.designpatterns.structural.bridge.JavaStack#empty()
-	 */
 	public boolean empty() {
-		return (total == -1);
+		return total == -1;
 	}
 }
 
@@ -231,11 +153,6 @@ class StackMine implements JavaStack {
  *
  */
 public class BridgeExample {
-	
-	/**
-	 * 
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		Stack[] stacks = { new Stack("java"), new Stack("mine"), new StackHanoi("java"), new StackHanoi("mine") };
 		for (int i = 0, num; i < 20; i++) {
@@ -244,7 +161,6 @@ public class BridgeExample {
 				stack.push(num);
 			}
 		}
-		
 		for (int i = 0; i < stacks.length; i++) {
 			while (!stacks[i].isEmpty()) {
 				System.out.print(stacks[i].pop() + "  ");

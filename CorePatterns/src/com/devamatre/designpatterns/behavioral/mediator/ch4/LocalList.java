@@ -38,7 +38,7 @@ import javax.swing.JList;
  * @version 1.0.0
  * @since 1.0.0
  */
-public class LocalList extends JList implements Command {
+public class LocalList extends JList<String> implements Command {
 	/** serialVersionUID */
 	private static final long serialVersionUID = 1L;
 	
@@ -47,11 +47,11 @@ public class LocalList extends JList implements Command {
 	
 	/**
 	 * 
-	 * @param defaultListModel
+	 * @param listModel
 	 * @param mediator
 	 */
-	public LocalList(DefaultListModel defaultListModel, Mediator mediator) {
-		super(defaultListModel);
+	public LocalList(DefaultListModel<String> listModel, Mediator mediator) {
+		super(listModel);
 		this.mediator = mediator;
 		mediator.registerLocalList(this);
 	}
@@ -63,5 +63,14 @@ public class LocalList extends JList implements Command {
 	 */
 	public void processEvent() {
 		mediator.selectLocalList();
+	}
+	
+	/**
+	 * 
+	 * @return
+	 * @see javax.swing.JList#getModel()
+	 */
+	public DefaultListModel<String> getModel() {
+		return (DefaultListModel<String>) super.getModel();
 	}
 }

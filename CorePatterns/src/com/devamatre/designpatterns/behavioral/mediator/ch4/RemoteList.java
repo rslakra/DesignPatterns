@@ -38,7 +38,7 @@ import javax.swing.JList;
  * @version 1.0.0
  * @since 1.0.0
  */
-public class RemoteList extends JList implements Command {
+public class RemoteList extends JList<String> implements Command {
 	/** serialVersionUID */
 	private static final long serialVersionUID = 1L;
 	
@@ -47,16 +47,30 @@ public class RemoteList extends JList implements Command {
 	
 	/**
 	 * 
-	 * @param defObj
+	 * @param listModel
 	 * @param mediator
 	 */
-	public RemoteList(DefaultListModel defObj, Mediator mediator) {
-		super(defObj);
+	public RemoteList(DefaultListModel<String> listModel, Mediator mediator) {
+		super(listModel);
 		this.mediator = mediator;
 		mediator.registerRemoteList(this);
 	}
 	
+	/**
+	 * 
+	 * 
+	 * @see com.devamatre.designpatterns.behavioral.mediator.ch4.Command#processEvent()
+	 */
 	public void processEvent() {
 		mediator.selectRemoteList();
+	}
+	
+	/**
+	 * 
+	 * @return
+	 * @see javax.swing.JList#getModel()
+	 */
+	public DefaultListModel<String> getModel() {
+		return (DefaultListModel<String>) super.getModel();
 	}
 }
