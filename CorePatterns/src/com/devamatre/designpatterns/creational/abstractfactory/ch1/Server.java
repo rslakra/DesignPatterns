@@ -1,6 +1,6 @@
 /******************************************************************************
  * Copyright (C) Devamatre Inc 2009-2018. All rights reserved.
- * 
+ *
  * This code is licensed to Devamatre under one or more contributor license 
  * agreements. The reproduction, transmission or use of this code, in source 
  * and binary forms, with or without modification, are permitted provided 
@@ -10,7 +10,7 @@
  * 2. Redistributions in binary form must reproduce the above copyright
  *    notice, this list of conditions and the following disclaimer in the
  *    documentation and/or other materials provided with the distribution.
- * 
+ *
  * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -22,60 +22,51 @@
  * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
- *      
+ *
  * Devamatre reserves the right to modify the technical specifications and or 
  * features without any prior notice.
  *****************************************************************************/
 package com.devamatre.designpatterns.creational.abstractfactory.ch1;
 
 /**
- * 
  * @author Rohtash Lakra (rohtash.lakra@devamatre.com)
  * @author Rohtash Singh Lakra (rohtash.singh@gmail.com)
- * @created 2007-01-04 03:10:24 PM
  * @version 1.0.0
+ * @created 2007-01-04 03:10:24 PM
  * @since 1.0.0
  */
 public class Server extends Computer {
-	/**
-	 * 
-	 * @return
-	 * @see com.devamatre.patterns.core.creational.abstractfactory.ch1.Computer#getProcessor()
-	 */
-	public Component getProcessor() {
-		return new Component("Intel Core Duo");
-	}
+    /**
+     * @return
+     */
+    public Component getProcessor() {
+        return new Component("Intel Core Duo");
+    }
 
-	/**
-	 * 
-	 * @return
-	 * @see com.devamatre.patterns.core.creational.abstractfactory.ch1.Computer#getRam()
-	 */
-	public Component getRam() {
-		return new Component("4 GB");
-	}
+    /**
+     * @return
+     */
+    public Component getRam() {
+        return new Component("4 GB");
+    }
 
-	/**
-	 * 
-	 * @return
-	 * @see com.devamatre.patterns.core.creational.abstractfactory.ch1.Computer#getMonitor()
-	 */
-	public Component getMonitor() {
-		return new Component("17 Inch");
-	}
+    /**
+     * @return
+     */
+    public Component getMonitor() {
+        return new Component("17 Inch");
+    }
 
-	/**
-	 * 
-	 * @return
-	 * @see com.devamatre.patterns.core.creational.abstractfactory.ch1.Computer#toString()
-	 */
-	public String toString() {
-		StringBuffer strBuffer = new StringBuffer("");
-		strBuffer.append("========================================================================");
-		strBuffer.append("\nServer Specifications:\n");
-		strBuffer.append("========================================================================");
-		strBuffer.append("\n");
-		strBuffer.append(super.toString());
-		return strBuffer.toString();
-	}
+    /**
+     * @return
+     */
+    public String toString() {
+        StringBuffer strBuffer = new StringBuffer("");
+        strBuffer.append("========================================================================");
+        strBuffer.append("\nServer Specifications:\n");
+        strBuffer.append("========================================================================");
+        strBuffer.append("\n");
+        strBuffer.append(super.toString());
+        return strBuffer.toString();
+    }
 }

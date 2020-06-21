@@ -1,6 +1,6 @@
 /******************************************************************************
  * Copyright (C) Devamatre Inc 2009-2018. All rights reserved.
- * 
+ *
  * This code is licensed to Devamatre under one or more contributor license 
  * agreements. The reproduction, transmission or use of this code, in source 
  * and binary forms, with or without modification, are permitted provided 
@@ -10,7 +10,7 @@
  * 2. Redistributions in binary form must reproduce the above copyright
  *    notice, this list of conditions and the following disclaimer in the
  *    documentation and/or other materials provided with the distribution.
- * 
+ *
  * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -22,7 +22,7 @@
  * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
- *      
+ *
  * Devamatre reserves the right to modify the technical specifications and or 
  * features without any prior notice.
  *****************************************************************************/
@@ -30,37 +30,28 @@ package com.devamatre.designpatterns.creational.abstractfactory.ch2;
 
 /**
  * The <code>Producer</code>
- * 
+ *
  * @author Rohtash Singh
- * @created: Jun 13, 2013
  * @version 1.0.0
+ * @created: Jun 13, 2013
  * @since 1.0.0
  */
 public class FactoryProducer {
 
-	/**
-	 * Returns the factory for the specified type.
-	 * 
-	 * @param choice
-	 * @return
-	 */
-	public static AbstractFactory getFactory(FactoryType factoryType) {
-		AbstractFactory factory = null;
-		/* validate the specified type is not null or empty. */
-		if (factoryType != null) {
-			switch (factoryType) {
-			case COLOR:
-				factory = new ColorFactory();
-				break;
-			case SHAPE:
-				factory = new ShapeFactory();
-				break;
-			default:
-				System.out.println("Invalid Factory Type:"
-						+ factoryType.toString());
-				break;
-			}
-		}
-		return factory;
-	}
+    /**
+     * Returns the factory for the specified type.
+     *
+     * @param factoryType
+     * @return
+     */
+    public static AbstractFactory getFactory(FactoryType factoryType) {
+        switch (factoryType) {
+            case COLOR:
+                return new ColorFactory();
+            case SHAPE:
+                return new ShapeFactory();
+            default:
+                throw new RuntimeException("Invalid factoryType:" + factoryType);
+        }
+    }
 }

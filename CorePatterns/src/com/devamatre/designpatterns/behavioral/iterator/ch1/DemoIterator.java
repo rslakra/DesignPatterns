@@ -69,14 +69,14 @@ public class DemoIterator {
 		System.out.println(list);
 		System.out.println(list.size());
 
-		Iterator<String> itr = list.createInterator();
+		Iterator<String> itr = list.createIterator();
 		while (itr.hasNext()) {
 			System.out.println(itr.getNext());
 		}
 
 		System.out.println();
 
-		itr = list.createInterator();
+		itr = list.createIterator();
 		while (itr.hasNext()) {
 			System.out.println(itr.getNext());
 		}

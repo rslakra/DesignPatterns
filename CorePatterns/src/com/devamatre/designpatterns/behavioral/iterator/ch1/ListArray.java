@@ -1,6 +1,6 @@
 /******************************************************************************
  * Copyright (C) Devamatre Inc 2009-2018. All rights reserved.
- * 
+ *
  * This code is licensed to Devamatre under one or more contributor license 
  * agreements. The reproduction, transmission or use of this code, in source 
  * and binary forms, with or without modification, are permitted provided 
@@ -10,7 +10,7 @@
  * 2. Redistributions in binary form must reproduce the above copyright
  *    notice, this list of conditions and the following disclaimer in the
  *    documentation and/or other materials provided with the distribution.
- * 
+ *
  * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -22,7 +22,7 @@
  * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
- *      
+ *
  * Devamatre reserves the right to modify the technical specifications and or 
  * features without any prior notice.
  *****************************************************************************/
@@ -33,60 +33,56 @@ import java.util.ArrayList;
 /**
  * @author Rohtash Lakra (rohtash.lakra@devamatre.com)
  * @author Rohtash Singh Lakra (rohtash.singh@gmail.com)
- * @created 2018-01-16 02:22:52 PM
  * @version 1.0.0
+ * @created 2018-01-16 02:22:52 PM
  * @since 1.0.0
  */
 public class ListArray<E> extends ArrayList<E> implements Collection<E> {
 
-	/**
-	 * @return
-	 * @see com.devamatre.patterns.core.behavioral.iterator.Collection#createInterator()
-	 */
-	@Override
-	public Iterator<E> createInterator() {
-		return new ListIterator<E>();
-	}
+    /**
+     * @return
+     */
+    @Override
+    public Iterator<E> createIterator() {
+        return new ListIterator<E>();
+    }
 
-	/**
-	 * Handles the iteration of the list.
-	 * 
-	 * @author Rohtash Lakra (rohtash.lakra@devamatre.com)
-	 * @author Rohtash Singh Lakra (rohtash.singh@gmail.com)
-	 * @created 2018-01-16 02:32:39 PM
-	 * @version 1.0.0
-	 * @since 1.0.0
-	 * @param <E>
-	 */
-	@SuppressWarnings("hiding")
-	private class ListIterator<E> implements Iterator<E> {
+    /**
+     * Handles the iteration of the list.
+     *
+     * @param <E>
+     * @author Rohtash Lakra (rohtash.lakra@devamatre.com)
+     * @author Rohtash Singh Lakra (rohtash.singh@gmail.com)
+     * @version 1.0.0
+     * @created 2018-01-16 02:32:39 PM
+     * @since 1.0.0
+     */
+    @SuppressWarnings("hiding")
+    private class ListIterator<E> implements Iterator<E> {
 
-		private int index;
+        private int index;
 
-		public ListIterator() {
-			super();
-			index = 0;
-		}
+        public ListIterator() {
+            super();
+            index = 0;
+        }
 
-		/**
-		 * @return
-		 * @see com.devamatre.patterns.core.behavioral.iterator.Iterator#hasNext()
-		 */
-		@Override
-		public boolean hasNext() {
-			return (index < size());
-		}
+        /**
+         * @return
+         */
+        @Override
+        public boolean hasNext() {
+            return (index < size());
+        }
 
-		/**
-		 * @return
-		 * @see com.devamatre.patterns.core.behavioral.iterator.Iterator#getNext()
-		 */
-		@SuppressWarnings("unchecked")
-		@Override
-		public E getNext() {
-			return (E) get(index++);
-		}
+        /**
+         * @return
+         */
+        @Override
+        public E getNext() {
+            return (E) get(index++);
+        }
 
-	}
+    }
 
 }

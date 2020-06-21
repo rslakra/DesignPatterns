@@ -210,8 +210,6 @@ public final class Singleton implements Cloneable, Serializable {
 	/**
 	 * One file will be made daily. So, putting date time in file name.
 	 *
-	 * @param gc
-	 *            GregorianCalendar
 	 * @return String, name of file
 	 */
 	public String getLogFilePath() {
