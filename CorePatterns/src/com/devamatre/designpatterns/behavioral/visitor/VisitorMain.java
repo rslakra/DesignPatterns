@@ -11,14 +11,14 @@ public class VisitorMain {
 
     public static void main(String[] args) {
 
-        Visitor v = new ElementVisitor();
+        Visitor visitor = new ElementVisitor();
 
-        Document d = new Document(generateUuid());
-        d.elements.add(new JsonElement(generateUuid()));
-        d.elements.add(new JsonElement(generateUuid()));
-        d.elements.add(new XmlElement(generateUuid()));
+        Document document = new Document(generateUuid());
+        document.elements.add(new JsonElement(generateUuid()));
+        document.elements.add(new JsonElement(generateUuid()));
+        document.elements.add(new XmlElement(generateUuid()));
 
-        d.accept(v);
+        document.accept(visitor);
     }
 
     private static String generateUuid() {

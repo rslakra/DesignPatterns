@@ -6,4 +6,13 @@ package com.devamatre.designpatterns.behavioral.chainofresponsibility;
  * Version: 1.0.0
  */
 public abstract class AuthenticationProcessor {
+
+    // next element in chain or responsibility
+    public AuthenticationProcessor nextProcessor;
+
+    public AuthenticationProcessor(AuthenticationProcessor nextProcessor) {
+        this.nextProcessor = nextProcessor;
+    }
+
+    public abstract boolean isAuthorized(AuthenticationProvider authProvider);
 }

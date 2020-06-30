@@ -1,6 +1,6 @@
 /******************************************************************************
  * Copyright (C) Devamatre Inc 2009-2018. All rights reserved.
- * 
+ *
  * This code is licensed to Devamatre under one or more contributor license 
  * agreements. The reproduction, transmission or use of this code, in source 
  * and binary forms, with or without modification, are permitted provided 
@@ -10,7 +10,7 @@
  * 2. Redistributions in binary form must reproduce the above copyright
  *    notice, this list of conditions and the following disclaimer in the
  *    documentation and/or other materials provided with the distribution.
- * 
+ *
  * THIS SOFTWARE IS PROVIDED BY THE AUTHOR AND CONTRIBUTORS "AS IS" AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -22,60 +22,70 @@
  * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
  * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  * SUCH DAMAGE.
- *      
+ *
  * Devamatre reserves the right to modify the technical specifications and or 
  * features without any prior notice.
  *****************************************************************************/
 package com.devamatre.designpatterns.behavioral.command.ch1;
 
 /**
- * 
  * @author Rohtash Lakra (rohtash.lakra@devamatre.com)
  * @author Rohtash Singh Lakra (rohtash.singh@gmail.com)
- * @created 2018-01-15 03:03:42 PM
  * @version 1.0.0
+ * @created 2018-01-15 03:03:42 PM
  * @since 1.0.0
  */
 public class Namer {
-	String firstName;
-	String lastName;
+    private String firstName;
+    private String lastName;
 
-	public Namer() {
-	}
+    public Namer() {
+    }
 
-	public String getFirstName() {
-		return firstName;
-	}
+    public String getFirstName() {
+        return firstName;
+    }
 
-	public String getLastName() {
-		return lastName;
-	}
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
 }
 
 /**
  * Name is space delimited. We assume that everything before the last space is
  * part of the first name. If comma does not exists in name, the throw an error.
- * 
+ *
  * @author Rohtash Lakra (rohtash.lakra@devamatre.com)
  * @author Rohtash Singh Lakra (rohtash.singh@gmail.com)
- * @created 2018-01-15 03:03:50 PM
  * @version 1.0.0
+ * @created 2018-01-15 03:03:50 PM
  * @since 1.0.0
  */
 final class FirstName extends Namer {
-	public FirstName(String str) {
-		if (str == null) {
-			throw new NullPointerException("Passed Name is Null!");
-		}
-		int idx = str.lastIndexOf(" ");
-		if (idx > 0) {
-			firstName = str.substring(0, idx).trim();
-			lastName = str.substring(idx + 1).trim();
-		} else {
-			lastName = str;
-			firstName = "";
-		}
-	}
+    /**
+     * @param name
+     */
+    public FirstName(String name) {
+        if (name == null) {
+            throw new NullPointerException("name is Null!");
+        }
+        int idx = name.lastIndexOf(" ");
+        if (idx > 0) {
+            setFirstName(name.substring(0, idx).trim());
+            setLastName(name.substring(idx + 1).trim());
+        } else {
+            setFirstName(name);
+            setLastName("");
+        }
+    }
 }
 
 /**
@@ -83,17 +93,20 @@ final class FirstName extends Namer {
  * if comma does not exists in name, the throw an error.
  */
 class LastName extends Namer {
-	public LastName(String str) {
-		if (str == null) {
-			throw new NullPointerException("Passed Name is Null!");
-		}
-		int idx = str.indexOf(",");
-		if (idx > 0) {
-			lastName = str.substring(0, idx).trim();
-			firstName = str.substring(idx + 1).trim();
-		} else {
-			lastName = str;
-			firstName = "";
-		}
-	}
+    /**
+     * @param name
+     */
+    public LastName(String name) {
+        if (name == null) {
+            throw new NullPointerException("Passed Name is Null!");
+        }
+        int idx = name.indexOf(",");
+        if (idx > 0) {
+            setFirstName(name.substring(0, idx).trim());
+            setLastName(name.substring(idx + 1).trim());
+        } else {
+            setFirstName(name);
+            setLastName("");
+        }
+    }
 }
