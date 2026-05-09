@@ -1,14 +1,35 @@
 # DesignPatterns
 
-This repository contains the programs, which are related to Design Patterns that includes Core, J2EE and other related 
-patterns.
+This repository contains programs related to design patterns, including core GoF-style examples and related material.
 
-All the examples, used in this repository to be written in ```Java```.
+All examples are written in **Java**.
 
+## Repository layout
+
+| Path | Description |
+|------|-------------|
+| [`pom.xml`](pom.xml) | Maven aggregator (multi-module root) |
+| [`CorePatterns/`](CorePatterns/) | Core design pattern samples (`com.rslakra.designpatterns…`) |
+| [`CorePatterns/README.md`](CorePatterns/README.md) | Catalog of patterns and source links |
+
+## Build
+
+- **JDK** 21 and **Apache Maven** 3.6+ are required (see module POMs for `maven.compiler.*`).
+- From the **repository root**, build all modules:
+
+  ```bash
+  mvn clean install -Drevision=0.0.1-SNAPSHOT
+  ```
+
+  Use any valid `revision` you publish with; the root and child POMs use the `revision` property for the version.
+
+- Optional: [`buildMaven.sh`](buildMaven.sh) sets `revision` from [`version.sh`](version.sh) (Git commit count when available) and runs `mvn clean install` from the **directory where you execute the script** (typically the repo root for the aggregator).
+
+For more detail (including the `CorePatterns/buildMaven.sh` helper), see [**CorePatterns/README.md**](CorePatterns/README.md).
 
 ## What are design patterns?
 
-Before knowing to know the design patterns, let's ask 1 more question?
+Before learning about design patterns, consider one more question.
 
 - What do you mean by a pattern?
 
@@ -18,7 +39,7 @@ Before knowing to know the design patterns, let's ask 1 more question?
     
     - An ordered set of numbers, shapes or other mathematical objects, arranged according to a rule.    
 
-Know let's come back to our actual question.
+Now let's return to the main question.
 
 As per wikipedia [System Design Patterns](https://en.wikipedia.org/wiki/Software_design_pattern)
 
@@ -51,4 +72,4 @@ Design patterns had originally been categorized into 3 sub-classifications based
 
 ## Authors
 
-* [Rohtash Lakra](https://github.com/rslakra/DesignPatterns.git)
+* Rohtash Lakra

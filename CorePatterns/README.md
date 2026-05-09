@@ -1,8 +1,36 @@
 # CorePatterns
 
-The ```CorePatterns``` modules provides the information about the core design patterns.
+The **CorePatterns** Maven module holds the core design pattern examples under standard layout:
 
-All the examples, used in this repository to be written in ```Java```.
+- **Sources:** `src/main/java/com/rslakra/designpatterns/…`
+- **Resources:** `src/main/resources/`
+- **Tests:** `src/test/java/` and `src/test/resources/`
+
+All examples are **Java** (JDK 21 as configured in `pom.xml`).
+
+## Build and test
+
+From the **CorePatterns** directory (so this module’s `pom.xml` is used):
+
+```bash
+cd CorePatterns
+mvn clean install -Drevision=0.0.1-SNAPSHOT
+```
+
+Or use the helper script (it sources `../version.sh` and passes `-Drevision` from `buildVersion`):
+
+```bash
+cd CorePatterns
+bash buildMaven.sh
+```
+
+To build the whole reactor from the **repository root** (aggregator builds this module too):
+
+```bash
+mvn clean install -Drevision=0.0.1-SNAPSHOT
+```
+
+JUnit 5 tests live under `src/test/java`. Swap `revision` for the version you need; it must match how your parent POM passes `revision` in CI or release flows.
 
 ## Core Categories of Design Patterns
 
@@ -305,4 +333,4 @@ A class can implement the <code>Observer</code> interface when it wants to be in
 
 ## Authors
 
-* [Rohtash Lakra](https://github.com/rslakra/DesignPatterns.git)
+* Rohtash Lakra
