@@ -45,8 +45,8 @@
         <!-- swagger -->
         <swagger.skip>false</swagger.skip>
 
-        <!-- junit-jupiter-params -->
-        <junit-jupiter-params.version>5.10.2</junit-jupiter-params.version>
+        <junit-jupiter.version>5.10.2</junit-jupiter.version>
+        <maven-surefire-plugin.version>3.2.5</maven-surefire-plugin.version>
 
     </properties>
 
@@ -79,8 +79,8 @@
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-params</artifactId>
-            <version>${junit-jupiter-params.version}</version>
+            <artifactId>junit-jupiter</artifactId>
+            <version>${junit-jupiter.version}</version>
             <scope>test</scope>
         </dependency>
 
@@ -112,7 +112,7 @@
                 </property>
             </activation>
             <properties>
-                <buildVersion>${project.version</buildVersion>
+                <buildVersion>${project.version}</buildVersion>
             </properties>
         </profile>
 
@@ -172,6 +172,12 @@
                         </configuration>
                     </execution>
                 </executions>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${maven-surefire-plugin.version}</version>
             </plugin>
 
             <!-- maven-release-plugin -->
