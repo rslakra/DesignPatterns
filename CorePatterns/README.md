@@ -35,14 +35,14 @@ The core categories of the design patterns, based on the kinds of problems, they
     - Cache
     - Config Reader    
 
-[Singleton Example](src/com/devamatre/designpatterns/creational/singleton)
+[Singleton Example](src/com/rslakra/designpatterns/creational/singleton)
 
 
 #### 1.2. Factory Method Pattern
 
     To centralize creation of objects of same kind of classes.
     
-[Factory Method Example](src/com/devamatre/designpatterns/creational/factory)    
+[Factory Method Example](src/com/rslakra/designpatterns/creational/factory)    
 
 
 #### 1.3. Builder Pattern
@@ -50,14 +50,14 @@ The core categories of the design patterns, based on the kinds of problems, they
     Separate the construction of a complex object from its representation, allowing the same construction process to 
     create various representations.
 
-[Builder Example](src/com/devamatre/designpatterns/creational/builder)    
+[Builder Example](src/com/rslakra/designpatterns/creational/builder)    
 
 
 #### 1.4. Abstract Factory Pattern
 
     Provide an interface for creating families of related or dependent objects without specifying their concrete classes.
 
-[Abstract Factory Example](src/com/devamatre/designpatterns/creational/abstractfactory)    
+[Abstract Factory Example](src/com/rslakra/designpatterns/creational/abstractfactory)    
 
 
 #### 1.5. Prototype Pattern
@@ -65,7 +65,7 @@ The core categories of the design patterns, based on the kinds of problems, they
     A fully initialized instance to be copied or cloned
 
 
-[Prototype Example](src/com/devamatre/designpatterns/creational/prototype)    
+[Prototype Example](src/com/rslakra/designpatterns/creational/prototype)    
 
 
 ### 2. Structural Patterns
@@ -87,7 +87,7 @@ There are two ways of implementing adapter pattern:
 - Using Inheritance (termed as the class adapter pattern)
 
 
-[Adapter Example](src/com/devamatre/designpatterns/structural/adapter)
+[Adapter Example](src/com/rslakra/designpatterns/structural/adapter)
 
 
 #### 2.2. Bridge Pattern
@@ -102,14 +102,14 @@ i.e.
     
     ```Adapter``` makes things work after they're designed; ```Bridge``` makes them work before they are.
 
-[Bridge Example](src/com/devamatre/designpatterns/structural/bridge)
+[Bridge Example](src/com/rslakra/designpatterns/structural/bridge)
 
 #### 2.3. Composite Pattern
 
     A tree structure of simple and composite objects.
     
     
-[Composite Example](src/com/devamatre/designpatterns/structural/composite)
+[Composite Example](src/com/rslakra/designpatterns/structural/composite)
 
 
 #### 2.4. Decorator Pattern
@@ -117,14 +117,14 @@ i.e.
     Add responsibilities to objects dynamically.
     Adds dynamically stacked behavior thus helping us to change the behavior of the object on runtime.
     
-[Decorator Example](src/com/devamatre/designpatterns/structural/decorator)
+[Decorator Example](src/com/rslakra/designpatterns/structural/decorator)
     
 
 #### 2.5. Façade Pattern
 
     A single class that represents an entire subsystem.
     
-[Façade Example](src/com/devamatre/designpatterns/structural/facade)
+[Façade Example](src/com/rslakra/designpatterns/structural/facade)
 
 #### 2.6. Flyweight Pattern
 
@@ -135,7 +135,7 @@ i.e.
 i.e.
 - Printing visiting card for all employees in the organization.
 
-[Flyweight Example](src/com/devamatre/designpatterns/structural/flyweight)
+[Flyweight Example](src/com/rslakra/designpatterns/structural/flyweight)
 
 
 #### 2.7. Proxy Pattern
@@ -150,7 +150,7 @@ i.e.
 
 The advantages of using proxy are security and avoiding duplicating objects which are of huge sizes.
 
-[Proxy Example](src/com/devamatre/designpatterns/structural/proxy)
+[Proxy Example](src/com/rslakra/designpatterns/structural/proxy)
 
 ### 3. Behavioral Patterns
 
@@ -170,50 +170,50 @@ The advantages of using proxy are security and avoiding duplicating objects whic
 
     Defines simplified communication between classes.
     
-[Mediator Example](src/com/devamatre/designpatterns/behavioral/mediator)
+[Mediator Example](src/com/rslakra/designpatterns/behavioral/mediator)
 
 #### 3.2. Memento Pattern
 
     Capture and restore an object's internal state with out violating encapsulation.
     
-[Memento Example](src/com/devamatre/designpatterns/behavioral/memento)
+[Memento Example](src/com/rslakra/designpatterns/behavioral/memento)
 
 #### 3.3. Interpreter Pattern
 
     A way to include language elements in a program.
     
-[Interpreter Example](src/com/devamatre/designpatterns/behavioral/interpreter)
+[Interpreter Example](src/com/rslakra/designpatterns/behavioral/interpreter)
 
 #### 3.4. Iterator Pattern
 
     Sequentially access the elements of a collection.
 
-[Iterator Example](src/com/devamatre/designpatterns/behavioral/iterator)
+[Iterator Example](src/com/rslakra/designpatterns/behavioral/iterator)
 
 #### 3.5. Chain of Responsibility Pattern
 
     A way of passing a request between a chain of objects.
     Chain of Responsibility is used when we have series of processing which will be handled by a series of handler logic.
 
-[Chain of Responsibility Example](src/com/devamatre/designpatterns/behavioral/chainofresponsibility)
+[Chain of Responsibility Example](src/com/rslakra/designpatterns/behavioral/chainofresponsibility)
 
 #### 3.6. Command Pattern
 
     Encapsulate a command request as an object.
     
-[Command Example](src/com/devamatre/designpatterns/behavioral/command)
+[Command Example](src/com/rslakra/designpatterns/behavioral/command)
 
 #### 3.7. State Pattern
 
     It allows an object to change its behavior when it's state changes.
 
-[State Example](src/com/devamatre/designpatterns/behavioral/state)
+[State Example](src/com/rslakra/designpatterns/behavioral/state)
 
 #### 3.8. Strategy Pattern
 
     Encapsulates an algorithms inside a class which can be interchanged depending on the usage of the class.
 
-[Strategy Example](src/com/devamatre/designpatterns/behavioral/strategy)
+[Strategy Example](src/com/rslakra/designpatterns/behavioral/strategy)
 
 #### 3.9. Observer Pattern
 
@@ -225,7 +225,7 @@ The advantages of using proxy are security and avoiding duplicating objects whic
 
 A class can implement the <code>Observer</code> interface when it wants to be informed of changes in observable objects
 
-[Observer Example](src/com/devamatre/designpatterns/behavioral/observer)
+[Observer Example](src/com/rslakra/designpatterns/behavioral/observer)
 
 #### 3.10. Template Method Pattern
 
@@ -233,7 +233,7 @@ A class can implement the <code>Observer</code> interface when it wants to be in
     
     Template pattern is used in scenarios where we want to create an extendable behaviors in generalization and specialization relationship.
 
-[Template Example](src/com/devamatre/designpatterns/behavioral/template)
+[Template Example](src/com/rslakra/designpatterns/behavioral/template)
 
 #### 3.11. Visitor Pattern
 
@@ -242,7 +242,7 @@ A class can implement the <code>Observer</code> interface when it wants to be in
     It allows us to change the class structure with out changing the actual class. It's a way of separating the logic 
     and algorithm from the current data structure.
 
-[Visitor Example](src/com/devamatre/designpatterns/behavioral/visitor)
+[Visitor Example](src/com/rslakra/designpatterns/behavioral/visitor)
 
 ### 4. Similarities and Differences
 
