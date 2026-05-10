@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar>
+  <enterprise-beans>
+    <entity>
+      <!--
+
+This file contains metadata for a component in Sun One Studio
+You should not edit this file directly unless you are attempting to resolve
+a merge conflict after updating this object from a source code management system.
+
+A DTD file which describes the structure of this XML document can be found
+in the docs/dtd directory of the Sun One Studio installation in a file called
+ejb-jar_2_0.dtd
+This file describes the structure of a single EJB.
+It is merged with other deployment descriptors by an EJB Module.
+
+-->
+      <display-name>LdapPerson</display-name>
+      <ejb-name>LdapPerson</ejb-name>
+      <local-home>com.devamatre.patterns.antipatterns.ejbs.LocalLdapPersonHome</local-home>
+      <local>com.devamatre.patterns.antipatterns.ejbs.LocalLdapPerson</local>
+      <ejb-class>com.devamatre.patterns.antipatterns.ejbs.LdapPersonBean</ejb-class>
+      <persistence-type>Bean</persistence-type>
+      <prim-key-class>java.lang.String</prim-key-class>
+      <reentrant>False</reentrant>
+    </entity>
+  </enterprise-beans>
+</ejb-jar>

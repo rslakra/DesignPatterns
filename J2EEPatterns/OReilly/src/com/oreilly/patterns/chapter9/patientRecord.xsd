@@ -1,0 +1,19 @@
+<schema
+         targetNamespace="http://chapter9/IMedicalRecordService.xsd"
+         xmlns="http://www.w3.org/2001/XMLSchema"
+         xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/">
+         <complexType name="chapter9_PatientRecord">
+            <all>
+               <element name="FirstName" type="string"/>
+               <element name="LastName" type="string"/>
+               <element name="MiddleName" type="string"/>
+               <element name="Address1" type="string"/>
+               <element name="Address2" type="string"/>
+               <element name="City" type="string"/>
+               <element name="State" type="string"/>
+               <element name="Zip" type="string"/>
+               <element name="Country" type="string"/>
+               <element name="PatientID" type="long"/>
+            </all>
+         </complexType>
+      </schema>

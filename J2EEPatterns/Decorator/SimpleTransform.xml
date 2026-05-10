@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsl:stylesheet version="1.0"
+	xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:fo="http://www.w3.org/1999/XSL/Format">
+	<xsl:output method="html" />
+
+	<!-- template rule matching source root element -->
+	<xsl:template match="/">
+		<html>
+			<title>XSLT Generated Page!</title>
+			<xsl:apply-templates />
+		</html>
+	</xsl:template>
+
+
+	<xsl:template match="/XMLView">
+		<body>
+			<xsl:apply-templates />
+		</body>
+	</xsl:template>
+
+	<xsl:template match="/XMLView/USERTABLE">
+
+		<table border='"1"'>
+			<tr>
+				<td>
+					<b>UserName</b>
+				</td>
+				<td>
+					<b>Language</b>
+				</td>
+				<td>
+					<b></b>
+				</td>
+			</tr>
+			<xsl:apply-templates></xsl:apply-templates>
+		</table>
+	</xsl:template>
+
+	<xsl:template match="/XMLView/USERTABLE/USER">
+		<tr>
+			<td>
+				<xsl:apply-templates select="NAME"></xsl:apply-templates>
+			</td>
+			<td>
+				<xsl:apply-templates select="LANGUAGE"></xsl:apply-templates>
+			</td>
+		</tr>
+	</xsl:template>
+</xsl:stylesheet>
+

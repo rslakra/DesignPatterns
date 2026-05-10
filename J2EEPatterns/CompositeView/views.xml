@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Created by jon on December 19, 2002, 11:26 PM -->
+
+<views>
+	<view name="page1" template="MainTemplate.jsp">
+		<container name="main">
+			<include name="header" url="Header.html"></include>
+			<include name="footer" url="Footer.html"></include>
+			<include name="body" url="page1.html"></include>
+		</container>
+	</view>
+	<view name="page2" template="MainTemplate.jsp">
+		<container name="main">
+			<include name="header" url="Header.html"></include>
+			<include name="footer" url="Footer.html"></include>
+			<include name="body" url="page2.html"></include>
+		</container>
+	</view>
+</views>
+

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is the primary file for an EJBModule  -->
+<EJBModuleDataBean>
+  <!--
+
+This file contains metadata for a component in Sun One Studio
+You should not edit this file directly unless you are attempting to resolve
+a merge conflict after updating this object from a source code management system.
+
+A DTD file which describes the structure of this XML document can be found
+in the docs/dtd directory of the Sun One Studio installation in a file called
+SparseEJBModule.dtd
+This file describes the structure of an EJB Module.
+It contains a list of the primary files of the EJBs contained in the EJB Module.
+
+-->
+  <name>PersonEJBs</name>
+  <useUserDD>false</useUserDD>
+  <EJBDataBean>
+    <filename>antipatterns/ejbs/PersonFacade.ejbdd</filename>
+  </EJBDataBean>
+  <EJBDataBean>
+    <filename>antipatterns/ejbs/LdapPerson.ejbdd</filename>
+  </EJBDataBean>
+  <EJBDataBean>
+    <filename>antipatterns/ejbs/AddressBook.ejbdd</filename>
+  </EJBDataBean>
+  <EJBDataBean>
+    <filename>antipatterns/ejbs/AddressBookEntry.ejbdd</filename>
+  </EJBDataBean>
+  <EJBDataBean>
+    <filename>antipatterns/ejbs/EJBPerson.ejbdd</filename>
+  </EJBDataBean>
+</EJBModuleDataBean>

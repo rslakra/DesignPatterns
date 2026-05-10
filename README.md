@@ -11,10 +11,12 @@ All examples are written in **Java**.
 | [`pom.xml`](pom.xml) | Maven aggregator (multi-module root) |
 | [`CorePatterns/`](CorePatterns/) | Core design pattern samples (`com.rslakra.designpatterns…`) |
 | [`CorePatterns/README.md`](CorePatterns/README.md) | Catalog of patterns and source links |
+| [`J2EEPatterns/`](J2EEPatterns/) | J2EE / servlet / JSP samples (legacy `javax.*`, Java 21) |
+| [`J2EEPatterns/README.md`](J2EEPatterns/README.md) | J2EE module list and Maven notes |
 
 ## Build
 
-- **JDK** 21 and **Apache Maven** 3.6+ are required (see module POMs for `maven.compiler.*`).
+- **JDK** 21 and **Apache Maven** 3.6+ are recommended for the full reactor (**CorePatterns** and **J2EEPatterns** both use Java 21—see each module’s `pom.xml`).
 - From the **repository root**, build all modules:
 
   ```bash
@@ -25,7 +27,7 @@ All examples are written in **Java**.
 
 - Optional: [`buildMaven.sh`](buildMaven.sh) sets `revision` from [`version.sh`](version.sh) (Git commit count when available) and runs `mvn clean install` from the **directory where you execute the script** (typically the repo root for the aggregator).
 
-For more detail (including the `CorePatterns/buildMaven.sh` helper), see [**CorePatterns/README.md**](CorePatterns/README.md).
+For more detail, see [**CorePatterns/README.md**](CorePatterns/README.md) and [**J2EEPatterns/README.md**](J2EEPatterns/README.md).
 
 ## What are design patterns?
 

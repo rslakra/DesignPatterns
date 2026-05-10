@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN" "http://java.sun.com/dtd/ejb-jar_2_0.dtd">
+<ejb-jar>
+  <display-name>PersonEJBs</display-name>
+  <enterprise-beans>
+    <session>
+      <display-name>PersonFacade</display-name>
+      <ejb-name>PersonFacade</ejb-name>
+      <home>com.devamatre.patterns.antipatterns.ejbs.PersonFacadeHome</home>
+      <remote>com.devamatre.patterns.antipatterns.ejbs.PersonFacade</remote>
+      <ejb-class>com.devamatre.patterns.antipatterns.ejbs.PersonFacadeBean</ejb-class>
+      <session-type>Stateless</session-type>
+      <transaction-type>Container</transaction-type>
+      <ejb-local-ref>
+        <description>Person</description>
+        <ejb-ref-name>ejb/local/Person</ejb-ref-name>
+        <ejb-ref-type>Entity</ejb-ref-type>
+        <local-home>com.devamatre.patterns.antipatterns.ejbs.LocalPersonHome</local-home>
+        <local>com.devamatre.patterns.antipatterns.ejbs.LocalPerson</local>
+        <ejb-link>Person</ejb-link>
+      </ejb-local-ref>
+    </session>
+    <entity>
+      <display-name>Person</display-name>
+      <ejb-name>Person</ejb-name>
+      <home>com.devamatre.patterns.antipatterns.ejbs.PersonHome</home>
+      <remote>com.devamatre.patterns.antipatterns.ejbs.Person</remote>
+      <local-home>com.devamatre.patterns.antipatterns.ejbs.LocalPersonHome</local-home>
+      <local>com.devamatre.patterns.antipatterns.ejbs.LocalPerson</local>
+      <ejb-class>com.devamatre.patterns.antipatterns.ejbs.PersonBean</ejb-class>
+      <persistence-type>Container</persistence-type>
+      <prim-key-class>com.devamatre.patterns.antipatterns.ejbs.PersonKey</prim-key-class>
+      <reentrant>False</reentrant>
+      <abstract-schema-name>Person</abstract-schema-name>
+      <cmp-field>
+        <field-name>personId</field-name>
+      </cmp-field>
+      <cmp-field>
+        <field-name>firstName</field-name>
+      </cmp-field>
+      <cmp-field>
+        <field-name>lastName</field-name>
+      </cmp-field>
+      <cmp-field>
+        <field-name>phoneNumber</field-name>
+      </cmp-field>
+      <query>
+        <query-method>
+          <method-name>findAll</method-name>
+          <method-params/>
+        </query-method>
+        <ejb-ql>SELECT OBJECT(p) FROM Person p</ejb-ql>
+      </query>
+      <query>
+        <query-method>
+          <method-name>findByName</method-name>
+          <method-params>
+            <method-param>java.lang.String</method-param>
+            <method-param>java.lang.String</method-param>
+          </method-params>
+        </query-method>
+        <ejb-ql>SELECT OBJECT(p) FROM Person p WHERE p.firstName = ?1 AND p.lastName = ?2</ejb-ql>
+      </query>
+      <query>
+        <query-method>
+          <method-name>findByFirstName</method-name>
+          <method-params>
+            <method-param>java.lang.String</method-param>
+          </method-params>
+        </query-method>
+        <ejb-ql>SELECT OBJECT(p) FROM Person p WHERE p.firstName = ?1</ejb-ql>
+      </query>
+      <query>
+        <query-method>
+          <method-name>findByLastName</method-name>
+          <method-params>
+            <method-param>java.lang.String</method-param>
+          </method-params>
+        </query-method>
+        <ejb-ql>SELECT OBJECT(p) FROM Person p WHERE p.lastName = ?1</ejb-ql>
+      </query>
+    </entity>
+  </enterprise-beans>
+  <assembly-descriptor>
+    <container-transaction>
+      <description>This value was set as a default by Forte For Java.</description>
+      <method>
+        <ejb-name>Person</ejb-name>
+        <method-name>*</method-name>
+      </method>
+      <trans-attribute>Required</trans-attribute>
+    </container-transaction>
+    <container-transaction>
+      <description>This value was set as a default by Forte For Java.</description>
+      <method>
+        <ejb-name>PersonFacade</ejb-name>
+        <method-name>*</method-name>
+      </method>
+      <trans-attribute>Required</trans-attribute>
+    </container-transaction>
+  </assembly-descriptor>
+</ejb-jar>

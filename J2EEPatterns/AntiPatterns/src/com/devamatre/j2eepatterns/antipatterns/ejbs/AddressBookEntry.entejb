@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fjee-ejb>
+  <!--
+
+This file contains metadata for a component in Sun One Studio
+You should not edit this file directly unless you are attempting to resolve
+a merge conflict after updating this object from a source code management system.
+
+A DTD file which describes the structure of this XML document can be found
+in the docs/dtd directory of the Sun One Studio installation in a file called
+ffjejb.dtd
+This file contains the data about an EJB
+which is not included in the standard deployment descriptor.
+
+-->
+  <file-version>1.0</file-version>
+  <ejb-version>2.0</ejb-version>
+</fjee-ejb>

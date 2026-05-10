@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar>
+  <enterprise-beans>
+    <entity>
+      <!--
+
+This file contains metadata for a component in Sun One Studio
+You should not edit this file directly unless you are attempting to resolve
+a merge conflict after updating this object from a source code management system.
+
+A DTD file which describes the structure of this XML document can be found
+in the docs/dtd directory of the Sun One Studio installation in a file called
+ejb-jar_2_0.dtd
+This file describes the structure of a single EJB.
+It is merged with other deployment descriptors by an EJB Module.
+
+-->
+      <display-name>AddressBookEntry</display-name>
+      <ejb-name>AddressBookEntry</ejb-name>
+      <local-home>com.devamatre.patterns.antipatterns.ejbs.LocalAddressBookEntryHome</local-home>
+      <local>com.devamatre.patterns.antipatterns.ejbs.LocalAddressBookEntry</local>
+      <ejb-class>com.devamatre.patterns.antipatterns.ejbs.AddressBookEntryBean</ejb-class>
+      <persistence-type>Container</persistence-type>
+      <prim-key-class>com.devamatre.patterns.antipatterns.ejbs.AddressBookEntryKey</prim-key-class>
+      <reentrant>False</reentrant>
+      <abstract-schema-name>AddressBookEntry</abstract-schema-name>
+      <cmp-field>
+        <field-name>entryId</field-name>
+      </cmp-field>
+      <cmp-field>
+        <field-name>owner</field-name>
+      </cmp-field>
+      <cmp-field>
+        <field-name>firstName</field-name>
+      </cmp-field>
+      <cmp-field>
+        <field-name>lastName</field-name>
+      </cmp-field>
+      <cmp-field>
+        <field-name>phoneNumber</field-name>
+      </cmp-field>
+      <query>
+        <query-method>
+          <method-name>findAll</method-name>
+          <method-params>
+            <method-param>java.lang.String</method-param>
+          </method-params>
+        </query-method>
+        <ejb-ql>SELECT OBJECT(a) FROM AddressBookEntry a WHERE a.owner = ?1</ejb-ql>
+      </query>
+      <query>
+        <query-method>
+          <method-name>findByFirstName</method-name>
+          <method-params>
+            <method-param>java.lang.String</method-param>
+            <method-param>java.lang.String</method-param>
+          </method-params>
+        </query-method>
+        <ejb-ql>SELECT OBJECT(a) FROM AddressBookEntry a WHERE a.owner = ?1 AND a.firstName = ?2</ejb-ql>
+      </query>
+      <query>
+        <query-method>
+          <method-name>findByLastName</method-name>
+          <method-params>
+            <method-param>java.lang.String</method-param>
+            <method-param>java.lang.String</method-param>
+          </method-params>
+        </query-method>
+        <ejb-ql>SELECT OBJECT(a) FROM AddressBookEntry a WHERE a.owner = ?1 AND a.lastName = ?2</ejb-ql>
+      </query>
+      <query>
+        <query-method>
+          <method-name>findByName</method-name>
+          <method-params>
+            <method-param>java.lang.String</method-param>
+            <method-param>java.lang.String</method-param>
+            <method-param>java.lang.String</method-param>
+          </method-params>
+        </query-method>
+        <ejb-ql>SELECT OBJECT(a) FROM AddressBookEntry a WHERE a.owner = ?1 AND a.firstName = ?2 AND a.lastName = ?3</ejb-ql>
+      </query>
+    </entity>
+  </enterprise-beans>
+</ejb-jar>

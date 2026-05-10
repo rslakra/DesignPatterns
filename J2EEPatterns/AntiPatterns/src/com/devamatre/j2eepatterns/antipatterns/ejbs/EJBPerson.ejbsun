@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sun-ejb-jar>
+  <enterprise-beans>
+    <ejb>
+      <ejb-name>EJBPerson</ejb-name>
+      <jndi-name>ejb/EJBPerson</jndi-name>
+      <pass-by-reference>false</pass-by-reference>
+      <cmp>
+        <mapping-properties>pcImpl0/moduleComp0/antipatterns/ejbs/EJBPerson.mapping</mapping-properties>
+      </cmp>
+      <refresh-period-in-seconds>600</refresh-period-in-seconds>
+      <bean-pool>
+        <steady-pool-size>32</steady-pool-size>
+        <resize-quantity>16</resize-quantity>
+        <max-pool-size>640</max-pool-size>
+        <pool-idle-timeout-in-seconds>600</pool-idle-timeout-in-seconds>
+        <max-wait-time-in-millis>0</max-wait-time-in-millis>
+      </bean-pool>
+      <bean-cache>
+        <max-cache-size>512</max-cache-size>
+        <resize-quantity>16</resize-quantity>
+        <is-cache-overflow-allowed>true</is-cache-overflow-allowed>
+        <cache-idle-timeout-in-seconds>600</cache-idle-timeout-in-seconds>
+        <removal-timeout-in-seconds>5400</removal-timeout-in-seconds>
+        <victim-selection-policy>nru</victim-selection-policy>
+      </bean-cache>
+    </ejb>
+  </enterprise-beans>
+</sun-ejb-jar>

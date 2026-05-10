@@ -1,0 +1,2449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XML Spy v2.5 NT - http://www.xmlspy.com -->
+<rdf:RDF xmlns:dcq="http://purl.org/dc/qualifiers/1.0" xmlns:dc="http://purl.org/dc/elements/1.0"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+	<rdf:Description>
+		<DIEPER:Periodical xmlns:DIEPER="http://www.somehere.de">
+			<dc:identifier>
+				<rdf:Description>
+					<rdf:value>0025-5831</rdf:value>
+					<dcq:identifierType>
+						<DIEPER:SICI_ID />
+					</dcq:identifierType>
+					<dcq:identifierScheme
+						rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/ISSN/" />
+				</rdf:Description>
+			</dc:identifier>
+			<dc:identifier>
+				<rdf:Description>
+					<rdf:value>urn:dieper:unigoe::0025-5831</rdf:value>
+					<dcq:identifierType>
+						<DIEPER:DIEPER_ID />
+					</dcq:identifierType>
+				</rdf:Description>
+			</dc:identifier>
+			<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+				<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+					<rdf:value>Mathematische Annalen</rdf:value>
+					<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+						<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+					</dcq:titleType>
+				</rdf:Description>
+			</dc:title>
+			<dc:subject xmlns:dc="http://purl.org/dc/elements/1.0">
+				<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+					<rdf:value>510</rdf:value>
+					<dcq:subjectScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">DDC
+					</dcq:subjectScheme>
+				</rdf:Description>
+			</dc:subject>
+			<dc:language xmlns:dc="http://purl.org/dc/elements/1.0">
+				<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+					<rdf:value>de</rdf:value>
+					<dcq:languageScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">RFC1766
+					</dcq:languageScheme>
+				</rdf:Description>
+			</dc:language>
+			<dc:publisher xmlns:dc="http://purl.org/dc/elements/1.0">
+				<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+					<rdf:value>Springer</rdf:value>
+				</rdf:Description>
+			</dc:publisher>
+			<DIEPER:SerialsNumbering>1.1869 - 119.1943/44,2; 120.1947/49 -
+				122.1950/51</DIEPER:SerialsNumbering>
+			<DIEPER:PlaceOfPublication>Berlin</DIEPER:PlaceOfPublication>
+			<DIEPER:PlaceOfPublication>G&#246;ttingen</DIEPER:PlaceOfPublication>
+			<DIEPER:PlaceOfPublication>Heidelberg</DIEPER:PlaceOfPublication>
+			<DIEPER:PeriodicalVolume>
+				<dc:identifier>
+					<rdf:Description>
+						<rdf:value>0025-5831(1888)31&lt;1:MA:1>3.0.CO;2-#</rdf:value>
+						<dcq:identifierType>
+							<DIEPER:SICI_ID />
+						</dcq:identifierType>
+						<dcq:identifierScheme
+							rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+					</rdf:Description>
+				</dc:identifier>
+				<dc:identifier>
+					<rdf:Description>
+						<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C1:MA:1%3E3.0.CO;2-%23
+						</rdf:value>
+						<dcq:identifierType>
+							<DIEPER:DIEPER_ID />
+						</dcq:identifierType>
+					</rdf:Description>
+				</dc:identifier>
+				<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+					<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+						<rdf:value>Mathematische Annalen</rdf:value>
+						<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+							<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+						</dcq:titleType>
+					</rdf:Description>
+				</dc:title>
+				<dc:subject xmlns:dc="http://purl.org/dc/elements/1.0">
+					<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+						<rdf:value>510</rdf:value>
+						<dcq:subjectScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">DDC
+						</dcq:subjectScheme>
+					</rdf:Description>
+				</dc:subject>
+				<DIEPER:ItemNumber>31</DIEPER:ItemNumber>
+				<DIEPER:ItemNumberSorting>31</DIEPER:ItemNumberSorting>
+				<dc:date xmlns:dc="http://purl.org/dc/elements/1.0">
+					<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+						<rdf:value>1888</rdf:value>
+						<dcq:dateType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+							<DIEPER:PublicationYear xmlns:DIEPER="http://www.somehere.de" />
+						</dcq:dateType>
+					</rdf:Description>
+				</dc:date>
+				<DIEPER:RefImageSetRange>
+					<DIEPER:RefImageSetID resource="#Imageset001" />
+					<DIEPER:ImageSetPageStart>1</DIEPER:ImageSetPageStart>
+					<DIEPER:ImageSetPageEnd>626</DIEPER:ImageSetPageEnd>
+				</DIEPER:RefImageSetRange>
+				<DIEPER:TitlePage>
+					<dc:identifier>
+						<rdf:Description>
+							<rdf:value>0025-5831(1888)31&lt;1:1>3.0.CO;2-V</rdf:value>
+							<dcq:identifierType>
+								<DIEPER:SICI_ID />
+							</dcq:identifierType>
+							<dcq:identifierScheme
+								rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+						</rdf:Description>
+					</dc:identifier>
+					<dc:identifier>
+						<rdf:Description>
+							<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C1:1%3E3.0.CO;2-V
+							</rdf:value>
+							<dcq:identifierType>
+								<DIEPER:DIEPER_ID />
+							</dcq:identifierType>
+						</rdf:Description>
+					</dc:identifier>
+					<DIEPER:RefImageSetRange>
+						<DIEPER:RefImageSetID resource="#Imageset001" />
+						<DIEPER:ImageSetPageStart>1</DIEPER:ImageSetPageStart>
+						<DIEPER:ImageSetPageEnd>1</DIEPER:ImageSetPageEnd>
+					</DIEPER:RefImageSetRange>
+				</DIEPER:TitlePage>
+				<DIEPER:TableOfContents>
+					<dc:identifier>
+						<rdf:Description>
+							<rdf:value>0025-5831(1888)31&lt;3:3>3.1.CO;2-G</rdf:value>
+							<dcq:identifierType>
+								<DIEPER:SICI_ID />
+							</dcq:identifierType>
+							<dcq:identifierScheme
+								rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+						</rdf:Description>
+					</dc:identifier>
+					<dc:identifier>
+						<rdf:Description>
+							<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C3:3%3E3.1.CO;2-G
+							</rdf:value>
+							<dcq:identifierType>
+								<DIEPER:DIEPER_ID />
+							</dcq:identifierType>
+						</rdf:Description>
+					</dc:identifier>
+					<DIEPER:RefImageSetRange>
+						<DIEPER:RefImageSetID resource="#Imageset001" />
+						<DIEPER:ImageSetPageStart>3</DIEPER:ImageSetPageStart>
+						<DIEPER:ImageSetPageEnd>4</DIEPER:ImageSetPageEnd>
+					</DIEPER:RefImageSetRange>
+				</DIEPER:TableOfContents>
+				<DIEPER:PeriodicalIssue>
+					<dc:identifier>
+						<rdf:Description>
+							<rdf:value>0025-5831(1888)31&lt;1:5>3.0.CO;2-J</rdf:value>
+							<dcq:identifierType>
+								<DIEPER:SICI_ID />
+							</dcq:identifierType>
+							<dcq:identifierScheme
+								rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+						</rdf:Description>
+					</dc:identifier>
+					<dc:identifier>
+						<rdf:Description>
+							<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C1:5%3E3.0.CO;2-J
+							</rdf:value>
+							<dcq:identifierType>
+								<DIEPER:DIEPER_ID />
+							</dcq:identifierType>
+						</rdf:Description>
+					</dc:identifier>
+					<DIEPER:RefImageSetRange>
+						<DIEPER:RefImageSetID resource="#Imageset001" />
+						<DIEPER:ImageSetPageStart>5</DIEPER:ImageSetPageStart>
+						<DIEPER:ImageSetPageEnd>164</DIEPER:ImageSetPageEnd>
+					</DIEPER:RefImageSetRange>
+					<DIEPER:TitlePage>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;1:5>3.0.CO;2-J</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C1:5%3E3.0.CO;2-J
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>5</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>5</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:TitlePage>
+					<DIEPER:Advertisement>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;2:6>3.0.CO;2-D</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C2:6%3E3.0.CO;2-D
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>6</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>6</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Advertisement>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;1:UENIDF:7>3.0.CO;2-B
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C1:UENIDF:7%3E3.0.CO;2-B
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber eine neue Interpretation der
+									Fundamentalgleichungen der Dynamik</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>K&#246;nig, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>7</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>48</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;43:UDRCN:49>3.0.CO;2-Q
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C43:UDRCN:49%3E3.0.CO;2-Q
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber die regelm&#228;ssigen Configurationen n 3
+								</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Sch&#246;nflies, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>49</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>75</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;70:UDEF:76>3.0.CO;2-B
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C70:UDEF:76%3E3.0.CO;2-B
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber die Euler'sche ... - Function</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Busche, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>76</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>80</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;75:UABZDF:81>3.0.CO;2-M
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C75:UABZDF:81%3E3.0.CO;2-M
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber algebraische Beziehungen zwischen den
+									Fundamentalintegralen und deren Ableitungen f&#252;r eine
+									irreductible lineare homogene Differentialgleichung zweiter
+									Ordnung</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Koenigsberger, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>81</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>90</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;85:UEBAVS:91>3.0.CO;2-B
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C85:UEBAVS:91%3E3.0.CO;2-B
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber eine besondere Art von Strahlensystemen
+								</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Lilienthal, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>91</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>101</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;96:ZAESDZ:102>3.0.CO;2-D
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C96:ZAESDZ:102%3E3.0.CO;2-D
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Zur algebraischen Erzeugung s&#228;mmtlicherauch der
+									zerfallenden ebenen rationalen Curven vierter Ordnung
+								</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Meyer, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>102</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>139</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;134:PDDHTU:140>3.0.CO;2-9
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C134:PDDHTU:140%3E3.0.CO;2-9
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Partielle Differentialgleichungen der
+									hyperelliptischen Thetafunctionen und der Perioden derselben.
+								</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Wiltheiss, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>140</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>161</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;156:UEIDHR:162>3.0.CO;2-D
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C156:UEIDHR:162%3E3.0.CO;2-D
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber eine Integraldarstellung der hypergeometrischen
+									Reihe</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Schafheitlin, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>162</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>162</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Advertisement>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;1:163>3.0.CO;2-G</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C1:163%3E3.0.CO;2-G
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>163</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>163</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Advertisement>
+					<DIEPER:TableOfContents>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;2:164>3.1.CO;2-7</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C2:164%3E3.1.CO;2-7
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>164</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>164</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:TableOfContents>
+				</DIEPER:PeriodicalIssue>
+				<DIEPER:PeriodicalIssue>
+					<dc:identifier>
+						<rdf:Description>
+							<rdf:value>0025-5831(1888)31&lt;3:165>3.0.CO;2-4</rdf:value>
+							<dcq:identifierType>
+								<DIEPER:SICI_ID />
+							</dcq:identifierType>
+							<dcq:identifierScheme
+								rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+						</rdf:Description>
+					</dc:identifier>
+					<dc:identifier>
+						<rdf:Description>
+							<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C3:165%3E3.0.CO;2-4
+							</rdf:value>
+							<dcq:identifierType>
+								<DIEPER:DIEPER_ID />
+							</dcq:identifierType>
+						</rdf:Description>
+					</dc:identifier>
+					<DIEPER:RefImageSetRange>
+						<DIEPER:RefImageSetID resource="#Imageset001" />
+						<DIEPER:ImageSetPageStart>165</DIEPER:ImageSetPageStart>
+						<DIEPER:ImageSetPageEnd>320</DIEPER:ImageSetPageEnd>
+					</DIEPER:RefImageSetRange>
+					<DIEPER:TitlePage>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;3:165>3.0.CO;2-4</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C3:165%3E3.0.CO;2-4
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>165</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>165</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:TitlePage>
+					<DIEPER:Advertisement>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;4:166>3.0.CO;2-Z</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C4:166%3E3.0.CO;2-Z
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>166</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>166</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Advertisement>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;157:DCDTCF:167>3.0.CO;2-I
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C157:DCDTCF:167%3E3.0.CO;2-I
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Die Concomitanten der tern&#228;ren cubischen
+									Formeninsbesondere der Form .....................</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Dingeldey, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>167</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>186</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;177:UDTDGD:187>3.0.CO;2-O
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C177:UDTDGD:187%3E3.0.CO;2-O
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber die Transformation der Gleichung der ebenen
+									Curve dritter Ordnung mit Doppelpunkt auf die Normalform
+								</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Busche, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>187</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>192</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;183:UDVD:193>3.0.CO;2-F
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C183:UDVD:193%3E3.0.CO;2-F
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber die Verwerthung der ... - Functionen f&#252;r
+									die Curven dritter Ordnung nebst einer Anwendung auf die zu
+									einer Curve dritter Ordnung apolaren Curven</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Schlesinger, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>193</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>229</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;220:UABZIL:230>3.0.CO;2-3
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C220:UABZIL:230%3E3.0.CO;2-3
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber algebraische Beziehungen zwischen Integralen
+									linearer Differentialgleichungen.</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Koenigsberger, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>230</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>236</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;227:UAUIDG:237>3.0.CO;2-R
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C227:UAUIDG:237%3E3.0.CO;2-R
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber ausgezeichnete Untergruppen in der Gruppe der
+									elliptischen Modulfunctionen</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Fricke, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>237</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>244</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;235:SLDDCA:245>3.0.CO;2-E
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C235:SLDDCA:245%3E3.0.CO;2-E
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Sur la d&#233;termination d'une courbe
+									alg&#233;brique par des points donn&#233;s</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Zeuthen, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>245</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>261</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;252:DZDSET:262>3.0.CO;2-Z
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C252:DZDSET:262%3E3.0.CO;2-Z
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Die Zusammensetzung der stetigen endlichen
+									Transformationsgruppen</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Killing, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>262</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>300</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;291:UDAECM:301>3.0.CO;2-#
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C291:UDAECM:301%3E3.0.CO;2-%23
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber die auf einer Curve m ter Ordnung .... vom
+									Geschlecht p von den ........ Geraden G der Ebene
+									ausgeschnittene lineare Schaar .......</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>K&#252;pper, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>301</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>311</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;302:UDEDOA:312>3.0.CO;2-6
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C302:UDEDOA:312%3E3.0.CO;2-6
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber die Erniedrigung der Ordnung algebraischer
+									Differentialgleichungen mit H&#252;lfe bekannter Integrale
+								</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Koenigsberger, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>312</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>318</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Advertisement>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;1:319>3.0.CO;2-Y</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C1:319%3E3.0.CO;2-Y
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>319</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>319</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Advertisement>
+					<DIEPER:TableOfContents>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;2:320>3.1.CO;2-H</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C2:320%3E3.1.CO;2-H
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>320</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>320</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:TableOfContents>
+				</DIEPER:PeriodicalIssue>
+				<DIEPER:PeriodicalIssue>
+					<dc:identifier>
+						<rdf:Description>
+							<rdf:value>0025-5831(1888)31&lt;3:321>3.0.CO;2-E</rdf:value>
+							<dcq:identifierType>
+								<DIEPER:SICI_ID />
+							</dcq:identifierType>
+							<dcq:identifierScheme
+								rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+						</rdf:Description>
+					</dc:identifier>
+					<dc:identifier>
+						<rdf:Description>
+							<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C3:321%3E3.0.CO;2-E
+							</rdf:value>
+							<dcq:identifierType>
+								<DIEPER:DIEPER_ID />
+							</dcq:identifierType>
+						</rdf:Description>
+					</dc:identifier>
+					<DIEPER:RefImageSetRange>
+						<DIEPER:RefImageSetID resource="#Imageset001" />
+						<DIEPER:ImageSetPageStart>321</DIEPER:ImageSetPageStart>
+						<DIEPER:ImageSetPageEnd>470</DIEPER:ImageSetPageEnd>
+					</DIEPER:RefImageSetRange>
+					<DIEPER:TitlePage>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;3:321>3.0.CO;2-E</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C3:321%3E3.0.CO;2-E
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>321</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>321</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:TitlePage>
+					<DIEPER:Advertisement>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;4:322>3.0.CO;2-8</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C4:322%3E3.0.CO;2-8
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>322</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>322</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Advertisement>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;309:UDAIFZ:323>3.0.CO;2-T
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C309:UDAIFZ:323%3E3.0.CO;2-T
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber die Anwendung iterirter Functionen zur
+									Darstellung der Wurzeln algebraischer und transcendenter
+									Gleichungen</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Isenkrahe, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>323</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>331</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;318:DVFDBF:332>3.0.CO;2-T
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C318:DVFDBF:332%3E3.0.CO;2-T
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Das vollst&#228;ndige Formensystem der bin&#228;ren
+									Form 7ter Ordnung</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Gall, Frhr. von</rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>332</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>350</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;337:DMDMME:351>3.0.CO;2-J
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C337:DMDMME:351%3E3.0.CO;2-J
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Der Modul des Maximum Maximorum einer Function
+									............. in Bezug auf .... und die Anwendung seiner
+									Eigenschaften auf die Reihe von Lagrange</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Nekrassoff, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>351</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>372</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;359:UESGAD:373>3.0.CO;2-S
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C359:UESGAD:373%3E3.0.CO;2-S
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber eine specielle geometrische Aufgabe des
+									Minimums</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Neovius, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>373</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>376</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;363:UEHLMZ:377>3.0.CO;2-B
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C363:UEHLMZ:377%3E3.0.CO;2-B
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber Euler's homogenen line&#228;ren Multiplicator
+									zur Integration der regul&#228;ren line&#228;ren
+									Differentialgleichungen zweiter Ordnung</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Heun, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>377</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>387</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;374:UAC:388>3.0.CO;2-I
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C374:UAC:388%3E3.0.CO;2-I
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber algebraische Correspondenzen</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Brill, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>388</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>423</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;410:UDPDHT:424>3.0.CO;2-7
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C410:UDPDHT:424%3E3.0.CO;2-7
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber die Potenzreihen der hyperelliptischen
+									Thetafunctionen</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Wiltheiss, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>424</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>437</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;424:DISZSC:438>3.0.CO;2-Y
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C424:DISZSC:438%3E3.0.CO;2-Y
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Die irreducibeln Syzyganten zweier simultanen
+									cubischen Formen</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Gall, A. von</rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>438</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>454</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;441:UESDF:455>3.0.CO;2-0
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C441:UESDF:455%3E3.0.CO;2-0
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber einen Satz der Formentheorie</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Stroh, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>455</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>457</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;444:UDACDG:458>3.0.CO;2-3
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C444:UDACDG:458%3E3.0.CO;2-3
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber die asyzygetischen Covarianten dritten Grades
+									einer bin&#228;ren Form</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Stroh, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>458</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>468</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Advertisement>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;1:469>3.0.CO;2-Q</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C1:469%3E3.0.CO;2-Q
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>469</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>469</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Advertisement>
+					<DIEPER:TableOfContents>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;2:470>3.1.CO;2-9</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C2:470%3E3.1.CO;2-9
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>470</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>470</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:TableOfContents>
+				</DIEPER:PeriodicalIssue>
+				<DIEPER:PeriodicalIssue>
+					<dc:identifier>
+						<rdf:Description>
+							<rdf:value>0025-5831(1888)31&lt;3:471>3.0.CO;2-6</rdf:value>
+							<dcq:identifierType>
+								<DIEPER:SICI_ID />
+							</dcq:identifierType>
+							<dcq:identifierScheme
+								rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+						</rdf:Description>
+					</dc:identifier>
+					<dc:identifier>
+						<rdf:Description>
+							<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C3:471%3E3.0.CO;2-6
+							</rdf:value>
+							<dcq:identifierType>
+								<DIEPER:DIEPER_ID />
+							</dcq:identifierType>
+						</rdf:Description>
+					</dc:identifier>
+					<DIEPER:RefImageSetRange>
+						<DIEPER:RefImageSetID resource="#Imageset001" />
+						<DIEPER:ImageSetPageStart>471</DIEPER:ImageSetPageStart>
+						<DIEPER:ImageSetPageEnd>626</DIEPER:ImageSetPageEnd>
+					</DIEPER:RefImageSetRange>
+					<DIEPER:TitlePage>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;3:471>3.0.CO;2-6</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C3:471%3E3.0.CO;2-6
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>471</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>471</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:TitlePage>
+					<DIEPER:Advertisement>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;4:472>3.0.CO;2-0</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C4:472%3E3.0.CO;2-0
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>472</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>472</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Advertisement>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;455:ZTDG:473>3.0.CO;2-5
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C455:ZTDG:473%3E3.0.CO;2-5
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Zur Theorie der Gamma-Functionen</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Pringsheim, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>473</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>499</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;482:UBFMVD:500>3.0.CO;2-I
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C482:UBFMVD:500%3E3.0.CO;2-I
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber bin&#228;re Formen mit vorgeschriebener
+									Discriminante</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Hilbert, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>500</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>510</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;493:DSCDBF:511>3.0.CO;2-K
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C493:DSCDBF:511%3E3.0.CO;2-K
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Die Steiner'sche Covariante der bin&#228;ren Form 6.
+									Ordnung</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Maisano, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>511</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>524</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;507:SUUDSB:525>3.0.CO;2-M
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C507:SUUDSB:525%3E3.0.CO;2-M
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Synthetische Untersuchungen &#252;ber die
+									Schmiegungsebenen beliebiger Raumcurven und die
+									Realit&#228;tsverh&#228;ltnisse specieller Kegelschnittsysteme
+								</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Kneser, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>525</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>566</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;549:UEMDDS:567>3.0.CO;2-G
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C549:UEMDDS:567%3E3.0.CO;2-G
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber einige mit der dyadischen Schreibweise der
+									ganzen Zahlen zusammenh&#228;ngende arithmetische S&#228;tze
+								</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Simony, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>567</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>583</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;566:DDDFG:584>3.0.CO;2-W
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C566:DDDFG:584%3E3.0.CO;2-W
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Die Discriminante der Form 7. Grades f =.....
+								</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Gordan, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>584</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>618</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:Article>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;601:UZAVUK:619>3.0.CO;2-7
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C601:UZAVUK:619%3E3.0.CO;2-7
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Ueber zwei Arten von unendlich kleinen und von
+									unendlich grossen Gr&#246;ssen</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<dc:creator xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Stolz, </rdf:value>
+								<dcq:creatorType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:Author xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:creatorType>
+								<dcq:creatorScheme xmlns:dcq="http://purl.org/dc/qualifiers/1.0">FNF
+								</dcq:creatorScheme>
+							</rdf:Description>
+						</dc:creator>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>619</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>622</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Article>
+					<DIEPER:OtherDocStrct>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;605:BPP:623>3.0.CO;2-S
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C605:BPP:623%3E3.0.CO;2-S
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<dc:title xmlns:dc="http://purl.org/dc/elements/1.0">
+							<rdf:Description xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+								<rdf:value>Beneke'sche philosophische Preisaufgabe</rdf:value>
+								<dcq:titleType xmlns:dcq="http://purl.org/dc/qualifiers/1.0">
+									<DIEPER:MainTitle xmlns:DIEPER="http://www.somehere.de" />
+								</dcq:titleType>
+							</rdf:Description>
+						</dc:title>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>623</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>624</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:OtherDocStrct>
+					<DIEPER:Advertisement>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;1:625>3.0.CO;2-#</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C1:625%3E3.0.CO;2-%23
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>625</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>625</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:Advertisement>
+					<DIEPER:TableOfContents>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>0025-5831(1888)31&lt;2:626>3.1.CO;2-R</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:SICI_ID />
+								</dcq:identifierType>
+								<dcq:identifierScheme
+									rdf:resource="http://purl.org/dc/qualifiers/1.0/identifiers/scheme/SICI/" />
+							</rdf:Description>
+						</dc:identifier>
+						<dc:identifier>
+							<rdf:Description>
+								<rdf:value>urn:dieper:unigoe::0025-5831(1888)31%3C2:626%3E3.1.CO;2-R
+								</rdf:value>
+								<dcq:identifierType>
+									<DIEPER:DIEPER_ID />
+								</dcq:identifierType>
+							</rdf:Description>
+						</dc:identifier>
+						<DIEPER:RefImageSetRange>
+							<DIEPER:RefImageSetID resource="#Imageset001" />
+							<DIEPER:ImageSetPageStart>626</DIEPER:ImageSetPageStart>
+							<DIEPER:ImageSetPageEnd>626</DIEPER:ImageSetPageEnd>
+						</DIEPER:RefImageSetRange>
+					</DIEPER:TableOfContents>
+				</DIEPER:PeriodicalIssue>
+			</DIEPER:PeriodicalVolume>
+		</DIEPER:Periodical>
+		<DIEPER:ImageSet ID="Imageset001" xmlns:DIEPER="http://www.somehere.de">
+
+			Book
+			8 MATH I, 760:31
+			|[DOC_TYPE]ZEITSCHRIFTEN-BAND|[HAUPTTITEL]Mathematische
+			Annalen|[BAND]31|[JAHR]1888|[ERSCHEINUNGSORT]Leipzig|[VERZ_STRCT]mathan_23518168_B0031|
+
+			00:00:00
+
+			J:\docs_math\mathan_PPN235181684_0031\mathan_PPN235181684_0031_tif
+			Nieders&#228;chsische Staats- und Universit&#228;tsbibliothek
+			G&#246;ttingen, Germany
+			Nieders&#228;chsische Staats- und Universit&#228;tsbibliothek G&#246;ttingen, Germany
+			<DIEPER:SeqPagin>
+				<rdf:Seq xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+					<rdf:LI>
+						<DIEPER:SeqPaginNo xmlns:DIEPER="http://www.somehere.de">1
+						</DIEPER:SeqPaginNo>
+						<DIEPER:PagePhysStart xmlns:DIEPER="http://www.somehere.de">1
+						</DIEPER:PagePhysStart>
+						<DIEPER:PagePhysEnd xmlns:DIEPER="http://www.somehere.de">4
+						</DIEPER:PagePhysEnd>
+						<DIEPER:PageCountedStart xmlns:DIEPER="http://www.somehere.de">1
+						</DIEPER:PageCountedStart>
+						<DIEPER:PageCountedEnd xmlns:DIEPER="http://www.somehere.de">4
+						</DIEPER:PageCountedEnd>
+						<DIEPER:FormatPageNumber xmlns:DIEPER="http://www.somehere.de">R
+						</DIEPER:FormatPageNumber>
+					</rdf:LI>
+					<rdf:LI>
+						<DIEPER:SeqPaginNo xmlns:DIEPER="http://www.somehere.de">2
+						</DIEPER:SeqPaginNo>
+						<DIEPER:PagePhysStart xmlns:DIEPER="http://www.somehere.de">5
+						</DIEPER:PagePhysStart>
+						<DIEPER:PagePhysEnd xmlns:DIEPER="http://www.somehere.de">6
+						</DIEPER:PagePhysEnd>
+						<DIEPER:PageCountedStart xmlns:DIEPER="http://www.somehere.de">1
+						</DIEPER:PageCountedStart>
+						<DIEPER:PageCountedEnd xmlns:DIEPER="http://www.somehere.de">2
+						</DIEPER:PageCountedEnd>
+						<DIEPER:FormatPageNumber xmlns:DIEPER="http://www.somehere.de">A
+						</DIEPER:FormatPageNumber>
+					</rdf:LI>
+					<rdf:LI>
+						<DIEPER:SeqPaginNo xmlns:DIEPER="http://www.somehere.de">3
+						</DIEPER:SeqPaginNo>
+						<DIEPER:PagePhysStart xmlns:DIEPER="http://www.somehere.de">7
+						</DIEPER:PagePhysStart>
+						<DIEPER:PagePhysEnd xmlns:DIEPER="http://www.somehere.de">162
+						</DIEPER:PagePhysEnd>
+						<DIEPER:PageCountedStart xmlns:DIEPER="http://www.somehere.de">1
+						</DIEPER:PageCountedStart>
+						<DIEPER:PageCountedEnd xmlns:DIEPER="http://www.somehere.de">156
+						</DIEPER:PageCountedEnd>
+						<DIEPER:FormatPageNumber xmlns:DIEPER="http://www.somehere.de">A
+						</DIEPER:FormatPageNumber>
+					</rdf:LI>
+					<rdf:LI>
+						<DIEPER:SeqPaginNo xmlns:DIEPER="http://www.somehere.de">4
+						</DIEPER:SeqPaginNo>
+						<DIEPER:PagePhysStart xmlns:DIEPER="http://www.somehere.de">163
+						</DIEPER:PagePhysStart>
+						<DIEPER:PagePhysEnd xmlns:DIEPER="http://www.somehere.de">166
+						</DIEPER:PagePhysEnd>
+						<DIEPER:PageCountedStart xmlns:DIEPER="http://www.somehere.de">1
+						</DIEPER:PageCountedStart>
+						<DIEPER:PageCountedEnd xmlns:DIEPER="http://www.somehere.de">4
+						</DIEPER:PageCountedEnd>
+						<DIEPER:FormatPageNumber xmlns:DIEPER="http://www.somehere.de">A
+						</DIEPER:FormatPageNumber>
+					</rdf:LI>
+					<rdf:LI>
+						<DIEPER:SeqPaginNo xmlns:DIEPER="http://www.somehere.de">5
+						</DIEPER:SeqPaginNo>
+						<DIEPER:PagePhysStart xmlns:DIEPER="http://www.somehere.de">167
+						</DIEPER:PagePhysStart>
+						<DIEPER:PagePhysEnd xmlns:DIEPER="http://www.somehere.de">318
+						</DIEPER:PagePhysEnd>
+						<DIEPER:PageCountedStart xmlns:DIEPER="http://www.somehere.de">157
+						</DIEPER:PageCountedStart>
+						<DIEPER:PageCountedEnd xmlns:DIEPER="http://www.somehere.de">308
+						</DIEPER:PageCountedEnd>
+						<DIEPER:FormatPageNumber xmlns:DIEPER="http://www.somehere.de">A
+						</DIEPER:FormatPageNumber>
+					</rdf:LI>
+					<rdf:LI>
+						<DIEPER:SeqPaginNo xmlns:DIEPER="http://www.somehere.de">6
+						</DIEPER:SeqPaginNo>
+						<DIEPER:PagePhysStart xmlns:DIEPER="http://www.somehere.de">319
+						</DIEPER:PagePhysStart>
+						<DIEPER:PagePhysEnd xmlns:DIEPER="http://www.somehere.de">322
+						</DIEPER:PagePhysEnd>
+						<DIEPER:PageCountedStart xmlns:DIEPER="http://www.somehere.de">1
+						</DIEPER:PageCountedStart>
+						<DIEPER:PageCountedEnd xmlns:DIEPER="http://www.somehere.de">4
+						</DIEPER:PageCountedEnd>
+						<DIEPER:FormatPageNumber xmlns:DIEPER="http://www.somehere.de">A
+						</DIEPER:FormatPageNumber>
+					</rdf:LI>
+					<rdf:LI>
+						<DIEPER:SeqPaginNo xmlns:DIEPER="http://www.somehere.de">7
+						</DIEPER:SeqPaginNo>
+						<DIEPER:PagePhysStart xmlns:DIEPER="http://www.somehere.de">323
+						</DIEPER:PagePhysStart>
+						<DIEPER:PagePhysEnd xmlns:DIEPER="http://www.somehere.de">468
+						</DIEPER:PagePhysEnd>
+						<DIEPER:PageCountedStart xmlns:DIEPER="http://www.somehere.de">309
+						</DIEPER:PageCountedStart>
+						<DIEPER:PageCountedEnd xmlns:DIEPER="http://www.somehere.de">454
+						</DIEPER:PageCountedEnd>
+						<DIEPER:FormatPageNumber xmlns:DIEPER="http://www.somehere.de">A
+						</DIEPER:FormatPageNumber>
+					</rdf:LI>
+					<rdf:LI>
+						<DIEPER:SeqPaginNo xmlns:DIEPER="http://www.somehere.de">8
+						</DIEPER:SeqPaginNo>
+						<DIEPER:PagePhysStart xmlns:DIEPER="http://www.somehere.de">469
+						</DIEPER:PagePhysStart>
+						<DIEPER:PagePhysEnd xmlns:DIEPER="http://www.somehere.de">472
+						</DIEPER:PagePhysEnd>
+						<DIEPER:PageCountedStart xmlns:DIEPER="http://www.somehere.de">1
+						</DIEPER:PageCountedStart>
+						<DIEPER:PageCountedEnd xmlns:DIEPER="http://www.somehere.de">4
+						</DIEPER:PageCountedEnd>
+						<DIEPER:FormatPageNumber xmlns:DIEPER="http://www.somehere.de">A
+						</DIEPER:FormatPageNumber>
+					</rdf:LI>
+					<rdf:LI>
+						<DIEPER:SeqPaginNo xmlns:DIEPER="http://www.somehere.de">9
+						</DIEPER:SeqPaginNo>
+						<DIEPER:PagePhysStart xmlns:DIEPER="http://www.somehere.de">473
+						</DIEPER:PagePhysStart>
+						<DIEPER:PagePhysEnd xmlns:DIEPER="http://www.somehere.de">624
+						</DIEPER:PagePhysEnd>
+						<DIEPER:PageCountedStart xmlns:DIEPER="http://www.somehere.de">455
+						</DIEPER:PageCountedStart>
+						<DIEPER:PageCountedEnd xmlns:DIEPER="http://www.somehere.de">606
+						</DIEPER:PageCountedEnd>
+						<DIEPER:FormatPageNumber xmlns:DIEPER="http://www.somehere.de">A
+						</DIEPER:FormatPageNumber>
+					</rdf:LI>
+					<rdf:LI>
+						<DIEPER:SeqPaginNo xmlns:DIEPER="http://www.somehere.de">10
+						</DIEPER:SeqPaginNo>
+						<DIEPER:PagePhysStart xmlns:DIEPER="http://www.somehere.de">625
+						</DIEPER:PagePhysStart>
+						<DIEPER:PagePhysEnd xmlns:DIEPER="http://www.somehere.de">626
+						</DIEPER:PagePhysEnd>
+						<DIEPER:PageCountedStart xmlns:DIEPER="http://www.somehere.de">1
+						</DIEPER:PageCountedStart>
+						<DIEPER:PageCountedEnd xmlns:DIEPER="http://www.somehere.de">2
+						</DIEPER:PageCountedEnd>
+						<DIEPER:FormatPageNumber xmlns:DIEPER="http://www.somehere.de">A
+						</DIEPER:FormatPageNumber>
+					</rdf:LI>
+				</rdf:Seq>
+			</DIEPER:SeqPagin>
+		</DIEPER:ImageSet>
+	</rdf:Description>
+</rdf:RDF>

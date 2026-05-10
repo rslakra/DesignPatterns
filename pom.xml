@@ -14,6 +14,7 @@
     <!-- Modules -->
 	<modules>
 		<module>CorePatterns</module>
+		<module>J2EEPatterns</module>
 	</modules>
 
     <!-- properties -->

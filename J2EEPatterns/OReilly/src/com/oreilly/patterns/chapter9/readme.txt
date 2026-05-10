@@ -1,0 +1,1 @@
+The "standalone" package contains the code for Example 9-1, due to conflicting class names.

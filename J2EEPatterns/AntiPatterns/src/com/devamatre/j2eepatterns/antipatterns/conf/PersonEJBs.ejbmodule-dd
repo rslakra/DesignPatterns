@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar>
+  <display-name>PersonEJBs</display-name>
+  <enterprise-beans>
+    <session>
+      <ejb-name>PersonFacade</ejb-name>
+    </session>
+    <entity>
+      <ejb-name>EJBPerson</ejb-name>
+      <reentrant>False</reentrant>
+    </entity>
+    <entity>
+      <ejb-name>LdapPerson</ejb-name>
+      <reentrant>False</reentrant>
+    </entity>
+  </enterprise-beans>
+  <relationships/>
+  <assembly-descriptor>
+    <container-transaction>
+      <description>This value was set as a default by Forte For Java.</description>
+      <method>
+        <ejb-name>PersonFacade</ejb-name>
+        <method-name>*</method-name>
+      </method>
+      <trans-attribute>Required</trans-attribute>
+    </container-transaction>
+    <container-transaction>
+      <description>This value was set as a default by Forte For Java.</description>
+      <method>
+        <ejb-name>LdapPerson</ejb-name>
+        <method-name>*</method-name>
+      </method>
+      <trans-attribute>Required</trans-attribute>
+    </container-transaction>
+    <container-transaction>
+      <description>This value was set as a default by Sun ONE Studio.</description>
+      <method>
+        <ejb-name>AddressBook</ejb-name>
+        <method-name>*</method-name>
+      </method>
+      <trans-attribute>Required</trans-attribute>
+    </container-transaction>
+    <container-transaction>
+      <description>This value was set as a default by Sun ONE Studio.</description>
+      <method>
+        <ejb-name>AddressBookEntry</ejb-name>
+        <method-name>*</method-name>
+      </method>
+      <trans-attribute>Required</trans-attribute>
+    </container-transaction>
+    <container-transaction>
+      <description>This value was set as a default by Sun ONE Studio.</description>
+      <method>
+        <ejb-name>EJBPerson</ejb-name>
+        <method-name>*</method-name>
+      </method>
+      <trans-attribute>Required</trans-attribute>
+    </container-transaction>
+  </assembly-descriptor>
+</ejb-jar>

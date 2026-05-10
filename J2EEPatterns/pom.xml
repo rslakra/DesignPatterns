@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.rslakra</groupId>
+        <artifactId>DesignPatterns</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>J2EEPatterns</artifactId>
+    <packaging>pom</packaging>
+    <name>J2EEPatterns</name>
+    <description>J2EE/Web Sample Modules (legacy javax.* APIs, Java 21)</description>
+
+    <!-- Modules -->
+    <modules>
+        <module>AntiPatterns</module>
+        <module>AsynchPage</module>
+        <module>CachingFilter</module>
+        <module>CompositeView</module>
+        <module>Decorator</module>
+        <module>FrontController</module>
+        <module>MVC</module>
+        <module>OReilly</module>
+        <module>ResourcePool</module>
+        <module>S2W</module>
+        <module>ViewHelper</module>
+    </modules>
+
+    <!-- properties -->
+    <properties>
+        <java.version>21</java.version>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <checkstyle.skip>true</checkstyle.skip>
+        <maven-war-plugin.version>3.4.0</maven-war-plugin.version>
+        <jetty-ee8-maven-plugin.version>12.0.16</jetty-ee8-maven-plugin.version>
+        <glassfish-corba.version>4.2.4</glassfish-corba.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!-- Servlet 4; CachingFilter CacheOutputStream implements Servlet 3.1+ async hooks -->
+            <dependency>
+                <groupId>javax.servlet</groupId>
+                <artifactId>javax.servlet-api</artifactId>
+                <version>4.0.1</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet.jsp</groupId>
+                <artifactId>javax.servlet.jsp-api</artifactId>
+                <version>2.3.3</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax.servlet.jsp.jstl</groupId>
+                <artifactId>javax.servlet.jsp.jstl-api</artifactId>
+                <version>1.2.2</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>javax</groupId>
+                <artifactId>javaee-api</artifactId>
+                <version>8.0.1</version>
+                <scope>provided</scope>
+            </dependency>
+            <dependency>
+                <groupId>soap</groupId>
+                <artifactId>soap</artifactId>
+                <version>2.3.1</version>
+            </dependency>
+            <!-- javax.rmi.PortableRemoteObject (removed from JDK 11+) -->
+            <dependency>
+                <groupId>org.glassfish.corba</groupId>
+                <artifactId>glassfish-corba-orb</artifactId>
+                <version>${glassfish-corba.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-war-plugin</artifactId>
+                    <version>${maven-war-plugin.version}</version>
+                    <configuration>
+                        <failOnMissingWebXml>false</failOnMissingWebXml>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-checkstyle-plugin</artifactId>
+                    <configuration>
+                        <skip>true</skip>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.eclipse.jetty.ee8</groupId>
+                    <artifactId>jetty-ee8-maven-plugin</artifactId>
+                    <version>${jetty-ee8-maven-plugin.version}</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+</project>

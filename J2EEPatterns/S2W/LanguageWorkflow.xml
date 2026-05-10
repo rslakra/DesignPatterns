@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Created by jon on December 8, 2002, 6:29 PM -->
+
+<workflow>
+    <state name="login" action="LoginAction" viewURI="login.jsp" />
+    <state name="language" action="LanguageAction" viewURI="language.jsp" />
+    <state name="display" viewURI="display.jsp" action="RestartAction" />
+</workflow>
+

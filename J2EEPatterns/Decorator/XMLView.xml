@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<XMLView>
+	<USERTABLE>
+		<USER>
+			<NAME>Jon</NAME>
+			<LANGUAGE>English</LANGUAGE>
+		</USER>
+		<USER>
+			<NAME>Will</NAME>
+			<LANGUAGE>English</LANGUAGE>
+		</USER>
+		<USER>
+			<NAME>Pierre</NAME>
+			<LANGUAGE>French</LANGUAGE>
+		</USER>
+	</USERTABLE>
+
+</XMLView>
+

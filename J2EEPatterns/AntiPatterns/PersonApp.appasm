@@ -1,0 +1,688 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This is the primary file for a J2EE application  -->
+<app-asm major-version="0" minor-version="1">
+  <!--
+
+This file contains metadata for a component in Sun One Studio
+You should not edit this file directly unless you are attempting to resolve
+a merge conflict after updating this object from a source code management system.
+
+A DTD file which describes the structure of this XML document can be found
+in the docs/dtd directory of the Sun One Studio installation in a file called
+appasm.dtd
+This file describes the structure of an Application.
+This is a complicated file which includes inline copies of the deployment descriptors
+from the component modules.
+
+-->
+  <name>PersonApp</name>
+  <main-dd>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;application&gt;
+  &lt;display-name&gt;PersonApp&lt;/display-name&gt;
+  &lt;description&gt;J2EE Application PersonApp&lt;/description&gt;
+  &lt;module&gt;
+    &lt;ejb&gt;[PersonEJBs.ejbmodule1]&lt;/ejb&gt;
+  &lt;/module&gt;
+  &lt;module&gt;
+    &lt;web&gt;
+      &lt;web-uri&gt;[/home/jon/proj/book/Chapter12/Antipatterns/webapp2]&lt;/web-uri&gt;
+      &lt;context-root&gt;defaultContext&lt;/context-root&gt;
+    &lt;/web&gt;
+  &lt;/module&gt;
+&lt;/application&gt;
+</main-dd>
+  <app-component>
+    <name>webapp</name>
+    <id>2</id>
+    <component-id>/home/jon/proj/book/Chapter12/Antipatterns/webapp</component-id>
+    <factory-name>com.sun.forte4j.j2ee.lib.appasm.Assemblee$WebAppAssembleeFactory</factory-name>
+    <original-dd>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd"&gt;
+&lt;web-app&gt;
+  &lt;servlet&gt;
+    &lt;servlet-name&gt;MagicServlet&lt;/servlet-name&gt;
+    &lt;servlet-class&gt;antipatterns.MagicServlet&lt;/servlet-class&gt;
+  &lt;/servlet&gt;
+  &lt;servlet&gt;
+    &lt;servlet-name&gt;PersonServlet&lt;/servlet-name&gt;
+    &lt;display-name&gt;PersonServlet&lt;/display-name&gt;
+    &lt;description&gt;Default configuration created for servlet.&lt;/description&gt;
+    &lt;servlet-class&gt;antipatterns.controller.PersonServlet&lt;/servlet-class&gt;
+  &lt;/servlet&gt;
+  &lt;servlet&gt;
+    &lt;servlet-name&gt;LeakyServlet&lt;/servlet-name&gt;
+    &lt;display-name&gt;Leaky Servlet&lt;/display-name&gt;
+    &lt;servlet-class&gt;antipatterns.LeakyServlet&lt;/servlet-class&gt;
+  &lt;/servlet&gt;
+  &lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;MagicServlet&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;/servlet/MagicServlet&lt;/url-pattern&gt;
+  &lt;/servlet-mapping&gt;
+  &lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;PersonServlet&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;/servlet/PersonServlet&lt;/url-pattern&gt;
+  &lt;/servlet-mapping&gt;
+  &lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;LeakyServlet&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;/servlet/LeakyServlet&lt;/url-pattern&gt;
+  &lt;/servlet-mapping&gt;
+  &lt;session-config&gt;
+    &lt;session-timeout&gt;30&lt;/session-timeout&gt;
+  &lt;/session-config&gt;
+  &lt;welcome-file-list&gt;
+    &lt;welcome-file&gt;
+            index.jsp
+        &lt;/welcome-file&gt;
+    &lt;welcome-file&gt;
+            index.html
+        &lt;/welcome-file&gt;
+    &lt;welcome-file&gt;
+            index.htm
+        &lt;/welcome-file&gt;
+  &lt;/welcome-file-list&gt;
+  &lt;taglib&gt;
+    &lt;taglib-uri&gt;/jstl/core&lt;/taglib-uri&gt;
+    &lt;taglib-location&gt;/WEB-INF/c.tld&lt;/taglib-location&gt;
+  &lt;/taglib&gt;
+  &lt;ejb-ref&gt;
+    &lt;ejb-ref-name&gt;ejb/PersonFacade&lt;/ejb-ref-name&gt;
+    &lt;ejb-ref-type&gt;Session&lt;/ejb-ref-type&gt;
+    &lt;home&gt;com.devamatre.patterns.antipatterns.ejbs.PersonFacadeHome&lt;/home&gt;
+    &lt;remote&gt;com.devamatre.patterns.antipatterns.ejbs.PersonFacade&lt;/remote&gt;
+    &lt;ejb-link&gt;PersonFacade&lt;/ejb-link&gt;
+  &lt;/ejb-ref&gt;
+  &lt;ejb-ref&gt;
+    &lt;ejb-ref-name&gt;ejb/AddressBook&lt;/ejb-ref-name&gt;
+    &lt;ejb-ref-type&gt;Session&lt;/ejb-ref-type&gt;
+    &lt;home&gt;com.devamatre.patterns.antipatterns.ejbs.AddressBookHome&lt;/home&gt;
+    &lt;remote&gt;com.devamatre.patterns.antipatterns.ejbs.AddressBook&lt;/remote&gt;
+    &lt;ejb-link&gt;AddressBook&lt;/ejb-link&gt;
+  &lt;/ejb-ref&gt;
+  &lt;ejb-ref&gt;
+    &lt;ejb-ref-name&gt;ejb/EJBPerson&lt;/ejb-ref-name&gt;
+    &lt;ejb-ref-type&gt;Entity&lt;/ejb-ref-type&gt;
+    &lt;home&gt;com.devamatre.patterns.antipatterns.ejbs.EJBPersonHome&lt;/home&gt;
+    &lt;remote&gt;com.devamatre.patterns.antipatterns.ejbs.EJBPerson&lt;/remote&gt;
+    &lt;ejb-link&gt;EJBPerson&lt;/ejb-link&gt;
+  &lt;/ejb-ref&gt;
+&lt;/web-app&gt;
+</original-dd>
+    <current-dd>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd"&gt;
+
+&lt;web-app&gt;
+  &lt;servlet&gt;
+    &lt;servlet-name&gt;MagicServlet&lt;/servlet-name&gt;
+    &lt;servlet-class&gt;antipatterns.MagicServlet&lt;/servlet-class&gt;
+  &lt;/servlet&gt;
+  &lt;servlet&gt;
+    &lt;servlet-name&gt;PersonServlet&lt;/servlet-name&gt;
+    &lt;display-name&gt;PersonServlet&lt;/display-name&gt;
+    &lt;description&gt;Default configuration created for servlet.&lt;/description&gt;
+    &lt;servlet-class&gt;antipatterns.controller.PersonServlet&lt;/servlet-class&gt;
+  &lt;/servlet&gt;
+  &lt;servlet&gt;
+    &lt;servlet-name&gt;LeakyServlet&lt;/servlet-name&gt;
+    &lt;display-name&gt;Leaky Servlet&lt;/display-name&gt;
+    &lt;servlet-class&gt;antipatterns.LeakyServlet&lt;/servlet-class&gt;
+  &lt;/servlet&gt;
+  &lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;MagicServlet&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;/servlet/MagicServlet&lt;/url-pattern&gt;
+  &lt;/servlet-mapping&gt;
+  &lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;PersonServlet&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;/servlet/PersonServlet&lt;/url-pattern&gt;
+  &lt;/servlet-mapping&gt;
+  &lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;LeakyServlet&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;/servlet/LeakyServlet&lt;/url-pattern&gt;
+  &lt;/servlet-mapping&gt;
+  &lt;session-config&gt;
+    &lt;session-timeout&gt;
+            30
+        &lt;/session-timeout&gt;
+  &lt;/session-config&gt;
+  &lt;welcome-file-list&gt;
+    &lt;welcome-file&gt;
+            index.jsp
+        &lt;/welcome-file&gt;
+    &lt;welcome-file&gt;
+            index.html
+        &lt;/welcome-file&gt;
+    &lt;welcome-file&gt;
+            index.htm
+        &lt;/welcome-file&gt;
+  &lt;/welcome-file-list&gt;
+  &lt;taglib&gt;
+    &lt;taglib-uri&gt;/jstl/core&lt;/taglib-uri&gt;
+    &lt;taglib-location&gt;/WEB-INF/c.tld&lt;/taglib-location&gt;
+  &lt;/taglib&gt;
+  &lt;ejb-ref&gt;
+    &lt;ejb-ref-name&gt;ejb/PersonFacade&lt;/ejb-ref-name&gt;
+    &lt;ejb-ref-type&gt;Session&lt;/ejb-ref-type&gt;
+    &lt;home&gt;com.devamatre.patterns.antipatterns.ejbs.PersonFacadeHome&lt;/home&gt;
+    &lt;remote&gt;com.devamatre.patterns.antipatterns.ejbs.PersonFacade&lt;/remote&gt;
+    &lt;ejb-link&gt;PersonFacade&lt;/ejb-link&gt;
+  &lt;/ejb-ref&gt;
+  &lt;ejb-ref&gt;
+    &lt;ejb-ref-name&gt;ejb/AddressBook&lt;/ejb-ref-name&gt;
+    &lt;ejb-ref-type&gt;Session&lt;/ejb-ref-type&gt;
+    &lt;home&gt;com.devamatre.patterns.antipatterns.ejbs.AddressBookHome&lt;/home&gt;
+    &lt;remote&gt;com.devamatre.patterns.antipatterns.ejbs.AddressBook&lt;/remote&gt;
+    &lt;ejb-link&gt;AddressBook&lt;/ejb-link&gt;
+  &lt;/ejb-ref&gt;
+  &lt;ejb-ref&gt;
+    &lt;ejb-ref-name&gt;ejb/EJBPerson&lt;/ejb-ref-name&gt;
+    &lt;ejb-ref-type&gt;Entity&lt;/ejb-ref-type&gt;
+    &lt;home&gt;com.devamatre.patterns.antipatterns.ejbs.EJBPersonHome&lt;/home&gt;
+    &lt;remote&gt;com.devamatre.patterns.antipatterns.ejbs.EJBPerson&lt;/remote&gt;
+    &lt;ejb-link&gt;EJBPerson&lt;/ejb-link&gt;
+  &lt;/ejb-ref&gt;
+&lt;/web-app&gt;
+</current-dd>
+    <module-class>org.netbeans.modules.web.context.WebInfObject</module-class>
+  </app-component>
+  <app-component>
+    <name>PersonEJBs</name>
+    <id>1</id>
+    <component-id>PersonEJBs.ejbmodule</component-id>
+    <factory-name>com.sun.forte4j.j2ee.lib.appasm.Assemblee$EjbAssembleeFactory</factory-name>
+    <original-dd>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN" "http://java.sun.com/dtd/ejb-jar_2_0.dtd"&gt;
+&lt;ejb-jar&gt;
+  &lt;display-name&gt;PersonEJBs&lt;/display-name&gt;
+  &lt;enterprise-beans&gt;
+    &lt;session&gt;
+      &lt;display-name&gt;AddressBook&lt;/display-name&gt;
+      &lt;ejb-name&gt;AddressBook&lt;/ejb-name&gt;
+      &lt;home&gt;com.devamatre.patterns.antipatterns.ejbs.AddressBookHome&lt;/home&gt;
+      &lt;remote&gt;com.devamatre.patterns.antipatterns.ejbs.AddressBook&lt;/remote&gt;
+      &lt;ejb-class&gt;com.devamatre.patterns.antipatterns.ejbs.AddressBookBean&lt;/ejb-class&gt;
+      &lt;session-type&gt;Stateful&lt;/session-type&gt;
+      &lt;transaction-type&gt;Container&lt;/transaction-type&gt;
+      &lt;ejb-local-ref&gt;
+        &lt;ejb-ref-name&gt;ejb/local/AddressBookEntry&lt;/ejb-ref-name&gt;
+        &lt;ejb-ref-type&gt;Entity&lt;/ejb-ref-type&gt;
+        &lt;local-home&gt;com.devamatre.patterns.antipatterns.ejbs.LocalAddressBookEntryHome&lt;/local-home&gt;
+        &lt;local&gt;com.devamatre.patterns.antipatterns.ejbs.LocalAddressBookEntry&lt;/local&gt;
+        &lt;ejb-link&gt;AddressBookEntry&lt;/ejb-link&gt;
+      &lt;/ejb-local-ref&gt;
+    &lt;/session&gt;
+    &lt;session&gt;
+      &lt;display-name&gt;PersonFacade&lt;/display-name&gt;
+      &lt;ejb-name&gt;PersonFacade&lt;/ejb-name&gt;
+      &lt;home&gt;com.devamatre.patterns.antipatterns.ejbs.PersonFacadeHome&lt;/home&gt;
+      &lt;remote&gt;com.devamatre.patterns.antipatterns.ejbs.PersonFacade&lt;/remote&gt;
+      &lt;ejb-class&gt;com.devamatre.patterns.antipatterns.ejbs.PersonFacadeBean&lt;/ejb-class&gt;
+      &lt;session-type&gt;Stateless&lt;/session-type&gt;
+      &lt;transaction-type&gt;Container&lt;/transaction-type&gt;
+      &lt;ejb-local-ref&gt;
+        &lt;description&gt;ejbPerson&lt;/description&gt;
+        &lt;ejb-ref-name&gt;ejb/local/Person&lt;/ejb-ref-name&gt;
+        &lt;ejb-ref-type&gt;Entity&lt;/ejb-ref-type&gt;
+        &lt;local-home&gt;com.devamatre.patterns.antipatterns.ejbs.LocalEJBPersonHome&lt;/local-home&gt;
+        &lt;local&gt;com.devamatre.patterns.antipatterns.ejbs.LocalEJBPerson&lt;/local&gt;
+        &lt;ejb-link&gt;EJBPerson&lt;/ejb-link&gt;
+      &lt;/ejb-local-ref&gt;
+      &lt;ejb-local-ref&gt;
+        &lt;description&gt;LDAP Person Bean&lt;/description&gt;
+        &lt;ejb-ref-name&gt;ejb/local/LdapPerson&lt;/ejb-ref-name&gt;
+        &lt;ejb-ref-type&gt;Entity&lt;/ejb-ref-type&gt;
+        &lt;local-home&gt;com.devamatre.patterns.antipatterns.ejbs.LocalLdapPersonHome&lt;/local-home&gt;
+        &lt;local&gt;com.devamatre.patterns.antipatterns.ejbs.LocalLdapPerson&lt;/local&gt;
+        &lt;ejb-link&gt;LdapPerson&lt;/ejb-link&gt;
+      &lt;/ejb-local-ref&gt;
+    &lt;/session&gt;
+    &lt;entity&gt;
+      &lt;display-name&gt;AddressBookEntry&lt;/display-name&gt;
+      &lt;ejb-name&gt;AddressBookEntry&lt;/ejb-name&gt;
+      &lt;local-home&gt;com.devamatre.patterns.antipatterns.ejbs.LocalAddressBookEntryHome&lt;/local-home&gt;
+      &lt;local&gt;com.devamatre.patterns.antipatterns.ejbs.LocalAddressBookEntry&lt;/local&gt;
+      &lt;ejb-class&gt;com.devamatre.patterns.antipatterns.ejbs.AddressBookEntryBean&lt;/ejb-class&gt;
+      &lt;persistence-type&gt;Container&lt;/persistence-type&gt;
+      &lt;prim-key-class&gt;com.devamatre.patterns.antipatterns.ejbs.AddressBookEntryKey&lt;/prim-key-class&gt;
+      &lt;reentrant&gt;False&lt;/reentrant&gt;
+      &lt;abstract-schema-name&gt;AddressBookEntry&lt;/abstract-schema-name&gt;
+      &lt;cmp-field&gt;
+        &lt;field-name&gt;entryId&lt;/field-name&gt;
+      &lt;/cmp-field&gt;
+      &lt;cmp-field&gt;
+        &lt;field-name&gt;owner&lt;/field-name&gt;
+      &lt;/cmp-field&gt;
+      &lt;cmp-field&gt;
+        &lt;field-name&gt;firstName&lt;/field-name&gt;
+      &lt;/cmp-field&gt;
+      &lt;cmp-field&gt;
+        &lt;field-name&gt;lastName&lt;/field-name&gt;
+      &lt;/cmp-field&gt;
+      &lt;cmp-field&gt;
+        &lt;field-name&gt;phoneNumber&lt;/field-name&gt;
+      &lt;/cmp-field&gt;
+      &lt;query&gt;
+        &lt;query-method&gt;
+          &lt;method-name&gt;findAll&lt;/method-name&gt;
+          &lt;method-params&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+          &lt;/method-params&gt;
+        &lt;/query-method&gt;
+        &lt;ejb-ql&gt;SELECT OBJECT(a) FROM AddressBookEntry a WHERE a.owner = ?1&lt;/ejb-ql&gt;
+      &lt;/query&gt;
+      &lt;query&gt;
+        &lt;query-method&gt;
+          &lt;method-name&gt;findByFirstName&lt;/method-name&gt;
+          &lt;method-params&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+          &lt;/method-params&gt;
+        &lt;/query-method&gt;
+        &lt;ejb-ql&gt;SELECT OBJECT(a) FROM AddressBookEntry a WHERE a.owner = ?1 AND a.firstName = ?2&lt;/ejb-ql&gt;
+      &lt;/query&gt;
+      &lt;query&gt;
+        &lt;query-method&gt;
+          &lt;method-name&gt;findByLastName&lt;/method-name&gt;
+          &lt;method-params&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+          &lt;/method-params&gt;
+        &lt;/query-method&gt;
+        &lt;ejb-ql&gt;SELECT OBJECT(a) FROM AddressBookEntry a WHERE a.owner = ?1 AND a.lastName = ?2&lt;/ejb-ql&gt;
+      &lt;/query&gt;
+      &lt;query&gt;
+        &lt;query-method&gt;
+          &lt;method-name&gt;findByName&lt;/method-name&gt;
+          &lt;method-params&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+          &lt;/method-params&gt;
+        &lt;/query-method&gt;
+        &lt;ejb-ql&gt;SELECT OBJECT(a) FROM AddressBookEntry a WHERE a.owner = ?1 AND a.firstName = ?2 AND a.lastName = ?3&lt;/ejb-ql&gt;
+      &lt;/query&gt;
+    &lt;/entity&gt;
+    &lt;entity&gt;
+      &lt;display-name&gt;EJBPerson&lt;/display-name&gt;
+      &lt;ejb-name&gt;EJBPerson&lt;/ejb-name&gt;
+      &lt;home&gt;com.devamatre.patterns.antipatterns.ejbs.EJBPersonHome&lt;/home&gt;
+      &lt;remote&gt;com.devamatre.patterns.antipatterns.ejbs.EJBPerson&lt;/remote&gt;
+      &lt;local-home&gt;com.devamatre.patterns.antipatterns.ejbs.LocalEJBPersonHome&lt;/local-home&gt;
+      &lt;local&gt;com.devamatre.patterns.antipatterns.ejbs.LocalEJBPerson&lt;/local&gt;
+      &lt;ejb-class&gt;com.devamatre.patterns.antipatterns.ejbs.EJBPersonBean&lt;/ejb-class&gt;
+      &lt;persistence-type&gt;Container&lt;/persistence-type&gt;
+      &lt;prim-key-class&gt;com.devamatre.patterns.antipatterns.ejbs.EJBPersonKey&lt;/prim-key-class&gt;
+      &lt;reentrant&gt;False&lt;/reentrant&gt;
+      &lt;abstract-schema-name&gt;EJBPerson&lt;/abstract-schema-name&gt;
+      &lt;cmp-field&gt;
+        &lt;field-name&gt;personId&lt;/field-name&gt;
+      &lt;/cmp-field&gt;
+      &lt;cmp-field&gt;
+        &lt;field-name&gt;firstName&lt;/field-name&gt;
+      &lt;/cmp-field&gt;
+      &lt;cmp-field&gt;
+        &lt;field-name&gt;lastName&lt;/field-name&gt;
+      &lt;/cmp-field&gt;
+      &lt;cmp-field&gt;
+        &lt;field-name&gt;phoneNumber&lt;/field-name&gt;
+      &lt;/cmp-field&gt;
+      &lt;query&gt;
+        &lt;query-method&gt;
+          &lt;method-name&gt;findByName&lt;/method-name&gt;
+          &lt;method-params&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+          &lt;/method-params&gt;
+        &lt;/query-method&gt;
+        &lt;ejb-ql&gt;SELECT OBJECT(p) FROM EJBPerson p WHERE p.firstName = ?1 AND p.lastName = ?2&lt;/ejb-ql&gt;
+      &lt;/query&gt;
+      &lt;query&gt;
+        &lt;query-method&gt;
+          &lt;method-name&gt;findAll&lt;/method-name&gt;
+          &lt;method-params/&gt;
+        &lt;/query-method&gt;
+        &lt;ejb-ql&gt;SELECT OBJECT(p) FROM EJBPerson p&lt;/ejb-ql&gt;
+      &lt;/query&gt;
+      &lt;query&gt;
+        &lt;query-method&gt;
+          &lt;method-name&gt;findByFirstName&lt;/method-name&gt;
+          &lt;method-params&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+          &lt;/method-params&gt;
+        &lt;/query-method&gt;
+        &lt;ejb-ql&gt;SELECT OBJECT(p) FROM EJBPerson p WHERE p.firstName = ?1&lt;/ejb-ql&gt;
+      &lt;/query&gt;
+      &lt;query&gt;
+        &lt;query-method&gt;
+          &lt;method-name&gt;findByLastName&lt;/method-name&gt;
+          &lt;method-params&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+          &lt;/method-params&gt;
+        &lt;/query-method&gt;
+        &lt;ejb-ql&gt;SELECT OBJECT(p) FROM EJBPerson p WHERE p.lastName = ?1&lt;/ejb-ql&gt;
+      &lt;/query&gt;
+    &lt;/entity&gt;
+    &lt;entity&gt;
+      &lt;display-name&gt;LdapPerson&lt;/display-name&gt;
+      &lt;ejb-name&gt;LdapPerson&lt;/ejb-name&gt;
+      &lt;local-home&gt;com.devamatre.patterns.antipatterns.ejbs.LocalLdapPersonHome&lt;/local-home&gt;
+      &lt;local&gt;com.devamatre.patterns.antipatterns.ejbs.LocalLdapPerson&lt;/local&gt;
+      &lt;ejb-class&gt;com.devamatre.patterns.antipatterns.ejbs.LdapPersonBean&lt;/ejb-class&gt;
+      &lt;persistence-type&gt;Bean&lt;/persistence-type&gt;
+      &lt;prim-key-class&gt;java.lang.String&lt;/prim-key-class&gt;
+      &lt;reentrant&gt;False&lt;/reentrant&gt;
+    &lt;/entity&gt;
+  &lt;/enterprise-beans&gt;
+  &lt;assembly-descriptor&gt;
+    &lt;container-transaction&gt;
+      &lt;description&gt;This value was set as a default by Forte For Java.&lt;/description&gt;
+      &lt;method&gt;
+        &lt;ejb-name&gt;PersonFacade&lt;/ejb-name&gt;
+        &lt;method-name&gt;*&lt;/method-name&gt;
+      &lt;/method&gt;
+      &lt;trans-attribute&gt;Required&lt;/trans-attribute&gt;
+    &lt;/container-transaction&gt;
+    &lt;container-transaction&gt;
+      &lt;description&gt;This value was set as a default by Forte For Java.&lt;/description&gt;
+      &lt;method&gt;
+        &lt;ejb-name&gt;LdapPerson&lt;/ejb-name&gt;
+        &lt;method-name&gt;*&lt;/method-name&gt;
+      &lt;/method&gt;
+      &lt;trans-attribute&gt;Required&lt;/trans-attribute&gt;
+    &lt;/container-transaction&gt;
+    &lt;container-transaction&gt;
+      &lt;description&gt;This value was set as a default by Sun ONE Studio.&lt;/description&gt;
+      &lt;method&gt;
+        &lt;ejb-name&gt;AddressBook&lt;/ejb-name&gt;
+        &lt;method-name&gt;*&lt;/method-name&gt;
+      &lt;/method&gt;
+      &lt;trans-attribute&gt;Required&lt;/trans-attribute&gt;
+    &lt;/container-transaction&gt;
+    &lt;container-transaction&gt;
+      &lt;description&gt;This value was set as a default by Sun ONE Studio.&lt;/description&gt;
+      &lt;method&gt;
+        &lt;ejb-name&gt;AddressBookEntry&lt;/ejb-name&gt;
+        &lt;method-name&gt;*&lt;/method-name&gt;
+      &lt;/method&gt;
+      &lt;trans-attribute&gt;Required&lt;/trans-attribute&gt;
+    &lt;/container-transaction&gt;
+    &lt;container-transaction&gt;
+      &lt;description&gt;This value was set as a default by Sun ONE Studio.&lt;/description&gt;
+      &lt;method&gt;
+        &lt;ejb-name&gt;EJBPerson&lt;/ejb-name&gt;
+        &lt;method-name&gt;*&lt;/method-name&gt;
+      &lt;/method&gt;
+      &lt;trans-attribute&gt;Required&lt;/trans-attribute&gt;
+    &lt;/container-transaction&gt;
+  &lt;/assembly-descriptor&gt;
+&lt;/ejb-jar&gt;
+</original-dd>
+    <current-dd>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN" "http://java.sun.com/dtd/ejb-jar_2_0.dtd"&gt;
+
+&lt;ejb-jar&gt;
+  &lt;display-name&gt;PersonEJBs&lt;/display-name&gt;
+  &lt;enterprise-beans&gt;
+    &lt;session&gt;
+      &lt;display-name&gt;AddressBook&lt;/display-name&gt;
+      &lt;ejb-name&gt;AddressBook&lt;/ejb-name&gt;
+      &lt;home&gt;com.devamatre.patterns.antipatterns.ejbs.AddressBookHome&lt;/home&gt;
+      &lt;remote&gt;com.devamatre.patterns.antipatterns.ejbs.AddressBook&lt;/remote&gt;
+      &lt;ejb-class&gt;com.devamatre.patterns.antipatterns.ejbs.AddressBookBean&lt;/ejb-class&gt;
+      &lt;session-type&gt;Stateful&lt;/session-type&gt;
+      &lt;transaction-type&gt;Container&lt;/transaction-type&gt;
+      &lt;ejb-local-ref&gt;
+        &lt;ejb-ref-name&gt;ejb/local/AddressBookEntry&lt;/ejb-ref-name&gt;
+        &lt;ejb-ref-type&gt;Entity&lt;/ejb-ref-type&gt;
+        &lt;local-home&gt;com.devamatre.patterns.antipatterns.ejbs.LocalAddressBookEntryHome&lt;/local-home&gt;
+        &lt;local&gt;com.devamatre.patterns.antipatterns.ejbs.LocalAddressBookEntry&lt;/local&gt;
+        &lt;ejb-link&gt;AddressBookEntry&lt;/ejb-link&gt;
+      &lt;/ejb-local-ref&gt;
+    &lt;/session&gt;
+    &lt;session&gt;
+      &lt;display-name&gt;PersonFacade&lt;/display-name&gt;
+      &lt;ejb-name&gt;PersonFacade&lt;/ejb-name&gt;
+      &lt;home&gt;com.devamatre.patterns.antipatterns.ejbs.PersonFacadeHome&lt;/home&gt;
+      &lt;remote&gt;com.devamatre.patterns.antipatterns.ejbs.PersonFacade&lt;/remote&gt;
+      &lt;ejb-class&gt;com.devamatre.patterns.antipatterns.ejbs.PersonFacadeBean&lt;/ejb-class&gt;
+      &lt;session-type&gt;Stateless&lt;/session-type&gt;
+      &lt;transaction-type&gt;Container&lt;/transaction-type&gt;
+      &lt;ejb-local-ref&gt;
+        &lt;description&gt;ejbPerson&lt;/description&gt;
+        &lt;ejb-ref-name&gt;ejb/local/Person&lt;/ejb-ref-name&gt;
+        &lt;ejb-ref-type&gt;Entity&lt;/ejb-ref-type&gt;
+        &lt;local-home&gt;com.devamatre.patterns.antipatterns.ejbs.LocalEJBPersonHome&lt;/local-home&gt;
+        &lt;local&gt;com.devamatre.patterns.antipatterns.ejbs.LocalEJBPerson&lt;/local&gt;
+        &lt;ejb-link&gt;EJBPerson&lt;/ejb-link&gt;
+      &lt;/ejb-local-ref&gt;
+      &lt;ejb-local-ref&gt;
+        &lt;description&gt;LDAP Person Bean&lt;/description&gt;
+        &lt;ejb-ref-name&gt;ejb/local/LdapPerson&lt;/ejb-ref-name&gt;
+        &lt;ejb-ref-type&gt;Entity&lt;/ejb-ref-type&gt;
+        &lt;local-home&gt;com.devamatre.patterns.antipatterns.ejbs.LocalLdapPersonHome&lt;/local-home&gt;
+        &lt;local&gt;com.devamatre.patterns.antipatterns.ejbs.LocalLdapPerson&lt;/local&gt;
+        &lt;ejb-link&gt;LdapPerson&lt;/ejb-link&gt;
+      &lt;/ejb-local-ref&gt;
+    &lt;/session&gt;
+    &lt;entity&gt;
+      &lt;display-name&gt;AddressBookEntry&lt;/display-name&gt;
+      &lt;ejb-name&gt;AddressBookEntry&lt;/ejb-name&gt;
+      &lt;local-home&gt;com.devamatre.patterns.antipatterns.ejbs.LocalAddressBookEntryHome&lt;/local-home&gt;
+      &lt;local&gt;com.devamatre.patterns.antipatterns.ejbs.LocalAddressBookEntry&lt;/local&gt;
+      &lt;ejb-class&gt;com.devamatre.patterns.antipatterns.ejbs.AddressBookEntryBean&lt;/ejb-class&gt;
+      &lt;persistence-type&gt;Container&lt;/persistence-type&gt;
+      &lt;prim-key-class&gt;com.devamatre.patterns.antipatterns.ejbs.AddressBookEntryKey&lt;/prim-key-class&gt;
+      &lt;reentrant&gt;False&lt;/reentrant&gt;
+      &lt;abstract-schema-name&gt;AddressBookEntry&lt;/abstract-schema-name&gt;
+      &lt;cmp-field&gt;
+        &lt;field-name&gt;entryId&lt;/field-name&gt;
+      &lt;/cmp-field&gt;
+      &lt;cmp-field&gt;
+        &lt;field-name&gt;owner&lt;/field-name&gt;
+      &lt;/cmp-field&gt;
+      &lt;cmp-field&gt;
+        &lt;field-name&gt;firstName&lt;/field-name&gt;
+      &lt;/cmp-field&gt;
+      &lt;cmp-field&gt;
+        &lt;field-name&gt;lastName&lt;/field-name&gt;
+      &lt;/cmp-field&gt;
+      &lt;cmp-field&gt;
+        &lt;field-name&gt;phoneNumber&lt;/field-name&gt;
+      &lt;/cmp-field&gt;
+      &lt;query&gt;
+        &lt;query-method&gt;
+          &lt;method-name&gt;findAll&lt;/method-name&gt;
+          &lt;method-params&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+          &lt;/method-params&gt;
+        &lt;/query-method&gt;
+        &lt;ejb-ql&gt;SELECT OBJECT(a) FROM AddressBookEntry a WHERE a.owner = ?1&lt;/ejb-ql&gt;
+      &lt;/query&gt;
+      &lt;query&gt;
+        &lt;query-method&gt;
+          &lt;method-name&gt;findByFirstName&lt;/method-name&gt;
+          &lt;method-params&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+          &lt;/method-params&gt;
+        &lt;/query-method&gt;
+        &lt;ejb-ql&gt;SELECT OBJECT(a) FROM AddressBookEntry a WHERE a.owner = ?1 AND a.firstName = ?2&lt;/ejb-ql&gt;
+      &lt;/query&gt;
+      &lt;query&gt;
+        &lt;query-method&gt;
+          &lt;method-name&gt;findByLastName&lt;/method-name&gt;
+          &lt;method-params&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+          &lt;/method-params&gt;
+        &lt;/query-method&gt;
+        &lt;ejb-ql&gt;SELECT OBJECT(a) FROM AddressBookEntry a WHERE a.owner = ?1 AND a.lastName = ?2&lt;/ejb-ql&gt;
+      &lt;/query&gt;
+      &lt;query&gt;
+        &lt;query-method&gt;
+          &lt;method-name&gt;findByName&lt;/method-name&gt;
+          &lt;method-params&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+          &lt;/method-params&gt;
+        &lt;/query-method&gt;
+        &lt;ejb-ql&gt;SELECT OBJECT(a) FROM AddressBookEntry a WHERE a.owner = ?1 AND a.firstName = ?2 AND a.lastName = ?3&lt;/ejb-ql&gt;
+      &lt;/query&gt;
+    &lt;/entity&gt;
+    &lt;entity&gt;
+      &lt;display-name&gt;EJBPerson&lt;/display-name&gt;
+      &lt;ejb-name&gt;EJBPerson&lt;/ejb-name&gt;
+      &lt;home&gt;com.devamatre.patterns.antipatterns.ejbs.EJBPersonHome&lt;/home&gt;
+      &lt;remote&gt;com.devamatre.patterns.antipatterns.ejbs.EJBPerson&lt;/remote&gt;
+      &lt;local-home&gt;com.devamatre.patterns.antipatterns.ejbs.LocalEJBPersonHome&lt;/local-home&gt;
+      &lt;local&gt;com.devamatre.patterns.antipatterns.ejbs.LocalEJBPerson&lt;/local&gt;
+      &lt;ejb-class&gt;com.devamatre.patterns.antipatterns.ejbs.EJBPersonBean&lt;/ejb-class&gt;
+      &lt;persistence-type&gt;Container&lt;/persistence-type&gt;
+      &lt;prim-key-class&gt;com.devamatre.patterns.antipatterns.ejbs.EJBPersonKey&lt;/prim-key-class&gt;
+      &lt;reentrant&gt;False&lt;/reentrant&gt;
+      &lt;abstract-schema-name&gt;EJBPerson&lt;/abstract-schema-name&gt;
+      &lt;cmp-field&gt;
+        &lt;field-name&gt;personId&lt;/field-name&gt;
+      &lt;/cmp-field&gt;
+      &lt;cmp-field&gt;
+        &lt;field-name&gt;firstName&lt;/field-name&gt;
+      &lt;/cmp-field&gt;
+      &lt;cmp-field&gt;
+        &lt;field-name&gt;lastName&lt;/field-name&gt;
+      &lt;/cmp-field&gt;
+      &lt;cmp-field&gt;
+        &lt;field-name&gt;phoneNumber&lt;/field-name&gt;
+      &lt;/cmp-field&gt;
+      &lt;query&gt;
+        &lt;query-method&gt;
+          &lt;method-name&gt;findByName&lt;/method-name&gt;
+          &lt;method-params&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+          &lt;/method-params&gt;
+        &lt;/query-method&gt;
+        &lt;ejb-ql&gt;SELECT OBJECT(p) FROM EJBPerson p WHERE p.firstName = ?1 AND p.lastName = ?2&lt;/ejb-ql&gt;
+      &lt;/query&gt;
+      &lt;query&gt;
+        &lt;query-method&gt;
+          &lt;method-name&gt;findAll&lt;/method-name&gt;
+          &lt;method-params/&gt;
+        &lt;/query-method&gt;
+        &lt;ejb-ql&gt;SELECT OBJECT(p) FROM EJBPerson p&lt;/ejb-ql&gt;
+      &lt;/query&gt;
+      &lt;query&gt;
+        &lt;query-method&gt;
+          &lt;method-name&gt;findByFirstName&lt;/method-name&gt;
+          &lt;method-params&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+          &lt;/method-params&gt;
+        &lt;/query-method&gt;
+        &lt;ejb-ql&gt;SELECT OBJECT(p) FROM EJBPerson p WHERE p.firstName = ?1&lt;/ejb-ql&gt;
+      &lt;/query&gt;
+      &lt;query&gt;
+        &lt;query-method&gt;
+          &lt;method-name&gt;findByLastName&lt;/method-name&gt;
+          &lt;method-params&gt;
+            &lt;method-param&gt;java.lang.String&lt;/method-param&gt;
+          &lt;/method-params&gt;
+        &lt;/query-method&gt;
+        &lt;ejb-ql&gt;SELECT OBJECT(p) FROM EJBPerson p WHERE p.lastName = ?1&lt;/ejb-ql&gt;
+      &lt;/query&gt;
+    &lt;/entity&gt;
+    &lt;entity&gt;
+      &lt;display-name&gt;LdapPerson&lt;/display-name&gt;
+      &lt;ejb-name&gt;LdapPerson&lt;/ejb-name&gt;
+      &lt;local-home&gt;com.devamatre.patterns.antipatterns.ejbs.LocalLdapPersonHome&lt;/local-home&gt;
+      &lt;local&gt;com.devamatre.patterns.antipatterns.ejbs.LocalLdapPerson&lt;/local&gt;
+      &lt;ejb-class&gt;com.devamatre.patterns.antipatterns.ejbs.LdapPersonBean&lt;/ejb-class&gt;
+      &lt;persistence-type&gt;Bean&lt;/persistence-type&gt;
+      &lt;prim-key-class&gt;java.lang.String&lt;/prim-key-class&gt;
+      &lt;reentrant&gt;False&lt;/reentrant&gt;
+    &lt;/entity&gt;
+  &lt;/enterprise-beans&gt;
+  &lt;assembly-descriptor&gt;
+    &lt;container-transaction&gt;
+      &lt;description&gt;This value was set as a default by Forte For Java.&lt;/description&gt;
+      &lt;method&gt;
+        &lt;ejb-name&gt;PersonFacade&lt;/ejb-name&gt;
+        &lt;method-name&gt;*&lt;/method-name&gt;
+      &lt;/method&gt;
+      &lt;trans-attribute&gt;Required&lt;/trans-attribute&gt;
+    &lt;/container-transaction&gt;
+    &lt;container-transaction&gt;
+      &lt;description&gt;This value was set as a default by Forte For Java.&lt;/description&gt;
+      &lt;method&gt;
+        &lt;ejb-name&gt;LdapPerson&lt;/ejb-name&gt;
+        &lt;method-name&gt;*&lt;/method-name&gt;
+      &lt;/method&gt;
+      &lt;trans-attribute&gt;Required&lt;/trans-attribute&gt;
+    &lt;/container-transaction&gt;
+    &lt;container-transaction&gt;
+      &lt;description&gt;This value was set as a default by Sun ONE Studio.&lt;/description&gt;
+      &lt;method&gt;
+        &lt;ejb-name&gt;AddressBook&lt;/ejb-name&gt;
+        &lt;method-name&gt;*&lt;/method-name&gt;
+      &lt;/method&gt;
+      &lt;trans-attribute&gt;Required&lt;/trans-attribute&gt;
+    &lt;/container-transaction&gt;
+    &lt;container-transaction&gt;
+      &lt;description&gt;This value was set as a default by Sun ONE Studio.&lt;/description&gt;
+      &lt;method&gt;
+        &lt;ejb-name&gt;AddressBookEntry&lt;/ejb-name&gt;
+        &lt;method-name&gt;*&lt;/method-name&gt;
+      &lt;/method&gt;
+      &lt;trans-attribute&gt;Required&lt;/trans-attribute&gt;
+    &lt;/container-transaction&gt;
+    &lt;container-transaction&gt;
+      &lt;description&gt;This value was set as a default by Sun ONE Studio.&lt;/description&gt;
+      &lt;method&gt;
+        &lt;ejb-name&gt;EJBPerson&lt;/ejb-name&gt;
+        &lt;method-name&gt;*&lt;/method-name&gt;
+      &lt;/method&gt;
+      &lt;trans-attribute&gt;Required&lt;/trans-attribute&gt;
+    &lt;/container-transaction&gt;
+  &lt;/assembly-descriptor&gt;
+&lt;/ejb-jar&gt;
+</current-dd>
+    <module-class>com.sun.forte4j.j2ee.ejbmodule.EJBModuleDataObject</module-class>
+  </app-component>
+  <values>
+    <module>
+      <module-name>common</module-name>
+      <group>
+        <group-name>main</group-name>
+        <key-value>
+          <key-name>ServerId</key-name>
+        </key-value>
+        <key-value>
+          <key-name>InstanceId</key-name>
+        </key-value>
+      </group>
+    </module>
+    <module>
+      <module-name>PersonEJBs.ejbmodule1</module-name>
+      <group>
+        <group-name>EJBRename</group-name>
+        <key-value>
+          <key-name>AddressBook</key-name>
+          <value>AddressBook</value>
+        </key-value>
+        <key-value>
+          <key-name>PersonFacade</key-name>
+          <value>PersonFacade</value>
+        </key-value>
+        <key-value>
+          <key-name>AddressBookEntry</key-name>
+          <value>AddressBookEntry</value>
+        </key-value>
+        <key-value>
+          <key-name>EJBPerson</key-name>
+          <value>EJBPerson</value>
+        </key-value>
+        <key-value>
+          <key-name>LdapPerson</key-name>
+          <value>LdapPerson</value>
+        </key-value>
+      </group>
+    </module>
+  </values>
+</app-asm>

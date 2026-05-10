@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sun-ejb-jar>
+  <enterprise-beans>
+    <ejb>
+      <ejb-name>PersonFacade</ejb-name>
+      <jndi-name>ejb/PersonFacade</jndi-name>
+      <pass-by-reference>false</pass-by-reference>
+    </ejb>
+  </enterprise-beans>
+</sun-ejb-jar>

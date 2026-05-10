@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- No external DTD: fetching http://... DTDs can hang or fail offline. -->
+<rss version="0.91">
+	<channel>
+		<title>Patterns News</title>
+		<link>http://www.patternsnews.com</link>
+
+		<item>
+			<title>Local pattern-creators honored</title>
+			<link>http://www.patternsnews.com/stories?id=0001</link>
+		</item>
+		<item>
+			<title>Patterns solve business problem</title>
+			<link>http://www.patternsnews.com/stories?id=0002</link>
+
+		</item>
+		<item>
+			<title>New patterns discovered!</title>
+			<link>http://www.patternsnews.com/stories?id=0003</link>
+		</item>
+
+	</channel>
+</rss>
+
