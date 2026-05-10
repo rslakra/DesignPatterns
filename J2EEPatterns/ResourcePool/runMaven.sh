@@ -15,7 +15,7 @@ echo "JAVA_HOME=${JAVA_HOME}"
 echo
 RELEASE_VERSION=$(buildVersion)
 echo "revision=${RELEASE_VERSION}"
-echo "Running com.devamatre.j2eepatterns.resourcepool.PoolTest"
+echo "Running com.rslakra.j2eepatterns.resourcepool.PoolTest"
 echo "(optional JVM app args after -- , e.g. mvn ... -Dexec.args=\"5 3\")"
 echo
 

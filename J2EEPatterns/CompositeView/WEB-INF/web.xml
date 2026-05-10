@@ -7,7 +7,7 @@
 <web-app>
 	<servlet>
 		<servlet-name>FrontController</servlet-name>
-		<servlet-class>com.devamatre.j2eepatterns.compositeview.controller.FrontController</servlet-class>
+		<servlet-class>com.rslakra.j2eepatterns.compositeview.controller.FrontController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>FrontController</servlet-name>

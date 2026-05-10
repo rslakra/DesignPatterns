@@ -18,13 +18,13 @@
 		</tldx> -->
 	<tag>
 		<name>RSSChannel</name>
-		<tag-class>com.devamatre.j2eepatterns.asyncpage.view.RSSChannelTag</tag-class>
+		<tag-class>com.rslakra.j2eepatterns.asyncpage.view.RSSChannelTag</tag-class>
 		<body-content>JSP</body-content>
 		<small-icon></small-icon>
 		<large-icon></large-icon>
 		<description></description>
 		<!-- Forte4J_TLDX: This comment contains code generation information. Do 
-			not delete. <tldx> <packagename>com.devamatre.j2eepatterns.asyncpage.view</packagename> 
+			not delete. <tldx> <packagename>com.rslakra.j2eepatterns.asyncpage.view</packagename> 
 			<extendsSupportClass>TRUE</extendsSupportClass> <supportClass>BodyTagSupport</supportClass> 
 			<implementsTryCatchFinally>FALSE</implementsTryCatchFinally> <findparent>FALSE</findparent> 
 			<parenttype></parenttype> <parentvariable></parentvariable> </tldx> -->
@@ -64,13 +64,13 @@
 	</tag>
 	<tag>
 		<name>RSSItems</name>
-		<tag-class>com.devamatre.j2eepatterns.asyncpage.view.RSSItemsTag</tag-class>
+		<tag-class>com.rslakra.j2eepatterns.asyncpage.view.RSSItemsTag</tag-class>
 		<body-content>JSP</body-content>
 		<small-icon></small-icon>
 		<large-icon></large-icon>
 		<description></description>
 		<!-- Forte4J_TLDX: This comment contains code generation information. Do 
-			not delete. <tldx> <packagename>com.devamatre.j2eepatterns.asyncpage.view</packagename> 
+			not delete. <tldx> <packagename>com.rslakra.j2eepatterns.asyncpage.view</packagename> 
 			<extendsSupportClass>TRUE</extendsSupportClass> <supportClass>BodyTagSupport</supportClass> 
 			<implementsTryCatchFinally>FALSE</implementsTryCatchFinally> <findparent>TRUE</findparent> 
 			<parenttype>RSSChannelTag</parenttype> <parentvariable>channel</parentvariable> 

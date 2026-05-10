@@ -1,5 +1,5 @@
 <%@page contentType="text/html"%>
-<jsp:useBean id="userbean" scope="session" class="com.devamatre.patterns.s2w.model.UserBeanImpl" />
+<jsp:useBean id="userbean" scope="session" class="com.rslakra.patterns.s2w.model.UserBeanImpl" />
 <html>
 <head><title>Welcome</title></head>
 <body>

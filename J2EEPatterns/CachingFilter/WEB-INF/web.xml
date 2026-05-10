@@ -7,7 +7,7 @@
 <web-app>
 	<filter>
 		<filter-name>CacheFilter</filter-name>
-		<filter-class>com.devamatre.j2eepatterns.cachingfilter.controller.CacheFilter</filter-class>
+		<filter-class>com.rslakra.j2eepatterns.cachingfilter.controller.CacheFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>CacheFilter</filter-name>

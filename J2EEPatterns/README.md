@@ -1,6 +1,6 @@
 # J2EEPatterns
 
-Legacy **J2EE / servlet / JSP** examples (original `com.devamatre…`, O’Reilly book samples under `com.oreilly…`, etc.). This tree is built with **Maven** only; the old Ant `build.xml` at this level has been removed.
+Legacy **J2EE / servlet / JSP** examples (original `com.rslakra…`, O’Reilly book samples under `com.oreilly…`, etc.). This tree is built with **Maven** only; the old Ant `build.xml` at this level has been removed.
 
 ## Requirements
 
@@ -75,7 +75,7 @@ The Chapter 12 examples were provided in **NetBeans** form for easier deployment
 
 - `AntiPatterns` (module root)
 - `AntiPatterns/webapp`
-- EJB packages: `AntiPatterns/src/com/devamatre/j2eepatterns/antipatterns/ejbs` (as an EJB / source root in the IDE if required)
+- EJB packages: `AntiPatterns/src/com/rslakra/j2eepatterns/antipatterns/ejbs` (as an EJB / source root in the IDE if required)
 
 You can then deploy the application referred to as **PersonApp** (e.g. `PersonApp` / `PersonApp.appasm` assets under `AntiPatterns/`).
 

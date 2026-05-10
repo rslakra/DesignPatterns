@@ -7,7 +7,7 @@
 		return u.replace("&", "&amp;").replace("'", "&#39;");
 	}
 %>
-<jsp:useBean id="userbean" scope="session" class="com.devamatre.patterns.s2w.model.UserBeanImpl" />
+<jsp:useBean id="userbean" scope="session" class="com.rslakra.patterns.s2w.model.UserBeanImpl" />
 <!DOCTYPE html>
 <html>
 <head>

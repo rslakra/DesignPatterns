@@ -8,7 +8,7 @@
 	}
 %>
 <jsp:useBean id="userbean" scope="session"
-	class="com.devamatre.j2eepatterns.decorator.model.UserBeanImpl" />
+	class="com.rslakra.j2eepatterns.decorator.model.UserBeanImpl" />
 <!DOCTYPE html>
 <html>
 <head>

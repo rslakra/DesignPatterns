@@ -7,11 +7,11 @@
 <web-app>
 	<servlet>
 		<servlet-name>FrontController</servlet-name>
-		<servlet-class>com.devamatre.j2eepatterns.frontcontroller.controller.FrontController</servlet-class>
+		<servlet-class>com.rslakra.j2eepatterns.frontcontroller.controller.FrontController</servlet-class>
 	</servlet>
 	<servlet>
 		<servlet-name>ListController</servlet-name>
-		<servlet-class>com.devamatre.j2eepatterns.frontcontroller.controller.ListController</servlet-class>
+		<servlet-class>com.rslakra.j2eepatterns.frontcontroller.controller.ListController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>FrontController</servlet-name>

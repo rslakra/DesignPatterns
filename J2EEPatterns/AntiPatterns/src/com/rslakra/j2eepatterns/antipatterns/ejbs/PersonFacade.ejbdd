@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar>
+  <enterprise-beans>
+    <session>
+      <!--
+
+This file contains metadata for a component in Sun One Studio
+You should not edit this file directly unless you are attempting to resolve
+a merge conflict after updating this object from a source code management system.
+
+A DTD file which describes the structure of this XML document can be found
+in the docs/dtd directory of the Sun One Studio installation in a file called
+ejb-jar_2_0.dtd
+This file describes the structure of a single EJB.
+It is merged with other deployment descriptors by an EJB Module.
+
+-->
+      <display-name>PersonFacade</display-name>
+      <ejb-name>PersonFacade</ejb-name>
+      <home>com.rslakra.patterns.antipatterns.ejbs.PersonFacadeHome</home>
+      <remote>com.rslakra.patterns.antipatterns.ejbs.PersonFacade</remote>
+      <ejb-class>com.rslakra.patterns.antipatterns.ejbs.PersonFacadeBean</ejb-class>
+      <session-type>Stateless</session-type>
+      <transaction-type>Container</transaction-type>
+      <ejb-local-ref>
+        <description>ejbPerson</description>
+        <ejb-ref-name>ejb/local/Person</ejb-ref-name>
+        <ejb-ref-type>Entity</ejb-ref-type>
+        <local-home>com.rslakra.patterns.antipatterns.ejbs.LocalEJBPersonHome</local-home>
+        <local>com.rslakra.patterns.antipatterns.ejbs.LocalEJBPerson</local>
+        <ejb-link>EJBPerson</ejb-link>
+      </ejb-local-ref>
+      <ejb-local-ref>
+        <description>LDAP Person Bean</description>
+        <ejb-ref-name>ejb/local/LdapPerson</ejb-ref-name>
+        <ejb-ref-type>Entity</ejb-ref-type>
+        <local-home>com.rslakra.patterns.antipatterns.ejbs.LocalLdapPersonHome</local-home>
+        <local>com.rslakra.patterns.antipatterns.ejbs.LocalLdapPerson</local>
+        <ejb-link>LdapPerson</ejb-link>
+      </ejb-local-ref>
+    </session>
+  </enterprise-beans>
+</ejb-jar>

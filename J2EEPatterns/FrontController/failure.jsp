@@ -1,6 +1,6 @@
 <%@page contentType="text/html"%>
 <jsp:useBean id="mailingbean" scope="request"
-	type="com.devamatre.j2eepatterns.frontcontroller.model.MailingBean" />
+	type="com.rslakra.j2eepatterns.frontcontroller.model.MailingBean" />
 <html>
 <head>
 <title>Subscription Results</title>

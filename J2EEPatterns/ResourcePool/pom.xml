@@ -19,7 +19,7 @@
                 <artifactId>exec-maven-plugin</artifactId>
                 <version>3.3.0</version>
                 <configuration>
-                    <mainClass>com.devamatre.j2eepatterns.resourcepool.PoolTest</mainClass>
+                    <mainClass>com.rslakra.j2eepatterns.resourcepool.PoolTest</mainClass>
                 </configuration>
             </plugin>
         </plugins>

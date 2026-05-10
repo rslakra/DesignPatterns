@@ -7,11 +7,11 @@
 <web-app>
 	<filter>
 		<filter-name>RequestInfoFilter</filter-name>
-		<filter-class>com.devamatre.j2eepatterns.decorator.controller.RequestInfoFilter</filter-class>
+		<filter-class>com.rslakra.j2eepatterns.decorator.controller.RequestInfoFilter</filter-class>
 	</filter>
 	<filter>
 		<filter-name>XmlStylesheetDecoratingFilter</filter-name>
-		<filter-class>com.devamatre.j2eepatterns.decorator.controller.XmlStylesheetDecoratingFilter</filter-class>
+		<filter-class>com.rslakra.j2eepatterns.decorator.controller.XmlStylesheetDecoratingFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>RequestInfoFilter</filter-name>
@@ -24,7 +24,7 @@
 	</filter-mapping>
 	<servlet>
 		<servlet-name>FrontController</servlet-name>
-		<servlet-class>com.devamatre.j2eepatterns.decorator.controller.FrontController</servlet-class>
+		<servlet-class>com.rslakra.j2eepatterns.decorator.controller.FrontController</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>FrontController</servlet-name>

@@ -7,18 +7,18 @@
 <web-app>
   <servlet>
     <servlet-name>MagicServlet</servlet-name>
-    <servlet-class>com.devamatre.j2eepatterns.antipatterns.MagicServlet</servlet-class>
+    <servlet-class>com.rslakra.j2eepatterns.antipatterns.MagicServlet</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>PersonServlet</servlet-name>
     <display-name>PersonServlet</display-name>
     <description>Default configuration created for servlet.</description>
-    <servlet-class>com.devamatre.j2eepatterns.antipatterns.controller.PersonServlet</servlet-class>
+    <servlet-class>com.rslakra.j2eepatterns.antipatterns.controller.PersonServlet</servlet-class>
   </servlet>
   <servlet>
     <servlet-name>LeakyServlet</servlet-name>
     <display-name>Leaky Servlet</display-name>
-    <servlet-class>com.devamatre.j2eepatterns.antipatterns.LeakyServlet</servlet-class>
+    <servlet-class>com.rslakra.j2eepatterns.antipatterns.LeakyServlet</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>MagicServlet</servlet-name>
@@ -50,22 +50,22 @@
   <ejb-ref>
     <ejb-ref-name>ejb/PersonFacade</ejb-ref-name>
     <ejb-ref-type>Session</ejb-ref-type>
-    <home>com.devamatre.j2eepatterns.antipatterns.ejbs.PersonFacadeHome</home>
-    <remote>com.devamatre.j2eepatterns.antipatterns.ejbs.PersonFacade</remote>
+    <home>com.rslakra.j2eepatterns.antipatterns.ejbs.PersonFacadeHome</home>
+    <remote>com.rslakra.j2eepatterns.antipatterns.ejbs.PersonFacade</remote>
     <ejb-link>PersonFacade</ejb-link>
   </ejb-ref>
   <ejb-ref>
     <ejb-ref-name>ejb/AddressBook</ejb-ref-name>
     <ejb-ref-type>Session</ejb-ref-type>
-    <home>com.devamatre.j2eepatterns.antipatterns.ejbs.AddressBookHome</home>
-    <remote>com.devamatre.j2eepatterns.antipatterns.ejbs.AddressBook</remote>
+    <home>com.rslakra.j2eepatterns.antipatterns.ejbs.AddressBookHome</home>
+    <remote>com.rslakra.j2eepatterns.antipatterns.ejbs.AddressBook</remote>
     <ejb-link>AddressBook</ejb-link>
   </ejb-ref>
   <ejb-ref>
     <ejb-ref-name>ejb/EJBPerson</ejb-ref-name>
     <ejb-ref-type>Entity</ejb-ref-type>
-    <home>com.devamatre.j2eepatterns.antipatterns.ejbs.EJBPersonHome</home>
-    <remote>com.devamatre.j2eepatterns.antipatterns.ejbs.EJBPerson</remote>
+    <home>com.rslakra.j2eepatterns.antipatterns.ejbs.EJBPersonHome</home>
+    <remote>com.rslakra.j2eepatterns.antipatterns.ejbs.EJBPerson</remote>
     <ejb-link>EJBPerson</ejb-link>
   </ejb-ref>
 </web-app>

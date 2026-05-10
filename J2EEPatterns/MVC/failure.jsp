@@ -2,7 +2,7 @@
 
 <%-- import the model bean by name and class --%>
 <jsp:useBean id="mailingbean" scope="request"
-	type="com.devamatre.j2eepatterns.mvc.model.MailingBean" />
+	type="com.rslakra.j2eepatterns.mvc.model.MailingBean" />
 
 <html>
 <head>
