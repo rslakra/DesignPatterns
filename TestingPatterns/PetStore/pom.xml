@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.rslakra</groupId>
+        <artifactId>TestingPatterns</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <artifactId>testing-petstore</artifactId>
+    <packaging>jar</packaging>
+    <name>TestingPatterns - PetStore (buildable subset, Java 21)</name>
+    <description>
+        Buildable subset of the original Sun Java BluePrints PetStore application,
+        modernized to Java 21 + javax.* J2EE APIs.
+
+        - src/main/java       : 43 self-contained sources (Swing admin client,
+                                EJB local/home interfaces, JNDI constants,
+                                XML/SAX populators, JMS QueueHelper).
+        - legacy/sources/...  : 54 sources that import Sun BluePrints internal
+                                packages (waf, signon, cart, customer, etc.)
+                                that were never published to Maven Central.
+                                Preserved for reference; not on the Maven
+                                source path.
+        - legacy/apps/...     : original JSPs, images, J2EE descriptors, and
+                                Ant configuration from the BluePrints zip.
+    </description>
+
+    <properties>
+        <java.version>21</java.version>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <maven.compiler.release>21</maven.compiler.release>
+    </properties>
+
+    <dependencies>
+        <!-- javax.servlet.* (HttpServlet, HttpServletRequest, ...) -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- javax.ejb.* (EJBHome, EJBLocalHome, EJBObject, ...) -->
+        <dependency>
+            <groupId>javax.ejb</groupId>
+            <artifactId>javax.ejb-api</artifactId>
+            <version>3.2.2</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- javax.jms.* (Queue, Connection, MessageProducer, ...) -->
+        <dependency>
+            <groupId>javax.jms</groupId>
+            <artifactId>javax.jms-api</artifactId>
+            <version>2.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+    </build>
+</project>

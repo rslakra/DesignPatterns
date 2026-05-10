@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.rslakra</groupId>
+        <artifactId>TestingPatterns</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <artifactId>testing-self-shunt</artifactId>
+    <packaging>jar</packaging>
+    <name>TestingPatterns - SelfShunt</name>
+
+    <!--
+        ErrorHanderTest.java is illustrative book code that:
+          (a) declares public testCorrectSystems() with no return type, and
+          (b) references classes the book never supplies
+              (HUD, EnvironmentalControls, PilotControlSystem, ErrorHandler).
+        It cannot compile, so it has been moved out of the Maven source path
+        to SelfShunt/legacy/sources/ for documentation purposes.
+        Do NOT move it back to src/test/java unless you also add a
+        <testExcludes> entry under maven-compiler-plugin.
+    -->
+    <build>
+        <finalName>${project.artifactId}</finalName>
+    </build>
+</project>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.rslakra</groupId>
+        <artifactId>TestingPatterns</artifactId>
+        <version>${revision}</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+    <artifactId>testing-mock-objects</artifactId>
+    <packaging>jar</packaging>
+    <name>TestingPatterns - MockObjects</name>
+
+    <dependencies>
+        <!-- legacy javax.mail.* used by JavaxMailServer demo -->
+        <dependency>
+            <groupId>com.sun.mail</groupId>
+            <artifactId>javax.mail</artifactId>
+            <version>1.6.2</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <!--
+                        StubRequest extends the fictional class
+                        `J2EEImplementationOfHttpServletRequest` that the book uses to
+                        illustrate "extend your app server's HttpServletRequest impl".
+                        It is reference-only and cannot compile; exclude it.
+                    -->
+                    <testExcludes>
+                        <exclude>StubRequest.java</exclude>
+                    </testExcludes>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
