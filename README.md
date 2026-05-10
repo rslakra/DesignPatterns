@@ -10,9 +10,7 @@ All examples are written in **Java**.
 |------|-------------|
 | [`pom.xml`](pom.xml) | Maven aggregator (multi-module root) |
 | [`CorePatterns/`](CorePatterns/) | Core design pattern samples (`com.rslakra.designpatterns…`) |
-| [`CorePatterns/README.md`](CorePatterns/README.md) | Catalog of patterns and source links |
 | [`J2EEPatterns/`](J2EEPatterns/) | J2EE / servlet / JSP samples (legacy `javax.*`, Java 21) |
-| [`J2EEPatterns/README.md`](J2EEPatterns/README.md) | J2EE module list and Maven notes |
 
 ## Build
 
